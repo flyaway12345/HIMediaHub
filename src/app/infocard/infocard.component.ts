@@ -20,7 +20,7 @@ set value(value : string) {
 }
 
   ngOnInit(): void {
-    this.value = '';
+    this.value = 'Type Something to Replace Me';
   }
 
 }
