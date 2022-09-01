@@ -9,18 +9,19 @@ export class InfocardComponent implements OnInit {
 
   constructor() { }
 
-private _value = '';
 
-get value(): string {
-  return this._value;
+
+//testing interpolation
+private _infoSearchBar = '';
+get infoSearchBar(): string {
+  return this._infoSearchBar;
 }
- 
-set value(value : string) {
-  this._value = value;
+set infoSearchBar(infoSearchBar : string) {
+  this._infoSearchBar = infoSearchBar;
 }
 
   ngOnInit(): void {
-    this.value = 'Type Something to Replace Me';
+    this.infoSearchBar = 'Type Something to Replace Me';
   }
 
 }
