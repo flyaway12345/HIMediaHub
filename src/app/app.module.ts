@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { InfocardComponent } from './infocard/infocard.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfocardComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -9,19 +9,15 @@ export class InfocardComponent implements OnInit {
 
   constructor() { }
 
-
+  cardTitle : string = ''
 
 //testing interpolation
-private _infoSearchBar = '';
-get infoSearchBar(): string {
-  return this._infoSearchBar;
-}
-set infoSearchBar(infoSearchBar : string) {
-  this._infoSearchBar = infoSearchBar;
-}
 
   ngOnInit(): void {
-    this.infoSearchBar = 'Type Something to Replace Me';
+    this.cardTitle = 'Change This Cards Text'
   }
 
+  onTitleUpdate(message:string): void{
+    this.cardTitle = message;
+  }
 }
