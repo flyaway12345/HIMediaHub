@@ -8,20 +8,29 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { AudiodexComponent } from './audiodex/audiodex.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     InfocardComponent,
     SearchbarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AudiodexComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'home', component: HomeComponent},
+      {path: 'audiodex', component: AudiodexComponent},
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
