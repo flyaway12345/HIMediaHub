@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ITestInterface } from '../interfaces/test-interface';
 import { PokeapiService } from '../services/audiodex/pokeapi.service';
 import { TestService } from '../services/test.service';
 
@@ -9,29 +8,39 @@ import { TestService } from '../services/test.service';
   styleUrls: ['./audiodex.component.css']
 })
 export class AudiodexComponent implements OnInit {  
-  constructor(private testService : TestService,private pokeAPI : PokeapiService) { }
-  cardSearch : string = '1';
+  private _infoSearchBar = '1';
+  pokemonData: any ={} as any;
+  pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this._infoSearchBar;
+  get infoSearchBar(): string {
+    return this._infoSearchBar;
+  }
+  set infoSearchBar(infoSearchBar : string) {
+    this._infoSearchBar = infoSearchBar;
+    console.log('_infoSearchBar saved as infosearchbar')
+  }
+  onClick(): void {
+    this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this._infoSearchBar;
+    this.getData();
+    console.log('this.onClick fired');
+  }
   
-  pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this.cardSearch;
-  pokemonData: any;
 
-  pokemonSpeciesEndpoint = this.pokeAPI.getPokemonSpeciesDataViaPokeAPIURL + this.cardSearch;
-  pokemonSpeciesData: any;
+  constructor(private testService : TestService,private pokeAPI : PokeapiService) { }
 
-//testing interpolation
+
+  getData(){
+    this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
+    console.log('this.getData fired');
+    console.log(this.pokemonData);
+    console.log(this.pokemonEndpoint);
+  }
 
   ngOnInit(): void {
-    this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
-    this.pokeAPI.getData(this.pokemonSpeciesEndpoint).subscribe(data=>this.pokemonSpeciesData=data);
-  }
-  ngOnChange():void {
-    this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
-    this.pokeAPI.getData(this.pokemonSpeciesEndpoint).subscribe(data=>this.pokemonSpeciesData=data);
-
-  }
-  onSearchUpdate(message:string): void{
-    this.cardSearch = message;
+    this.getData();
   }
  
+ ngOnChange(): void {
+  this.getData();
+ }
   
 }

@@ -6,7 +6,7 @@ import { ITestInterface } from '../interfaces/test-interface';
 })
 export class TestService {
 
-  constructor() { }
+  constructor() { /* TODO document why this constructor is empty */  }
 
   sayTest(): ITestInterface[] {
     return [
