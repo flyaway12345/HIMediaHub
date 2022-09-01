@@ -17,13 +17,14 @@ export class SearchbarComponent implements OnInit {
     this._infoSearchBar = infoSearchBar;
   }
   
-  @Output() titleUpdate: EventEmitter<string> = new EventEmitter<string>();
+  @Output() searchUpdate: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnInit(): void {
+    
   }
 
 onClick(): void{
-    this.titleUpdate.emit
+    this.searchUpdate.emit(this._infoSearchBar);
 }
 
 }

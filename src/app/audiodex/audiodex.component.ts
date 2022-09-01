@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITestInterface } from '../interfaces/test-interface';
+import { PokeapiService } from '../services/audiodex/pokeapi.service';
 import { TestService } from '../services/test.service';
 
 @Component({
@@ -7,21 +8,30 @@ import { TestService } from '../services/test.service';
   templateUrl: './audiodex.component.html',
   styleUrls: ['./audiodex.component.css']
 })
-export class AudiodexComponent implements OnInit {
-  test : ITestInterface[] = [];
+export class AudiodexComponent implements OnInit {  
+  constructor(private testService : TestService,private pokeAPI : PokeapiService) { }
+  cardSearch : string = '1';
   
-  constructor(private testService : TestService) { }
+  pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this.cardSearch;
+  pokemonData: any;
 
-  cardTitle : string = ''
+  pokemonSpeciesEndpoint = this.pokeAPI.getPokemonSpeciesDataViaPokeAPIURL + this.cardSearch;
+  pokemonSpeciesData: any;
 
 //testing interpolation
 
   ngOnInit(): void {
-    this.cardTitle = 'Change This Cards Text'
-    this.test = this.testService.sayTest();
+    this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
+    this.pokeAPI.getData(this.pokemonSpeciesEndpoint).subscribe(data=>this.pokemonSpeciesData=data);
   }
+  ngOnChange():void {
+    this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
+    this.pokeAPI.getData(this.pokemonSpeciesEndpoint).subscribe(data=>this.pokemonSpeciesData=data);
 
-  onTitleUpdate(message:string): void{
-    this.cardTitle = message;
   }
+  onSearchUpdate(message:string): void{
+    this.cardSearch = message;
+  }
+ 
+  
 }

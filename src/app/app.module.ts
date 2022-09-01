@@ -11,7 +11,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AudiodexComponent } from './audiodex/audiodex.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-
 @NgModule({
   declarations: [
     AppComponent,
