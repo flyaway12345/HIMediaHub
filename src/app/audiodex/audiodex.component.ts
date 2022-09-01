@@ -3,11 +3,11 @@ import { ITestInterface } from '../interfaces/test-interface';
 import { TestService } from '../services/test.service';
 
 @Component({
-  selector: 'app-infocard',
-  templateUrl: './infocard.component.html',
-  styleUrls: ['./infocard.component.css']
+  selector: 'app-audiodex',
+  templateUrl: './audiodex.component.html',
+  styleUrls: ['./audiodex.component.css']
 })
-export class InfocardComponent implements OnInit {
+export class AudiodexComponent implements OnInit {
   test : ITestInterface[] = [];
   
   constructor(private testService : TestService) { }

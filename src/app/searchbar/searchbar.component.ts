@@ -23,7 +23,7 @@ export class SearchbarComponent implements OnInit {
   }
 
 onClick(): void{
-    this.titleUpdate.emit(this.infoSearchBar);
+    this.titleUpdate.emit
 }
 
 }
