@@ -57,23 +57,19 @@ jobs:
         # Used for authentication. You can find it in your heroku homepage account settings
         heroku_api_key: 617b3d0c-2f9a-4b75-a8ff-a04e0a8bba4c
         # Email from Heroku Account
-        heroku_email: evan
+        heroku_email: evanhaggard123@gmail.com
         # The appname to use for deploying/updating
-        heroku_app_name: 
+        heroku_app_name: himediahub
         # The branch that you would like to deploy to Heroku
-        branch: # optional, default is HEAD
+        branch: heroku
         # Set this to true if want to use --force
-        useforce: # optional
+        useforce: false
         # Set if your app is located in a subdirectory.
-        appdir: # optional, default is 
-        # Contents of the Procfile to save and deploy
         procfile: # optional, default is 
         # Set to true if you need upload files generated dynamically by the GitHub Action to Heroku
-        dynamicFiles: # optional
+        dynamicFiles: true
         # Buildpacks to install on Heroku
-        buildpacks: # optional, default is 
-        # Path to an localized env file
-        env_file: # optional, default is 
+
 
    
 
