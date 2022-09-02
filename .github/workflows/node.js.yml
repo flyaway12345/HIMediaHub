@@ -56,5 +56,5 @@ jobs:
         tag_name: ${{ steps.changelog.outputs.tag }}
         release_name: ${{ steps.changelog.outputs.tag }}
         body: ${{ steps.changelog.outputs.clean_changelog }}
-    -run: npm run deploy
+    - run: npm run deploy
 
