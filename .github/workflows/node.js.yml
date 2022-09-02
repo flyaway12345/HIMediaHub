@@ -1,4 +1,4 @@
-name:  Angular GitHub CI
+name: Node.js CI
 
 on:
   push:
@@ -7,12 +7,13 @@ on:
     branches: [ "master" ]
 
 jobs:
-  ci:
+  build:
+
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [12.x, 14.x, 16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -22,44 +23,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Cache node modules
-      id: cache-nodemodules
-      uses: actions/cache@v2
-      env:
-        cache-name: cache-node-modules
-      with:
-        # caching node_modules
-        path: node_modules
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-build-${{ env.cache-name }}-
-          ${{ runner.os }}-build-
-          ${{ runner.os }}-
-    - name: Install Dependencies
-      if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-      run: |
-        npm ci
-    - name: Build
-      run: |
-        npm run build --if-present
-    - name: Conventional Changelog Action
-      id: changelog
-      uses: TriPSs/conventional-changelog-action@v3
-      with:
-        github-token: ${{ secrets.TOKEN_GITHUB_ACTION }}
-        output-file: "false"
-
-    - name: Create Release
-      uses: actions/create-release@v1
-      if: ${{ steps.changelog.outputs.skipped == 'false' }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ACTION }}
-      with:
-        tag_name: ${{ steps.changelog.outputs.tag }}
-        release_name: ${{ steps.changelog.outputs.tag }}
-        body: ${{ steps.changelog.outputs.clean_changelog }}
-
-    - name: Deploy
-      run: |
-        npm run deploy
-
+    - name: Angular Github Actions
+      # You may pin to the exact commit or the version.
+      # uses: mayurrawte/github-angular-actions@babc38d81371a05fbe9b9b6d50d241efb96d4faf
+      uses: mayurrawte/github-angular-actions@latest
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
