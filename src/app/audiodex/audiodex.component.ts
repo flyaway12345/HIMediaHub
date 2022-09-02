@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiodexSpreakerAPIService } from '../services/audiodex/audiodex-spreaker-api.service';
 import { PokeapiService } from '../services/audiodex/pokeapi.service';
 import { TestService } from '../services/test.service';
 
@@ -9,41 +8,39 @@ import { TestService } from '../services/test.service';
   styleUrls: ['./audiodex.component.css']
 })
 export class AudiodexComponent implements OnInit {  
-  //ik this is not the best way to do this, but i want it to work ill refine later
-  pokedexLength = 5;
-  pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; })
- // pokemonDataArray: any[] = [1, 2, 3, 4, 5];
-  pokemonEndpoint:string = '';
+  private _infoSearchBar = '1';
+  pokemonData: any ={} as any;
+  pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this._infoSearchBar;
+  get infoSearchBar(): string {
+    return this._infoSearchBar;
+  }
+  set infoSearchBar(infoSearchBar : string) {
+    this._infoSearchBar = infoSearchBar;
+    console.log('_infoSearchBar saved as infosearchbar')
+  }
+  onClick(): void {
+    this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this._infoSearchBar;
+    this.getData();
+    console.log('this.onClick fired');
+  }
   
 
-  constructor(private testService : TestService,private pokeAPI : PokeapiService,private podcast:AudiodexSpreakerAPIService) { }
+  constructor(private testService : TestService,private pokeAPI : PokeapiService) { }
 
 
-  getPokemonData(){
-    for(let i = 0; i < this.pokemonDataArray.length; i++){
-      this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + (i+1);
-      console.log(this.pokemonEndpoint);
-      this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonDataArray[i]=data);
-      console.log('this.getData fired');
-      console.log(this.pokemonDataArray[i]);
-      
-    }
-    console.log(this.pokemonDataArray);
+  getData(){
+    this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
+    console.log('this.getData fired');
+    console.log(this.pokemonData);
+    console.log(this.pokemonEndpoint);
   }
-  // getPokemonSpeciesData(){
-  //   for(let i = 0; i < this.pokemonDataArray.length; i++){
-  //     this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + (i+1);
-  //     console.log(this.pokemonEndpoint);
-  //     this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonDataArray[i]=data);
-  //     console.log('this.getData fired');
-  //     console.log(this.pokemonDataArray[i]);
-      
-  //   }
-  //   console.log(this.pokemonDataArray);
-  // }
 
   ngOnInit(): void {
-    this.getPokemonData();
+    this.getData();
   }
+ 
+ ngOnChange(): void {
+  this.getData();
+ }
   
 }
