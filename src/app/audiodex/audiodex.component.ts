@@ -8,25 +8,13 @@ import { TestService } from '../services/test.service';
   styleUrls: ['./audiodex.component.css']
 })
 export class AudiodexComponent implements OnInit {  
-  private _infoSearchBar = '1';
-  pokemonData: any ={} as any;
-  pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this._infoSearchBar;
-  get infoSearchBar(): string {
-    return this._infoSearchBar;
-  }
-  set infoSearchBar(infoSearchBar : string) {
-    this._infoSearchBar = infoSearchBar;
-    console.log('_infoSearchBar saved as infosearchbar')
-  }
-  onClick(): void {
-    this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + this._infoSearchBar;
-    this.getData();
-    console.log('this.onClick fired');
-  }
+
+  //ik this is not the best way to do this, but i want it to work ill refine later
+  pokedexLength = 5;
+  pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; })
+  pokemonEndpoint:string = '';
   
-
   constructor(private testService : TestService,private pokeAPI : PokeapiService) { }
-
 
   getData(){
     this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonData=data);
@@ -39,8 +27,5 @@ export class AudiodexComponent implements OnInit {
     this.getData();
   }
  
- ngOnChange(): void {
-  this.getData();
- }
   
 }
