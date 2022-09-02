@@ -49,24 +49,13 @@ jobs:
         # If the action should run 'ng lint'
         # Will not fail the step if anything fails
         skip_failure: true 
-    - name: Heroku Action
-      # You may pin to the exact commit or the version.
-      # uses: CDNievas/heroku-action@c9cf9c85571e67583e44ec92c0d1113f66b0e838
-      uses: CDNievas/heroku-action@v1.0
-      with:
-        # Used for authentication. You can find it in your heroku homepage account settings
-        heroku_api_key: 617b3d0c-2f9a-4b75-a8ff-a04e0a8bba4c
-        # Email from Heroku Account
-        heroku_email: evanhaggard123@gmail.com
-        # The appname to use for deploying/updating
-        heroku_app_name: himediahub
-        # The branch that you would like to deploy to Heroku
-        branch: master
-        # Set this to true if want to use --force
-        useforce: false
-        # Set if your app is located in a subdirectory.
-        dynamicFiles: false
-        # Buildpacks to install on Heroku
+      - name: Heroku Deployment
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "himediahub" #Must be unique in Heroku
+          heroku_email: ${{secrets.AUTH_EMAIL}}
+
 
 
    
