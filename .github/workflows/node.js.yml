@@ -29,4 +29,3 @@ jobs:
       uses: mayurrawte/github-angular-actions@latest
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
