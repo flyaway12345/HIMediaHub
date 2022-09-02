@@ -8,14 +8,11 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -26,16 +23,12 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Angular Github Actions
-      # You may pin to the exact commit or the version.
-      # uses: mayurrawte/github-angular-actions@babc38d81371a05fbe9b9b6d50d241efb96d4faf
       uses: mayurrawte/github-angular-actions@latest        
     - name: Deploy to Heroku
-      # You may pin to the exact commit or the version.
-      # uses: AkhileshNS/heroku-deploy@79ef2ae4ff9b897010907016b268fd0f88561820
       uses: AkhileshNS/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-        heroku_app_name: "himediahub" #Must be unique in Heroku
+        heroku_app_name: himediahub
         heroku_email: ${{secrets.AUTH_EMAIL}}
 
 
