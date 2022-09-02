@@ -32,7 +32,5 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: mayurrawte/github-angular-actions@babc38d81371a05fbe9b9b6d50d241efb96d4faf
       uses: mayurrawte/github-angular-actions@latest        
-    - name: Deploy to Heroku
-      uses: AkhileshNS/heroku-deploy@v3.12.12
 
 
