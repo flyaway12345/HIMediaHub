@@ -9,7 +9,6 @@ import { TestService } from '../services/test.service';
 })
 export class AudiodexComponent implements OnInit {  
 
-  //ik this is not the best way to do this, but i want it to work ill refine later
   pokedexLength = 5;
   pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; })
   pokemonEndpoint:string = '';
