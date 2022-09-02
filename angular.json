@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "options": {
+            "baseHref": "/HIMediaHub/",
+            "name": "HIMediaHub",
+            "output-path": "/docs"
+          }
+          }
         }
       }
     }
