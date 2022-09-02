@@ -28,8 +28,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
-      {path: '/', component: HomeComponent},
-      {path: '/audiodex', component: AudiodexComponent},
+      {path: 'audiodex', component: AudiodexComponent},
     ])
   ],
   providers: [],
