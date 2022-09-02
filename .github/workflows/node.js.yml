@@ -43,7 +43,7 @@ jobs:
         # branch on which the angular build will be deployed
         deploy_branch: gh-pages
         # The folder in which `ng build` provides its output. This is the folder which will be deployed to the `deploy_branch`.
-        angular_dist_build_folder: dist/himedia-hub
+        angular_dist_build_folder: /docs
         # If the action should run 'ng lint'
         # Will not fail the step if anything fails
         skip_failure: true    
