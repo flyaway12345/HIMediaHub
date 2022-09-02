@@ -48,10 +48,16 @@ jobs:
         angular_dist_build_folder: /docs
         # If the action should run 'ng lint'
         # Will not fail the step if anything fails
-        skip_failure: true 
+        skip_failure: true         
+    - name: Deploy to Heroku
+      # You may pin to the exact commit or the version.
+      # uses: AkhileshNS/heroku-deploy@79ef2ae4ff9b897010907016b268fd0f88561820
+      uses: AkhileshNS/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "himediahub" #Must be unique in Heroku
+        heroku_email: ${{secrets.AUTH_EMAIL}}
 
 
-
-
-   
+        
 
