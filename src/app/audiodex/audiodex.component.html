@@ -1,14 +1,11 @@
 <div class="row">
-  <button class="btn btn-primary" (click)="onClick()">Test</button>
   <div *ngFor="let pokemonDataArray of pokemonDataArray; index as i" class="col-md-4">
     <div  class="col-3 card" style="width: 18rem; margin: 1em;">
       <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{pokemonDataArray.id}}.png" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">#{{pokemonDataArray.id}}: {{pokemonDataArray.name | titlecase}}</h5>
-        </div>
-              <input class="form-control" type="text" [(ngModel)]='infoSearchBar' placeholder="">
-              
+        </div>         
     </div>
   </div>
-    
-  </div>
+  
+</div>
