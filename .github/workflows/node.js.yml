@@ -61,12 +61,10 @@ jobs:
         # The appname to use for deploying/updating
         heroku_app_name: himediahub
         # The branch that you would like to deploy to Heroku
-        branch: heroku
+        branch: master
         # Set this to true if want to use --force
         useforce: false
         # Set if your app is located in a subdirectory.
-        procfile: # optional, default is 
-        # Set to true if you need upload files generated dynamically by the GitHub Action to Heroku
         dynamicFiles: true
         # Buildpacks to install on Heroku
 
