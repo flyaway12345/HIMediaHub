@@ -65,7 +65,7 @@ jobs:
         # Set this to true if want to use --force
         useforce: false
         # Set if your app is located in a subdirectory.
-        dynamicFiles: true
+        dynamicFiles: false
         # Buildpacks to install on Heroku
 
 
