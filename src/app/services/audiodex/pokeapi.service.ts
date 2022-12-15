@@ -11,10 +11,12 @@ export class PokeapiService {
   constructor(private http: HttpClient) { 
 
   }
-
+  
   getData(url:string){
     return this.http.get(url);
   }
-
-
+  pokedexLength: number = 6;
+  pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
+  pokemonEndpoint:string = '';
+  
 }

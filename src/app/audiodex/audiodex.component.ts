@@ -9,8 +9,7 @@ import { TestService } from '../services/test.service';
   styleUrls: ['./audiodex.component.css']
 })
 export class AudiodexComponent implements OnInit {  
-  pokedexLength: any = 6;
-  _pokedexLength:number = 6;
+  
 
   // updatePokedexLength(){
   //   if(this.pokedexLength == NaN 
@@ -29,17 +28,26 @@ export class AudiodexComponent implements OnInit {
   constructor(private testService : TestService,private pokeAPI : PokeapiService,private podcast:AudiodexSpreakerAPIService) { }
 
   //get data of pokemon from this appended link https://pokeapi.co/api/v2/pokemon/pokedexLength
-  pokemonDataArray: any[] = Array.apply(null, Array(this._pokedexLength)).map(function (x, i) { return i; });
+  spreakerArrayLength = 7;
+  pokemonSpreakerDataArray: Object = '';
+  pokemonSpreakerEndpoint:string = '';
+
+  
+
+
+  pokedexLength: any = 6;
+  pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
   pokemonEndpoint:string = '';
   getPokemonData(){
-    this.pokemonDataArray = Array.apply(null, Array(this._pokedexLength)).map(function (x, i) { return i; });
+    this.podcast.getData(this.podcast.getAudiodexEpisodesViaURL).subscribe(data=>this.pokemonSpreakerDataArray=data);
+    console.log("Spreaker Data"+this.pokemonSpreakerDataArray);
+    this.pokemonDataArray = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
     for(let i = 0; i < this.pokemonDataArray.length; i++){
       this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + (i+1);
       console.log(this.pokemonEndpoint);
       this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonDataArray[i]=data);
       console.log('this.getData fired');
       console.log(this.pokemonDataArray[i]);
-      
     }
     console.log(this.pokemonDataArray);
   }
