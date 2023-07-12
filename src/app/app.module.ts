@@ -11,6 +11,7 @@ import { AudiodexComponent } from './audiodex/audiodex.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.component';
+import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.compon
     FooterComponent,
     AudiodexComponent,
     HomeComponent,
-    TheWinstonCupComponent
+    TheWinstonCupComponent,
+    HotubanlistComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.compon
       {path: 'home', component: HomeComponent},
       {path: 'audiodex', component: AudiodexComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
+      {path: '/hotubanlist', component: HotubanlistComponent},
     ])
   ],
   providers: [],
