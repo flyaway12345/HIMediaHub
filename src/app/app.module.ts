@@ -29,12 +29,16 @@ import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
+      //Deployment
+      // {path: '', component: HomeComponent},
+      // {path: 'HIMediaHub/', component: HomeComponent},
+      // {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
+      // {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
+      // {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
       {path: '', component: HomeComponent},
-      {path: '/', component: HomeComponent},
-      {path: 'HIMediaHub/', component: HomeComponent},
-      {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
-      {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
-      {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
+      {path: 'audiodex', component: AudiodexComponent},
+      {path: 'thewinstoncup', component: TheWinstonCupComponent},
+      {path: 'hotubanlist', component: HotubanlistComponent},
     ])
   ],
   providers: [],
