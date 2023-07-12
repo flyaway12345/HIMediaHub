@@ -33,7 +33,7 @@ import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.
       {path: 'home', component: HomeComponent},
       {path: 'audiodex', component: AudiodexComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
-      {path: '/hotubanlist', component: HotubanlistComponent},
+      {path: 'hotubanlist', component: HotubanlistComponent},
     ])
   ],
   providers: [],
