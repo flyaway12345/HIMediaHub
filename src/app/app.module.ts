@@ -3,23 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InfocardComponent } from './infocard/infocard.component';
-import { SearchbarComponent } from './searchbar/searchbar.component';
+import { SearchbarComponent } from './audiodex/searchbar/searchbar.component';
 import { FormsModule } from '@angular/forms';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './app/header/header.component';
+import { FooterComponent } from './app/footer/footer.component';
 import { AudiodexComponent } from './audiodex/audiodex.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.component';
 @NgModule({
   declarations: [
     AppComponent,
-    InfocardComponent,
     SearchbarComponent,
     HeaderComponent,
     FooterComponent,
     AudiodexComponent,
-    HomeComponent
+    HomeComponent,
+    TheWinstonCupComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +30,7 @@ import { HomeComponent } from './home/home.component';
       {path: '', component: HomeComponent},
       {path: 'home', component: HomeComponent},
       {path: 'audiodex', component: AudiodexComponent},
+      {path: 'thewinstoncup', component: TheWinstonCupComponent},
     ])
   ],
   providers: [],

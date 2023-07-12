@@ -9,7 +9,7 @@ phases:
     commands:
       - echo install process started
       - npm install && npm install -g @angular/cli
-  build:
+  build: 
     commands:
       - echo build process started now
       - ng build --configuration=production

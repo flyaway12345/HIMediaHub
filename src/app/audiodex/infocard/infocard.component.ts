@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ITestInterface } from '../interfaces/test-interface';
-import { TestService } from '../services/test.service';
+import { ITestInterface } from '../../interfaces/test-interface';
+import { TestService } from '../../services/test.service';
 
 @Component({
   selector: 'app-infocard',
