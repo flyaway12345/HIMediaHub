@@ -29,6 +29,8 @@ import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: '/', component: HomeComponent},
       {path: 'HIMediaHub/', component: HomeComponent},
       {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
       {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
