@@ -42,12 +42,12 @@ export class AudiodexComponent implements OnInit {
   pokemonArt:any = '';
   pokemonFlavorText:any = '';
   pokemonDisplayName: any = '';
-
+  
 
   pokemonEndpoint:string = '';
   pokemonSpeciesEndpoint:string ='';
   getPokemonData(){
-
+      let i = 0;
       this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + (this.pokedexNumber);
       this.pokemonSpeciesEndpoint = this.pokeAPI.getPokemonSpeciesDataViaPokeAPIURL + (this.pokedexNumber);
       this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonDataArray[0]=data);
@@ -56,10 +56,6 @@ export class AudiodexComponent implements OnInit {
       this.pokemonID = this.pokedexNumber;
       this.pokemonDisplayName = "#" + this.pokedexNumber + ": " + this.pokemonName 
       this.pokemonFlavorText = this.pokemonSpeciesDataArray[0].flavor_text_entries[0].flavor_text;
-      console.log(this.pokemonArt)
-      console.log(this.pokemonDataArray[0].name);
-    
-    console.log(this.pokemonDataArray);
   }
 
   ngOnInit(): void {
