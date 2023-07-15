@@ -15,9 +15,9 @@ export class PokeapiService {
   getData(url:string){
     return this.http.get(url);
   }
-  pokedexLength: number = 6;
-  pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
-  pokemonEndpoint:string = '';
+  // pokedexLength: number = 1;
+  // pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
+  // pokemonEndpoint:string = '';
   
 }
  

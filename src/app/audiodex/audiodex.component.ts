@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { AudiodexSpreakerAPIService } from '../services/audiodex/audiodex-spreaker-api.service';
 import { PokeapiService } from '../services/audiodex/pokeapi.service';
 import { TestService } from '../services/test.service';
@@ -31,32 +31,50 @@ export class AudiodexComponent implements OnInit {
   spreakerArrayLength = 7;
   pokemonSpreakerDataArray: Object = '';
   pokemonSpreakerEndpoint:string = '';
+  pokemonDataArrayLength:number = 1;
+  pokemonDataArray: any[] = Array.apply(null, Array(this.pokemonDataArrayLength)).map(function (x, i) { return i; });
+  pokemonSpeciesDataArray: any[] = Array.apply(null, Array(this.pokemonDataArrayLength)).map(function (x, i) { return i; });
+  display: boolean = true;
+  inputID: any = '';
+  pokedexNumber: any = '';
+  pokemonName:any = '';
+  pokemonID:any = '';
+  pokemonArt:any = '';
+  pokemonFlavorText:any = '';
+  pokemonDisplayName: any = '';
 
-  
 
-
-  pokedexLength: any = 6;
-  pokemonDataArray: any[] = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
   pokemonEndpoint:string = '';
+  pokemonSpeciesEndpoint:string ='';
   getPokemonData(){
-    this.podcast.getData(this.podcast.getAudiodexEpisodesViaURL).subscribe(data=>this.pokemonSpreakerDataArray=data);
-    console.log("Spreaker Data"+this.pokemonSpreakerDataArray);
-    this.pokemonDataArray = Array.apply(null, Array(this.pokedexLength)).map(function (x, i) { return i; });
-    for(let i = 0; i < this.pokemonDataArray.length; i++){
-      this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + (i+1);
-      console.log(this.pokemonEndpoint);
-      this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonDataArray[i]=data);
-      console.log('this.getData fired');
-      console.log(this.pokemonDataArray[i]);
-    }
+
+      this.pokemonEndpoint = this.pokeAPI.getPokemonFromPokeAPIURL + (this.pokedexNumber);
+      this.pokemonSpeciesEndpoint = this.pokeAPI.getPokemonSpeciesDataViaPokeAPIURL + (this.pokedexNumber);
+      this.pokeAPI.getData(this.pokemonEndpoint).subscribe(data=>this.pokemonDataArray[0]=data);
+      this.pokeAPI.getData(this.pokemonSpeciesEndpoint).subscribe(data=>this.pokemonSpeciesDataArray[0]=data);
+      this.pokemonName = this.pokemonDataArray[0].name;
+      this.pokemonID = this.pokedexNumber;
+      this.pokemonDisplayName = "#" + this.pokedexNumber + ": " + this.pokemonName 
+      this.pokemonFlavorText = this.pokemonSpeciesDataArray[0].flavor_text_entries[0].flavor_text;
+      console.log(this.pokemonArt)
+      console.log(this.pokemonDataArray[0].name);
+    
     console.log(this.pokemonDataArray);
   }
 
   ngOnInit(): void {
     this.getPokemonData();
+
   }
   
   ngOnChange(): void {
     this.getPokemonData();
+
   }
+  updatePokedex(){
+    this.pokedexNumber = this.inputID;
+    this.getPokemonData();
+  }
+  
 }
+
