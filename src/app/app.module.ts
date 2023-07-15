@@ -32,17 +32,17 @@ import { WatchboxComponent } from './watchbox/watchbox.component';
     AppRoutingModule,
     RouterModule.forRoot([
       //Prod
-      // {path: '', component: HomeComponent},
-      // {path: 'HIMediaHub/', component: HomeComponent},
-      // {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
-      // {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
-      // {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
-      // {path: 'HIMediaHub/watchbox', component: WatchboxComponent},
-      //Dev
       {path: '', component: HomeComponent},
-      {path: 'audiodex', component: AudiodexComponent},
-      {path: 'thewinstoncup', component: TheWinstonCupComponent},
-      {path: 'watchbox', component: WatchboxComponent},
+      {path: 'HIMediaHub/', component: HomeComponent},
+      {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
+      {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
+      {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
+      {path: 'HIMediaHub/watchbox', component: WatchboxComponent},
+      //Dev
+      // {path: '', component: HomeComponent},
+      // {path: 'audiodex', component: AudiodexComponent},
+      // {path: 'thewinstoncup', component: TheWinstonCupComponent},
+      // {path: 'watchbox', component: WatchboxComponent},
     ])
   ],
   providers: [],
