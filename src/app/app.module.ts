@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.component';
 import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.component';
+import { WatchboxComponent } from './watchbox/watchbox.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.
     AudiodexComponent,
     HomeComponent,
     TheWinstonCupComponent,
-    HotubanlistComponent
+    HotubanlistComponent,
+    WatchboxComponent
   ],
   imports: [
     BrowserModule,
@@ -30,16 +32,17 @@ import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.
     AppRoutingModule,
     RouterModule.forRoot([
       //Prod
-      {path: '', component: HomeComponent},
-      {path: 'HIMediaHub/', component: HomeComponent},
-      {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
-      {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
-      {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
-      //Dev
       // {path: '', component: HomeComponent},
-      // {path: 'audiodex', component: AudiodexComponent},
-      // {path: 'thewinstoncup', component: TheWinstonCupComponent},
-      // {path: 'hotubanlist', component: HotubanlistComponent},
+      // {path: 'HIMediaHub/', component: HomeComponent},
+      // {path: 'HIMediaHub/audiodex', component: AudiodexComponent},
+      // {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
+      // {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
+      // {path: 'HIMediaHub/watchbox', component: WatchboxComponent},
+      //Dev
+      {path: '', component: HomeComponent},
+      {path: 'audiodex', component: AudiodexComponent},
+      {path: 'thewinstoncup', component: TheWinstonCupComponent},
+      {path: 'watchbox', component: WatchboxComponent},
     ])
   ],
   providers: [],

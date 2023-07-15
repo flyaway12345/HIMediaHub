@@ -4,16 +4,32 @@
             <img src="assets/himedialogo.png" 
             alt="" width="30" height="24">
         </a>  
-        <a class="btn btn-primary" href="/HIMediaHub/">Home</a>
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">The Winston Cup</button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a></li>
-                <li><a class="dropdown-item" href="HIMediaHub/hotubanlist">HOTU Banlist</a></li>
-            </ul>
-          </div>
-        <a class="btn btn-primary" href="HIMediaHub/audiodex">Audiodex </a>
-        
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            |||
+        </button>
+        <!---SideBAr-->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!--Sidebar Links-->
+        <div class="offcanvas-body">
+            <a class="btn btn-primary" href="/HIMediaHub/">Links</a>
+            <!--Winston Cup-->
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">The Winston Cup</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a></li>
+                    <li><a class="dropdown-item" href="HIMediaHub/hotubanlist">HOTU Banlist</a></li>
+                </ul>
+              </div>
+            <!--Audio Dex-->  
+            <a class="btn btn-primary" href="HIMediaHub/audiodex">Audiodex </a>
+            <a class="btn btn-primary" href="HIMediaHub/watchbox">Watchbox </a>
+
+        </div>
+        </div>  
     </div>
   </nav>
   
