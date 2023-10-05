@@ -43,9 +43,9 @@ import { Error404Component } from './error404/error404.component';
       {path: '' ,component: HomeComponent},
       {path: '**' ,component: Error404Component},
       {path: 'HIMediaHub', component: HomeComponent},
-      {path: 'HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
-      {path: 'HIMediaHub/hotubanlist', component: HotubanlistComponent},
-      {path: 'HIMediaHub/watchbox', component: WatchboxComponent},
+      {path: 'HIMediaHub/HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
+      {path: 'HIMediaHub/HIMediaHub/hotubanlist', component: HotubanlistComponent},
+      {path: 'HIMediaHub/HIMediaHub/watchbox', component: WatchboxComponent},
       // RouterModule.forRoot([
       //   //Prod
       //   {path: '' ,component: HomeComponent, outlet:'main'},
