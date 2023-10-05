@@ -16,7 +16,7 @@ import { YoutubeComponent } from './watchbox/youtube/youtube.component';
 import { TwitchComponent } from './watchbox/twitch/twitch.component';
 import { KickComponent } from './watchbox/kick/kick.component';
 import { WatchboxBaseComponent } from './watchbox/watchbox-base/watchbox-base.component';
-import { Error404Component } from './error404/error404.component';
+import { Error404Component } from './app/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -39,33 +39,12 @@ import { Error404Component } from './error404/error404.component';
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      //Prod
       {path: '' ,component: HomeComponent},
-      {path: '**' ,component: Error404Component},
       {path: 'HIMediaHub', component: HomeComponent},
-      {path: 'HIMediaHub/HIMediaHub/thewinstoncup', component: TheWinstonCupComponent},
-      {path: 'HIMediaHub/HIMediaHub/hotubanlist', component: HotubanlistComponent},
-      {path: 'HIMediaHub/HIMediaHub/watchbox', component: WatchboxComponent},
-      // RouterModule.forRoot([
-      //   //Prod
-      //   {path: '' ,component: HomeComponent, outlet:'main'},
-      //   {path: '**' ,component: Error404Component, outlet:'main'},
-      //   {path: 'HIMediaHub/', component: HomeComponent,outlet:'main', children: [
-      //     {path: 'thewinstoncup', component: TheWinstonCupComponent},
-      //     {path: 'hotubanlist', component: HotubanlistComponent},
-      //     {path: 'watchbox', component: WatchboxComponent, children: [
-      //       {path: 'youtube', component: YoutubeComponent, outlet: 'watchboxFrame'},
-      //       {path: 'twitch', component: WatchboxComponent, outlet: 'watchboxFrame'},
-      //       {path: 'kick', component: WatchboxComponent, outlet: 'watchboxFrame'}
-      //     ]}
-      //   ]}
-      
-      
-      //Dev
-      // {path: '', component: HomeComponent},
-      // {path: 'audiodex', component: AudiodexComponent},
-      // {path: 'thewinstoncup', component: TheWinstonCupComponent},
-      // {path: 'watchbox', component: WatchboxComponent},
+      {path: 'thewinstoncup', component: TheWinstonCupComponent},
+      {path: 'hotubanlist', component: HotubanlistComponent},
+      {path: 'watchbox', component: WatchboxComponent},
+      {path: '**' ,component: Error404Component}
     ]),
   ],
   providers: [],
