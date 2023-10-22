@@ -12,11 +12,12 @@ import { HomeComponent } from './home/home.component';
 import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.component';
 import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.component';
 import { WatchboxComponent } from './watchbox/watchbox.component';
-import { YoutubeComponent } from './watchbox/youtube/youtube.component';
-import { TwitchComponent } from './watchbox/twitch/twitch.component';
-import { KickComponent } from './watchbox/kick/kick.component';
-import { WatchboxBaseComponent } from './watchbox/watchbox-base/watchbox-base.component';
+
 import { Error404Component } from './app/error404/error404.component';
+import { GamesComponent } from './games/games.component';
+import { Bloonstd4Component } from './games/bloonstd4/bloonstd4.component';
+import { LiveComponent } from './watchbox/live/live.component';
+import { VideosComponent } from './watchbox/videos/videos.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +28,11 @@ import { Error404Component } from './app/error404/error404.component';
     TheWinstonCupComponent,
     HotubanlistComponent,
     WatchboxComponent,
-    YoutubeComponent,
-    TwitchComponent,
-    KickComponent,
-    WatchboxBaseComponent,
-    Error404Component
+    Error404Component,
+    GamesComponent,
+    Bloonstd4Component,
+    LiveComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +45,7 @@ import { Error404Component } from './app/error404/error404.component';
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
+      {path: 'games', component: GamesComponent},
       {path: '**' ,component: Error404Component}
     ]),
   ],

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YoutubeComponent } from './youtube.component';
+import { Bloonstd4Component } from './bloonstd4.component';
 
-describe('YoutubeComponent', () => {
-  let component: YoutubeComponent;
-  let fixture: ComponentFixture<YoutubeComponent>;
+describe('Bloonstd4Component', () => {
+  let component: Bloonstd4Component;
+  let fixture: ComponentFixture<Bloonstd4Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ YoutubeComponent ]
+      declarations: [ Bloonstd4Component ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(YoutubeComponent);
+    fixture = TestBed.createComponent(Bloonstd4Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
