@@ -19,6 +19,8 @@ import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.comp
 import { LiveComponent } from './watchbox/live/live.component';
 import { VideosComponent } from './watchbox/videos/videos.component';
 import { GameSelectComponent } from './games/game-select/game-select.component';
+import { KittenCannonComponent } from './games/game-select/kitten-cannon/kitten-cannon.component';
+import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { GameSelectComponent } from './games/game-select/game-select.component';
     Bloonstd4Component,
     LiveComponent,
     VideosComponent,
-    GameSelectComponent
+    GameSelectComponent,
+    KittenCannonComponent,
+    AgeOfWarComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,13 @@ import { GameSelectComponent } from './games/game-select/game-select.component';
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
-      {path: 'games', component: GamesComponent},
+      {path: 'games', component: GamesComponent, children: [
+        {path: '', component: GameSelectComponent},
+        {path: 'gameSelect', component: GameSelectComponent},
+        {path: 'bloonstd4', component: Bloonstd4Component},
+        {path: 'ageOfWar', component: AgeOfWarComponent},
+        {path: 'kittenCannon', component: KittenCannonComponent},
+      ]},
       {path: '**' ,component: Error404Component}
     ]),
   ],
