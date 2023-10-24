@@ -8,23 +8,24 @@ import { HeaderComponent } from './app/header/header.component';
 import { FooterComponent } from './app/footer/footer.component';
 
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { LinksComponent } from './links/links.component';
 import { TheWinstonCupComponent } from './the-winston-cup/the-winston-cup.component';
 import { HotubanlistComponent } from './the-winston-cup/hotubanlist/hotubanlist.component';
 import { WatchboxComponent } from './watchbox/watchbox.component';
 
 import { Error404Component } from './app/error404/error404.component';
 import { GamesComponent } from './games/games.component';
-import { Bloonstd4Component } from './games/bloonstd4/bloonstd4.component';
+import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.component';
 import { LiveComponent } from './watchbox/live/live.component';
 import { VideosComponent } from './watchbox/videos/videos.component';
+import { GameSelectComponent } from './games/game-select/game-select.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
+    LinksComponent,
     TheWinstonCupComponent,
     HotubanlistComponent,
     WatchboxComponent,
@@ -32,7 +33,8 @@ import { VideosComponent } from './watchbox/videos/videos.component';
     GamesComponent,
     Bloonstd4Component,
     LiveComponent,
-    VideosComponent
+    VideosComponent,
+    GameSelectComponent
   ],
   imports: [
     BrowserModule,
@@ -40,8 +42,8 @@ import { VideosComponent } from './watchbox/videos/videos.component';
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '' ,component: HomeComponent},
-      {path: 'HIMediaHub', component: HomeComponent},
+      {path: '' ,component: LinksComponent},
+      {path: 'HIMediaHub', component: LinksComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
