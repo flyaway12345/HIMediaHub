@@ -20,7 +20,9 @@ import { LiveComponent } from './watchbox/live/live.component';
 import { VideosComponent } from './watchbox/videos/videos.component';
 import { GameSelectComponent } from './games/game-select/game-select.component';
 import { KittenCannonComponent } from './games/game-select/kitten-cannon/kitten-cannon.component';
-import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.component'
+import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.component';
+import { DiscordComponent } from './links/discord/discord.component';
+import { SocialsComponent } from './links/socials/socials.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.com
     VideosComponent,
     GameSelectComponent,
     KittenCannonComponent,
-    AgeOfWarComponent
+    AgeOfWarComponent,
+    DiscordComponent,
+    SocialsComponent
   ],
   imports: [
     BrowserModule,
