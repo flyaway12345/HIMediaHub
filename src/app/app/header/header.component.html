@@ -16,26 +16,33 @@
         </div>
         <!--Sidebar Links-->
         <div class="offcanvas-body">
-            <a class="btn btn-primary"routerLink="">Links</a>
-            
+            <li><a class="btn btn-primary"routerLink="">Links</a></li>
+            <!-- <li><a class="btn btn-primary"routerLink="audiodex">Pokedex</a></li> -->
+
 
             <!--Winston Cup-->
-            <div class="dropdown">
+            <li>
+                <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">The Winston Cup</button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a></li>
                     <li><a class="dropdown-item" routerLink="hotubanlist">HOTU Banlist</a></li>
                 </ul>
               </div>
-            <a class="btn btn-primary" routerLink="watchbox">Watchbox </a>
-            <div class="dropdown">
+            </li>
+            <li><a class="btn btn-primary" routerLink="watchbox">Watchbox </a></li>
+            <!--Other Projects-->
+            <li>
+                <div class="dropdown">
                 <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Other Projects</button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://flyaway12345.github.io/Audiodex/" target="_blank">Audiodex</a></li>
                     <li><a class="dropdown-item" href="https://flyaway12345.github.io/CookingByApproximation/">Cooking By Approximation Recipe Repository</a></li>
                 </ul>
               </div>
-              <a class="btn btn-primary"routerLink="games">Games</a>
+            </li>
+            <li><a class="btn btn-primary"routerLink="games">Games</a></li>
+              
               <app-live></app-live>
         </div>
         </div>  
