@@ -1,0 +1,15 @@
+
+<div class="container">
+  <div *ngFor="let recipe of recipeData" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{recipe.img}}" alt="image" width="auto" height="100%">
+    <div class="card-body">
+      <h5 class="card-title">
+        {{recipe.name}}
+      </h5>
+      <p class="card-text">
+        {{recipe.description}}
+      </p>
+      <a href="{{recipe.video}}" class="btn btn-primary" target="_blank">Video Link</a>
+    </div>
+</div>
+</div>

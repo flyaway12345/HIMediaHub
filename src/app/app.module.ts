@@ -11,9 +11,9 @@ import { FooterComponent } from './app/footer/footer.component';
 import { Error404Component } from './app/error404/error404.component';
 
 
-import { LinksComponent } from './links/links.component';
-import { DiscordComponent } from './links/discord/discord.component';
-import { SocialsComponent } from './links/socials/socials.component';
+import { LinksComponent } from './modules/links/links.component';
+import { DiscordComponent } from './modules/links/discord/discord.component';
+import { SocialsComponent } from './modules/links/socials/socials.component';
 
 import { AudiodexUiComponent } from './modules/audiodex/audiodex-ui/audiodex-ui.component';
 
@@ -29,6 +29,8 @@ import { GameSelectComponent } from './games/game-select/game-select.component';
 import { KittenCannonComponent } from './games/game-select/kitten-cannon/kitten-cannon.component';
 import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.component';
 import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.component';
+
+import { RecipesComponent } from './modules/recipes/recipes.component';
 
 
 
@@ -50,7 +52,8 @@ import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.comp
     KittenCannonComponent,
     AgeOfWarComponent,
     DiscordComponent,
-    SocialsComponent
+    SocialsComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +74,7 @@ import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.comp
         {path: 'kittenCannon', component: KittenCannonComponent},
       ]},
       {path: 'audiodex', component: AudiodexUiComponent},
+      {path: 'cookbook', component: RecipesComponent},
       {path: '**' ,component: Error404Component}
     ]),
   ],
