@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotubanlistComponent implements OnInit {
 
-  constructor() { }
+  banlist: any;
+  url: string = '';
+  public constructor(private http: HttpClient) {}
+
+
 
   ngOnInit(): void {
+    this.http.get(this.url).subscribe(res => {
+      this.banlist = res;
+  });
+  
   }
-
 }
