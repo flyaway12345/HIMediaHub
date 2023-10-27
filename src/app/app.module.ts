@@ -61,8 +61,9 @@ import { RecipesComponent } from './modules/recipes/recipes.component';
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '' ,component: LinksComponent},
-      {path: 'HIMediaHub', component: LinksComponent},
+      {path: '' ,component: WatchboxComponent},
+      {path: 'HIMediaHub', component: WatchboxComponent},
+      {path: 'links', component: LinksComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
