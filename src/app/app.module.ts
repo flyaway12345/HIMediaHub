@@ -24,11 +24,11 @@ import { WatchboxComponent } from './modules/watchbox/watchbox.component';
 import { LiveComponent } from './modules/watchbox/live/live.component';
 import { VideosComponent } from './modules/watchbox/videos/videos.component';
 
-import { GamesComponent } from './games/games.component';
-import { GameSelectComponent } from './games/game-select/game-select.component';
-import { KittenCannonComponent } from './games/game-select/kitten-cannon/kitten-cannon.component';
-import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.component';
-import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.component';
+import { GamesComponent } from './modules/games/games.component';
+import { GameSelectComponent } from './modules/games/game-select/game-select.component';
+import { KittenCannonComponent } from './modules/games/game-select/kitten-cannon/kitten-cannon.component';
+import { AgeOfWarComponent } from './modules/games/game-select/age-of-war/age-of-war.component';
+import { Bloonstd4Component } from './modules/games/game-select/bloonstd4/bloonstd4.component';
 
 import { RecipesComponent } from './modules/recipes/recipes.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
