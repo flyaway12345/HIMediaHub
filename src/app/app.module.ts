@@ -31,6 +31,7 @@ import { AgeOfWarComponent } from './games/game-select/age-of-war/age-of-war.com
 import { Bloonstd4Component } from './games/game-select/bloonstd4/bloonstd4.component';
 
 import { RecipesComponent } from './modules/recipes/recipes.component';
+import { AppDirectoryComponent } from './modules/app-directory.component';
 
 
 
@@ -53,7 +54,8 @@ import { RecipesComponent } from './modules/recipes/recipes.component';
     AgeOfWarComponent,
     DiscordComponent,
     SocialsComponent,
-    RecipesComponent
+    RecipesComponent,
+    AppDirectoryComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +69,7 @@ import { RecipesComponent } from './modules/recipes/recipes.component';
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
+      {path: 'appDir', component: AppDirectoryComponent},
       {path: 'games', component: GamesComponent, children: [
         {path: '', component: GameSelectComponent},
         {path: 'gameSelect', component: GameSelectComponent},
