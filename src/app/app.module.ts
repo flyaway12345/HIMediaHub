@@ -32,6 +32,7 @@ import { Bloonstd4Component } from './modules/games/game-select/bloonstd4/bloons
 
 import { RecipesComponent } from './modules/recipes/recipes.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
+import { HallofshameComponent } from './modules/hallofshame/hallofshame.component';
 
 
 
@@ -55,7 +56,8 @@ import { AppDirectoryComponent } from './modules/app-directory.component';
     DiscordComponent,
     SocialsComponent,
     RecipesComponent,
-    AppDirectoryComponent
+    AppDirectoryComponent,
+    HallofshameComponent
   ],
   imports: [
     BrowserModule,
@@ -70,6 +72,7 @@ import { AppDirectoryComponent } from './modules/app-directory.component';
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
       {path: 'appDir', component: AppDirectoryComponent},
+      {path: 'hallofshame', component: HallofshameComponent},
       {path: 'games', component: GamesComponent, children: [
         {path: '', component: GameSelectComponent},
         {path: 'gameSelect', component: GameSelectComponent},
