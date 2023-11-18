@@ -17,16 +17,27 @@
         <!--Sidebar Links-->
         <div class="offcanvas-body">
             <li><a class="btn btn-primary"routerLink="links">Links</a></li>
-            <li><a class="btn btn-primary" routerLink="appDir">App Directory</a></li>
-            <li><a class="btn btn-primary" routerLink="thewinstoncup">The Winston Cup</a></li>
-            
+            <li><a class="btn btn-primary" routerLink="../watchbox">Watchbox </a></li>
             <li>
                 <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Other Projects</button>
-                <ul class="dropdown-menu">
-
-                </ul>
-              </div>
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">The Winston Cup</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="btn btn-primary" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a></li>
+                        <li><a class="btn btn-primary" routerLink="hotubanlist">YGO Banlist</a></li>                        
+                        <li><a class="btn btn-primary" routerLink="thewinstoncup">See All</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">App Directory</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="btn btn-primary" routerLink="../games">Games</a></li>
+                        <li><a class="btn btn-primary" routerLink="../cookbook">Cookbook</a></li>
+                        <li><a class="btn btn-primary" href="https://flyaway12345.github.io/Audiodex/" target="_blank">Audiodex</a></li>
+                        <li><a class="btn btn-primary" routerLink="appDir">See All</a></li>
+                    </ul>
+                </div>
             </li>
               <app-live></app-live>
         </div>
