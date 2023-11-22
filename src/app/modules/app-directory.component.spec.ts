@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KittenCannonComponent } from './kitten-cannon.component';
+import { AppDirectoryComponent } from './app-directory.component';
 
-describe('KittenCannonComponent', () => {
-  let component: KittenCannonComponent;
-  let fixture: ComponentFixture<KittenCannonComponent>;
+describe('AppDirectoryComponent', () => {
+  let component: AppDirectoryComponent;
+  let fixture: ComponentFixture<AppDirectoryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ KittenCannonComponent ]
+      declarations: [ AppDirectoryComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(KittenCannonComponent);
+    fixture = TestBed.createComponent(AppDirectoryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
