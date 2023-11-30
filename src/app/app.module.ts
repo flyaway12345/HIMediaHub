@@ -33,6 +33,7 @@ import { Bloonstd4Component } from './modules/games/game-select/bloonstd4/bloons
 import { RecipesComponent } from './modules/recipes/recipes.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
 import { HallofshameComponent } from './modules/hallofshame/hallofshame.component';
+import { DonateComponent } from './modules/donate/donate.component';
 
 
 
@@ -57,7 +58,8 @@ import { HallofshameComponent } from './modules/hallofshame/hallofshame.componen
     SocialsComponent,
     RecipesComponent,
     AppDirectoryComponent,
-    HallofshameComponent
+    HallofshameComponent,
+    DonateComponent
   ],
   imports: [
     BrowserModule,
@@ -68,6 +70,7 @@ import { HallofshameComponent } from './modules/hallofshame/hallofshame.componen
       {path: '' ,component: WatchboxComponent},
       {path: 'HIMediaHub', component: WatchboxComponent},
       {path: 'links', component: LinksComponent},
+      {path: 'donate', component: DonateComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'watchbox', component: WatchboxComponent},
