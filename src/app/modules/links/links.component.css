@@ -1,4 +1,8 @@
 
 .btn-primary{
     margin-bottom: 1em;
+    margin: 0.5em;
+}
+.col-md-6 {
+    margin-top:10em;
 }
