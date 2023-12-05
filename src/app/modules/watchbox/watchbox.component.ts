@@ -12,4 +12,10 @@ export class WatchboxComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  liveswitch:boolean = false;
+  onClick(){
+    this.liveswitch = !this.liveswitch
+  }
 }
+
+
