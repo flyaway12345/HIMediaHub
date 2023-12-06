@@ -1,2 +1,2 @@
 cd docs
-echo ‘himedia.gg’ >CNAME
+echo himedia.gg >CNAME
