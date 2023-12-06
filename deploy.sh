@@ -1,2 +1,2 @@
 cd docs
-echo ‘yourcustomdomain.com’ >CNAME
+echo ‘himedia.gg’ >CNAME
