@@ -1,0 +1,51 @@
+
+<div class="d-flex justify-content-center">
+    <h1>Good Morning, Seize The Day</h1>
+</div>
+<div class="d-flex justify-content-center">
+    <iframe src="https://free.timeanddate.com/clock/i9575wku/fn5/fs26/ftbi/tt1" frameborder="0" width="344" height="33"></iframe>
+</div>
+
+
+<div class="container ">
+    <div class="row">
+        <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
+            <h4>A Quote For The Moment</h4>
+            <h5></h5>
+        </div>
+        <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="d-flex justify-content-center">
+                <h4>What Da Dog Doin?</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>A Random Dog Pic Just To Make You Smile</p>
+            </div>
+            <img src="{{dogs.message}}" width="100%" alt="">
+        </div>
+        <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="d-flex justify-content-center">
+                <h4>Heres What Happend Since Last Night</h4>
+            </div>
+            <a class="btn btn-primary" (click)="newsSwap()">Swap Between Listening & Doom Scrolling</a>
+            <app-newsfeed-news *ngIf="switchNewsFormat"></app-newsfeed-news>
+            <app-himediatv-news-update *ngIf="!switchNewsFormat"></app-himediatv-news-update>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
+            <div class="d-flex justify-content-center">
+                <h4>Say Good Morning To <a class="btn btn-primary" routerLink="../watchbox">Chat </a></h4>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p>Catch The Stream When Your Feeling Ready ❤️</p>
+            </div>
+            <iframe
+            id="chat_embed"
+            src="https://www.twitch.tv/embed/himediatv/chat?parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
+            height="478px"
+            width="100%">
+        </iframe>
+        </div>
+    </div>
+</div>

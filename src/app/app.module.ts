@@ -34,7 +34,13 @@ import { RecipesComponent } from './modules/recipes/recipes.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
 import { HallofshameComponent } from './modules/hallofshame/hallofshame.component';
 import { DonateComponent } from './modules/donate/donate.component';
-import { ICSUUYTMTComponent } from './modules/icsuuytmt/icsuuytmt.component';
+import { ICSUUYTMTComponent } from './podcasts/icsuuytmt/icsuuytmt.component';
+import { MorningCoffeeComponent } from './modules/morning-coffee/morning-coffee.component';
+import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/newsfeed-news.component';
+import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
+import { HimediatvNewsUpdateComponent } from './podcasts/himediatv-news-update/himediatv-news-update.component';
+import { PodcastsComponent } from './podcasts/podcasts.component';
+import { AudiodexPlayerComponent } from './podcasts/audiodex-player/audiodex-player.component';
 
 
 
@@ -61,7 +67,13 @@ import { ICSUUYTMTComponent } from './modules/icsuuytmt/icsuuytmt.component';
     AppDirectoryComponent,
     HallofshameComponent,
     DonateComponent,
-    ICSUUYTMTComponent
+    ICSUUYTMTComponent,
+    MorningCoffeeComponent,
+    NewsfeedNewsComponent,
+    NewsfeedGamingComponent,
+    HimediatvNewsUpdateComponent,
+    PodcastsComponent,
+    AudiodexPlayerComponent
   ],
   imports: [
     BrowserModule,
@@ -85,8 +97,13 @@ import { ICSUUYTMTComponent } from './modules/icsuuytmt/icsuuytmt.component';
         {path: 'ageOfWar', component: AgeOfWarComponent},
         {path: 'kittenCannon', component: KittenCannonComponent},
       ]},
+      {path: 'morning-coffee', component: MorningCoffeeComponent,children: [
+        {path: 'news-feed', component: NewsfeedNewsComponent},
+        {path: 'audio-feed', component: HimediatvNewsUpdateComponent},
+      ]},
       {path: 'audiodex', component: AudiodexUiComponent},
       {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
+      {path: 'podcasts', component: PodcastsComponent},
       {path: 'cookbook', component: RecipesComponent},
       {path: '**' ,component: Error404Component}
     ]),
