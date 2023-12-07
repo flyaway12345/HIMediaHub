@@ -15,7 +15,7 @@ import { LinksComponent } from './modules/links/links.component';
 import { DiscordComponent } from './modules/links/discord/discord.component';
 import { SocialsComponent } from './modules/links/socials/socials.component';
 
-import { AudiodexUiComponent } from './modules/audiodex/audiodex-ui/audiodex-ui.component';
+import { AudiodexUiComponent } from './modules/podcasts/audiodex/audiodex-ui/audiodex-ui.component';
 
 import { TheWinstonCupComponent } from './modules/the-winston-cup/the-winston-cup.component';
 import { HotubanlistComponent } from './modules/the-winston-cup/hotubanlist/hotubanlist.component';
@@ -39,10 +39,10 @@ import { MorningCoffeeComponent } from './modules/morning-coffee/morning-coffee.
 import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/newsfeed-news.component';
 import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
 
-import { PodcastsComponent } from './podcasts/podcasts.component';
-import { AudiodexPlayerComponent } from './podcasts/audiodex-player/audiodex-player.component';
-import { ICSUUYTMTComponent } from './podcasts/icsuuytmt/icsuuytmt.component';
-import { HimediatvNewsUpdateComponent } from './podcasts/himediatv-news-update/himediatv-news-update.component';
+import { PodcastsComponent } from './modules/podcasts/podcasts.component';
+import { AudiodexPlayerComponent } from './modules/podcasts/audiodex/audiodex-player/audiodex-player.component';
+import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.component';
+import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
 
 
 
@@ -113,7 +113,8 @@ import { HimediatvNewsUpdateComponent } from './podcasts/himediatv-news-update/h
   exports: [
     LiveComponent,
     DiscordComponent,
-    AudiodexPlayerComponent
+    AudiodexPlayerComponent,
+    HimediatvNewsUpdateComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

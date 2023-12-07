@@ -1,5 +1,5 @@
 import { Component, SimpleChanges, OnInit, Output, Input } from '@angular/core';
-import { PokeapiService } from '../pokeapi.service';
+import { PokeapiService } from '../services/pokeapi.service';
 
 @Component({
   selector: 'app-audiodex-ui',
