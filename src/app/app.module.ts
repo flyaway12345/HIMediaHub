@@ -81,7 +81,7 @@ import { AudiodexPlayerComponent } from './podcasts/audiodex-player/audiodex-pla
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path: '' ,component: WatchboxComponent},
+      {path: '' ,component: LinksComponent},
       {path: 'HIMediaHub', component: WatchboxComponent},
       {path: 'links', component: LinksComponent},
       {path: 'donate', component: DonateComponent},
