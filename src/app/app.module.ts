@@ -30,17 +30,19 @@ import { KittenCannonComponent } from './modules/games/game-select/kitten-cannon
 import { AgeOfWarComponent } from './modules/games/game-select/age-of-war/age-of-war.component';
 import { Bloonstd4Component } from './modules/games/game-select/bloonstd4/bloonstd4.component';
 
-import { RecipesComponent } from './modules/recipes/recipes.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
 import { HallofshameComponent } from './modules/hallofshame/hallofshame.component';
 import { DonateComponent } from './modules/donate/donate.component';
-import { ICSUUYTMTComponent } from './podcasts/icsuuytmt/icsuuytmt.component';
+import { RecipesComponent } from './modules/recipes/recipes.component';
+
 import { MorningCoffeeComponent } from './modules/morning-coffee/morning-coffee.component';
 import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/newsfeed-news.component';
 import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
-import { HimediatvNewsUpdateComponent } from './podcasts/himediatv-news-update/himediatv-news-update.component';
+
 import { PodcastsComponent } from './podcasts/podcasts.component';
 import { AudiodexPlayerComponent } from './podcasts/audiodex-player/audiodex-player.component';
+import { ICSUUYTMTComponent } from './podcasts/icsuuytmt/icsuuytmt.component';
+import { HimediatvNewsUpdateComponent } from './podcasts/himediatv-news-update/himediatv-news-update.component';
 
 
 
@@ -87,7 +89,7 @@ import { AudiodexPlayerComponent } from './podcasts/audiodex-player/audiodex-pla
       {path: 'donate', component: DonateComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
-      {path: 'watchbox', component: WatchboxComponent},
+      {path: 'live', component: WatchboxComponent},
       {path: 'appDir', component: AppDirectoryComponent},
       {path: 'hallofshame', component: HallofshameComponent},
       {path: 'games', component: GamesComponent, children: [
@@ -110,7 +112,8 @@ import { AudiodexPlayerComponent } from './podcasts/audiodex-player/audiodex-pla
   ],
   exports: [
     LiveComponent,
-    DiscordComponent
+    DiscordComponent,
+    AudiodexPlayerComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
