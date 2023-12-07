@@ -28,7 +28,7 @@ dogs:any;
     });
   }
   ngOnInit(): void {
-
+    this.pullQuotes()
     this.pullDog()
     console.log(this.quotes.data.quoteText)
   }

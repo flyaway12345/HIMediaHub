@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InsperationalQuoteService {
-  private url = 'https://zenquotes.io/api/today';
+  private url = 'https://quote-garden.onrender.com/api/v3/quotes/random';
 
   constructor(private httpClient: HttpClient) { }
 

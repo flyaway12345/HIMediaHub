@@ -11,7 +11,8 @@
     <div class="row">
         <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
             <h4>A Quote For The Moment</h4>
-            <h5></h5>
+            <h6>{{quotes.data[0].quoteText}}</h6>
+            <p><em>-{{quotes.data[0].quoteAuthor}}</em></p>
         </div>
         <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
             <div class="d-flex justify-content-center">
@@ -35,7 +36,7 @@
     <div class="row">
         <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
             <div class="d-flex justify-content-center">
-                <h4>Say Good Morning To <a class="btn btn-primary" routerLink="../watchbox">Chat </a></h4>
+                <h4>Say Good Morning To Chat</h4>
             </div>
             <div class="d-flex justify-content-center">
                 <p>Catch The Stream When Your Feeling Ready ❤️</p>

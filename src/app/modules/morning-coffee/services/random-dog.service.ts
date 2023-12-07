@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class RandomDogService {
 
-  private url = 'http://api.forismatic.com/api/1.0/';
+  private url = 'https://dog.ceo/api/breeds/image/random/1';
 
   constructor(private httpClient: HttpClient) { }
 
