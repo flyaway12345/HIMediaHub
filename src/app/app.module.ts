@@ -43,6 +43,8 @@ import { PodcastsComponent } from './modules/podcasts/podcasts.component';
 import { AudiodexPlayerComponent } from './modules/podcasts/audiodex/audiodex-player/audiodex-player.component';
 import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.component';
 import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
+import { SoundboardComponent } from './modules/soundboard/soundboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -107,8 +109,10 @@ import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-
       {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
       {path: 'podcasts', component: PodcastsComponent},
       {path: 'cookbook', component: RecipesComponent},
+      {path: 'soundboard', component: SoundboardComponent},
       {path: '**' ,component: Error404Component}
     ]),
+    BrowserAnimationsModule,
   ],
   exports: [
     LiveComponent,
