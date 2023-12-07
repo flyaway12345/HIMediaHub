@@ -8,7 +8,7 @@ import { PokeapiService } from '../pokeapi.service';
 })
 export class AudiodexUiComponent implements OnInit{
   title = 'Audiodex';
-  
+  audiodexSearchReady:boolean = true;
 
   // updatePokedexLength(){
   //   if(this.pokedexLength == NaN 

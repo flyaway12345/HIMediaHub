@@ -34,6 +34,7 @@ import { RecipesComponent } from './modules/recipes/recipes.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
 import { HallofshameComponent } from './modules/hallofshame/hallofshame.component';
 import { DonateComponent } from './modules/donate/donate.component';
+import { ICSUUYTMTComponent } from './modules/icsuuytmt/icsuuytmt.component';
 
 
 
@@ -59,7 +60,8 @@ import { DonateComponent } from './modules/donate/donate.component';
     RecipesComponent,
     AppDirectoryComponent,
     HallofshameComponent,
-    DonateComponent
+    DonateComponent,
+    ICSUUYTMTComponent
   ],
   imports: [
     BrowserModule,
@@ -84,6 +86,7 @@ import { DonateComponent } from './modules/donate/donate.component';
         {path: 'kittenCannon', component: KittenCannonComponent},
       ]},
       {path: 'audiodex', component: AudiodexUiComponent},
+      {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
       {path: 'cookbook', component: RecipesComponent},
       {path: '**' ,component: Error404Component}
     ]),
