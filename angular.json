@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "HIMediaHub:build:production"
+              "buildTarget": "HIMediaHub:build:production"
             },
             "development": {
-              "browserTarget": "HIMediaHub:build:development"
+              "buildTarget": "HIMediaHub:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "HIMediaHub:build"
+            "buildTarget": "HIMediaHub:build"
           }
         },
         "test": {
