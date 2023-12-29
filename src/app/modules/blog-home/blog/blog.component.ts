@@ -14,8 +14,8 @@ import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 export class BlogComponent implements OnInit {
 
   blogData: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog-home/postlist.json';
-  srcURL:string ="";
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/f0d288ff9202c19a9c63e01dbc24d1ff966c9ea8/src/app/modules/blog-home/postlist.json';
+  srcURL:string ='https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/assets/posts/';
   markdown = `## Welcome To The Blog!
   ---`;
   activeImage: string = ""
@@ -29,8 +29,8 @@ export class BlogComponent implements OnInit {
   });
   }
   renderMarkdown(input:string,inputPicture:string){
-    this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/assets/posts/' + input + '.md';
-    this.http.get(this.srcURL,{responseType:'text'}).subscribe(data => this.markdown = data)
+    this.srcURL = this.srcURL + input.replace(/\s+/g, '') + '.md';
+    this.http.get(this.srcURL,{responseType:'text'}).subscribe(data => this.markdown = data);
     this.activeImage = inputPicture;
 
   }
