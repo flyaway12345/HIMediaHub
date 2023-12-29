@@ -1,3 +1,5 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1KvN5zuFI9A?si=0OqaDzvyFuLNfD8r&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 # -Death Cult America-
 
 ### *How Right Wing Religious Extremism Makes Our Lives Worse*
@@ -5,8 +7,6 @@
 My own personal issues aside and despite the gravity of the intro you've read in this book I'm in fact not a nihilist! I actually am hopeful for what our future looks like at least specifically as a country, country in this case being the United States of America. Oh please, a book that comes default in English with all the arrogance of that first chapter you knew good in hell well I was American before I said that don't lie to me. But broadly speaking I feel like there are issues all over the world and the main crux of that is conservatism, Specifically Religious Conservatism.
 
 Religious conservatism has led to Israel dehumanizing the Palestinians to the point of genocidal rhetoric. Religious conservatism has The American Evangelical supporting Israel's actions for the purposes of sacrificing all Jews to start the rapture. Religious conservatism is why the Indian government murders Sihks on foreign soil. And religious conservatism is why Myanmar Buddhists ethnically cleanse Muslims from their country. I am an atheist and while I do view religion as silly fundamentally at the end of the day I don't actually mind or want to tell people how to live their life. And in fact religion doesn't need to force other people to follow. Many faith in fact encourage against it The problem is conservatism. Conservatism requires ingroups and outgroups, It requires an almost performative adherence to the ideologies you believe. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1KvN5zuFI9A?si=0OqaDzvyFuLNfD8r&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Conservatism doesn't even wish to conserve the current structure; they hate it; they hate the current existence of society and glorify a past that only exists in their mind and ignores the realities of that past. The American Conservative focuses so heavily on the ideal 1950s depiction of American life ignoring the fact that high corporate tax rates, robust social programs, and the exclusion of black and brown people from those programs via red lining(among other policies) are what allowed people's grandparents to buy houses for $14 and a handful of raspberries. It's no coincidence that when the credit system was created in 1987 homeownership has continued a downward trend among the youngest Americans.
 
