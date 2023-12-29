@@ -9,15 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './blog.component.css'
 })
 export class BlogComponent implements OnInit {
-  recipeData: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/CookingByApproximation/main/src/assets/recipes.json';
+  blogData: any;
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog-home/postlist.json';
   public constructor(private http: HttpClient) {}
 
 
 
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
-      this.recipeData = res;
+      this.blogData = res;
   });
   
 }
