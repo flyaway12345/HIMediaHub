@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+import { NgModule, SecurityContext } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -45,8 +45,10 @@ import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.compo
 import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
 import { SoundboardComponent } from './modules/soundboard/soundboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { MarkdownModule } from 'ngx-markdown'; 
+import { PostsComponent } from './modules/blog-home/posts/posts.component';
+import { CommonModule } from '@angular/common';
+import { BlogComponent } from './modules/blog-home/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -77,15 +79,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NewsfeedGamingComponent,
     HimediatvNewsUpdateComponent,
     PodcastsComponent,
-    AudiodexPlayerComponent
+    AudiodexPlayerComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
+    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
     RouterModule.forRoot([
       {path: '' ,component: LinksComponent},
+      {path: 'blog' ,component: BlogComponent},
       {path: 'HIMediaHub', component: WatchboxComponent},
       {path: 'links', component: LinksComponent},
       {path: 'donate', component: DonateComponent},
@@ -110,9 +115,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       {path: 'podcasts', component: PodcastsComponent},
       {path: 'cookbook', component: RecipesComponent},
       {path: 'soundboard', component: SoundboardComponent},
+      { path: 'posts/post/:article', component: PostsComponent },
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
+    CommonModule
   ],
   exports: [
     LiveComponent,
