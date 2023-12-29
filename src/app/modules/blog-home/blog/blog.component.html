@@ -1,15 +1,16 @@
  <div class="container">
+    <div style="padding:100px" markdown [attr.src]="openArticle"></div>
+
     <div *ngFor="let post of blogData" class="card" style="width: 18rem;">
       <img class="card-img-top" src="{{post.img}}" alt="image" width="auto" height="100%">
       <div class="card-body">
-        <h5 class="card-title">
+        <h2 class="card-title">
           {{post.title}}
-        </h5>
+        </h2>
         <p class="card-text">
-          {{post.description}}
+          
         </p>
-        <a href="{{post.src}}" class="btn btn-primary" target="_blank">Video Link</a>
+        <a (click)="post.file == openArticle" class="btn btn-primary" >Read More</a>
       </div>
   </div>
   </div>
-    <a routerLink="/posts/post/helloworld" style="margin-bottom:24px">Hello World</a>
