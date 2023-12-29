@@ -1,8 +1,7 @@
 [
     {
-        "title": "Hello World",
-        "img": "https://miro.medium.com/v2/resize:fit:1344/1*s2VjDN8uGFo-izdU7BUETQ.png",
-        "file": "helloworld.md",
-        "src": "https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/assets/posts/helloworld.md"
+        "title": "helloworld",
+        "img": "https://miro.medium.com/v2/resize:fit:1344/1*s2VjDN8uGFo-izdU7BUETQ.png"
+
     }
 ]

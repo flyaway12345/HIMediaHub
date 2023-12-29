@@ -1,26 +1,37 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,MarkdownModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
 export class BlogComponent implements OnInit {
+
   blogData: any;
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog-home/postlist.json';
-openArticle: any;
-  public constructor(private http: HttpClient) {}
+  srcURL:string ="";
+  markdown = `## Welcome To The Blog!
+  ---`;
+  activeImage: string = ""
+  public constructor(private http: HttpClient,private markdownService:MarkdownService) {
 
-
-
+  }
+  
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.blogData = res;
   });
-  
-}
+  }
+  renderMarkdown(input:string,inputPicture:string){
+    this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/assets/posts/' + input + '.md';
+    this.http.get(this.srcURL,{responseType:'text'}).subscribe(data => this.markdown = data)
+    this.activeImage = inputPicture;
+
+  }
 }

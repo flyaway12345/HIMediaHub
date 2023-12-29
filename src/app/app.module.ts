@@ -45,11 +45,14 @@ import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.compo
 import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
 import { SoundboardComponent } from './modules/soundboard/soundboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MarkdownModule } from 'ngx-markdown'; 
-import { PostsComponent } from './modules/blog-home/posts/posts.component';
+import { MarkdownModule, MarkdownService } from 'ngx-markdown'; 
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './modules/blog-home/blog/blog.component';
 
+import 'prismjs';
+import 'prismjs/components/prism-typescript.min.js';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
+import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,7 +90,7 @@ import { BlogComponent } from './modules/blog-home/blog/blog.component';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    MarkdownModule.forRoot({ loader: HttpClient, sanitize: SecurityContext.NONE }),
+    MarkdownModule.forRoot(),
     RouterModule.forRoot([
       {path: '' ,component: LinksComponent},
       {path: 'blog' ,component: BlogComponent},
@@ -115,7 +118,6 @@ import { BlogComponent } from './modules/blog-home/blog/blog.component';
       {path: 'podcasts', component: PodcastsComponent},
       {path: 'cookbook', component: RecipesComponent},
       {path: 'soundboard', component: SoundboardComponent},
-      { path: 'posts/post/:article', component: PostsComponent },
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
