@@ -1,4 +1,7 @@
-.links {
-    padding: 72px;
+.card {
     text-align: center;
+    margin:1em;
+  }
+  img {
+    width:10em;
   }

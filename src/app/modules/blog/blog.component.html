@@ -1,9 +1,12 @@
  <div class="container">
     <div class="row">
+            <h2>Welcome To The Blog! <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h2>
+            <hr class="hr" />
             <markdown [data]="markdown"></markdown>
- 
+            <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()">Close <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
             <div *ngFor="let posts of blogData" class="card" style="width: 18rem;">
                 <div class="card-body">
+                  <img src="https://i.guim.co.uk/img/media/278509497c90254edb1543a86e6837a4bed19ac1/0_114_2160_1296/master/2160.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=5c6df37297167ba21da5818c7c247cb9" alt="">
                   <h2 class="card-title">
                     {{posts.title}}
                   </h2>
