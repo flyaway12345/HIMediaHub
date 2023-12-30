@@ -47,7 +47,7 @@ import { SoundboardComponent } from './modules/soundboard/soundboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkdownService } from 'ngx-markdown'; 
 import { CommonModule } from '@angular/common';
-import { BlogComponent } from './modules/blog-home/blog/blog.component';
+import { BlogComponent } from './modules/blog/blog.component';
 
 import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
