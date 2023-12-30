@@ -48,11 +48,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkdownService } from 'ngx-markdown'; 
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './modules/blog/blog.component';
+import { BookComponent } from './modules/book/book.component';
 
 import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,6 +96,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
     RouterModule.forRoot([
       {path: '' ,component: LinksComponent},
       {path: 'blog' ,component: BlogComponent},
+      {path: 'book' ,component: BookComponent},
       {path: 'HIMediaHub', component: WatchboxComponent},
       {path: 'links', component: LinksComponent},
       {path: 'donate', component: DonateComponent},
