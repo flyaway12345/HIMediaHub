@@ -1,12 +1,40 @@
  <div class="container">
     <div class="row">
-            <h2>Welcome To The Blog! <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h2>
-            <hr class="hr" />
-            <markdown [data]="markdown"></markdown>
+      <h2>Welcome To The Blog! <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a></h2>
+      <hr class="hr" />
+    </div>
+    <div *ngIf="!clear" class="row">
+      <div  class="col-md-8">
+        <markdown [data]="markdown"></markdown>
+      </div>
+      <div class="col-md-4">
+
+        <iframe src="https://player.twitch.tv/?channel=himediatv&parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
+        frameborder="0" 
+        allowfullscreen="true" 
+        muted="true"
+        scrolling="no"
+        height="378px" 
+        width="100%">
+        </iframe>
+        <iframe
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/himediatv/chat?parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
+        height="478px"
+        width="100%">
+        </iframe>
+        <iframe src="https://discord.com/widget?id=426459490725134339&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
             <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()">Close <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
             <div *ngFor="let posts of blogData" class="card" style="width: 18rem;">
                 <div class="card-body">
-                  <img src="https://i.guim.co.uk/img/media/278509497c90254edb1543a86e6837a4bed19ac1/0_114_2160_1296/master/2160.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=5c6df37297167ba21da5818c7c247cb9" alt="">
+                  <img src="{{posts.img}}" alt="">
                   <h2 class="card-title">
                     {{posts.title}}
                   </h2>
@@ -19,4 +47,4 @@
     </div>
 
 
-  </div>
+ 

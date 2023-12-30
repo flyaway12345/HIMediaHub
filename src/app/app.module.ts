@@ -66,7 +66,6 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
     Error404Component,
     GamesComponent,
     Bloonstd4Component,
-    LiveComponent,
     VideosComponent,
     GameSelectComponent,
     KittenCannonComponent,
@@ -84,6 +83,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
     HimediatvNewsUpdateComponent,
     PodcastsComponent,
     AudiodexPlayerComponent,
+    
     
   ],
   imports: [
@@ -122,7 +122,8 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    LiveComponent
   ],
   exports: [
     LiveComponent,
