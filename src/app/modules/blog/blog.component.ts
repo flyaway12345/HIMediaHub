@@ -29,6 +29,7 @@ export class BlogComponent implements OnInit {
   });
   }
   renderMarkdown(input:string){
+    this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog/posts/';
     this.srcURL = this.srcURL + input.replace(/\s+/g, '') + '.md';
     this.http.get(this.srcURL,{responseType:'text'}).subscribe(data => this.markdown = data);
 
