@@ -1,6 +1,6 @@
 # -Death Cult America-
 
-### *How Right Wing Religious Extremism Makes Our Lives Worse*
+#### *How Right Wing Religious Extremism Makes Our Lives Worse*
 
 My own personal issues aside and despite the gravity of the intro you've read in this book I'm in fact not a nihilist! I actually am hopeful for what our future looks like at least specifically as a country, country in this case being the United States of America. Oh please, a book that comes default in English with all the arrogance of that first chapter you knew good in hell well I was American before I said that don't lie to me. But broadly speaking I feel like there are issues all over the world and the main crux of that is conservatism, Specifically Religious Conservatism.
 
