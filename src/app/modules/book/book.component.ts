@@ -13,10 +13,11 @@ import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 })
 export class BookComponent implements OnInit {
 
-  blogData: any;
+  bookData: any;
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/book/postlist.json';
   srcURL:string ='https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/book/posts/';
-  markdown = `## Welcome To The Blog!
+  markdown = `## Evan's Book Of Thoughts!
+  ##### *Not a Manifesto I Promise*
   ---`;
   activeImage: string = ""
   public constructor(private http: HttpClient,private markdownService:MarkdownService) {
@@ -25,11 +26,12 @@ export class BookComponent implements OnInit {
   
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
-      this.blogData = res;
+      this.bookData = res;
   });
   }
   renderMarkdown(input:string){
-    this.srcURL = this.srcURL + input.replace(/\s+/g, '') + '.md';
+    this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/book/posts/';
+    this.srcURL = this.srcURL + input.replace(/\s+/g, '') + '.md';   
     this.http.get(this.srcURL,{responseType:'text'}).subscribe(data => this.markdown = data);
 
   }

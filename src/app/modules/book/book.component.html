@@ -4,13 +4,13 @@
             <markdown [data]="markdown"></markdown>
         </div>
         <div class="col-md-4">
-            <div *ngFor="let posts of blogData" class="card" style="width: 18rem;">
+            <div *ngFor="let posts of bookData" class="card" style="width: 18rem;">
                 <div class="card-body">
                   <h2 class="card-title">
                     {{posts.title}}
                   </h2>
                   <p class="card-text">
-                    
+                    {{posts.subject}}
                   </p>
                   <a (click)="renderMarkdown(posts.title)" class="btn btn-primary" >Read More</a>
                 </div>
