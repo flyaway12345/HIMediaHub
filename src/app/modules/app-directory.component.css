@@ -9,3 +9,15 @@
 .navbar{
     margin-bottom: 4%;
 }
+.card {
+    text-align: center;
+    margin:1em;
+  }
+
+  img {
+    
+    object-fit: cover;
+    object-position: center center;
+    width: 250px;
+    height: 250px;
+}
