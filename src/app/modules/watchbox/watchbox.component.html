@@ -2,7 +2,11 @@
     <!-- Watchbox -->
     <div class="row" *ngIf="liveswitch">
         <div class="d-flex justify-content-center">
-            <h2>Live Watchbox <a class="btn btn-primary" herf="#" (click)="onClick()"><i class="fa-regular fa-hand-pointer"></i> Mobile View</a></h2>
+            <h2>Live Watchbox <a class="btn btn-primary" herf="#" (click)="onClick()"><i class="fa-regular fa-hand-pointer"></i> Mobile View</a>
+                <a class="btn green" href="https://kick.com/himediatv">Watch On Kick <i class="fa-brands fa-kickstarter-k"></i></a>
+                <a class="btn red" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live">Watch On Youtube <i class="fa-brands fa-youtube"></i></a>
+            </h2>
+
         </div>
         <div class="d-flex justify-content-center">
             <iframe src="https://player.twitch.tv/?channel=himediatv&parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg" frameborder="0" allowfullscreen="true" scrolling="no" height="700" width="1200px"></iframe>
@@ -18,7 +22,11 @@
     </div>
     <div class="row" *ngIf="!liveswitch">
         <div class="d-flex justify-content-center">
-            <h2>Live Watchbox <a class="btn btn-primary" herf="#" (click)="onClick()"><i class="fa-regular fa-hand-pointer"></i> Desktop View</a></h2>
+            <h2>Live Watchbox <a class="btn btn-primary" herf="#" (click)="onClick()"><i class="fa-regular fa-hand-pointer"></i> Desktop View</a>
+                <a class="btn green" href="https://kick.com/himediatv">Watch On Kick <i class="fa-brands fa-kickstarter-k"></i></a>
+                <a class="btn red" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live">Watch On Youtube <i class="fa-brands fa-youtube"></i></a>
+            </h2>
+            
         </div>
         <div class="d-flex justify-content-center">
             <app-live></app-live>
