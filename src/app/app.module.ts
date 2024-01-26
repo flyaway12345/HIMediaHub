@@ -45,10 +45,10 @@ import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.compo
 import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
 import { SoundboardComponent } from './modules/soundboard/soundboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MarkdownModule, MarkdownService } from 'ngx-markdown'; 
+import { MarkdownModule} from 'ngx-markdown'; 
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './modules/blog/blog.component';
-
+import { PPCxTRRComponent } from './modules/ppcxtrr/ppcxtrr.component'
 import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
@@ -83,6 +83,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
     HimediatvNewsUpdateComponent,
     PodcastsComponent,
     AudiodexPlayerComponent,
+    PPCxTRRComponent,
     
     
   ],
@@ -119,6 +120,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
       {path: 'podcasts', component: PodcastsComponent},
       {path: 'cookbook', component: RecipesComponent},
       {path: 'soundboard', component: SoundboardComponent},
+      {path: 'ppcxtrr', component: PPCxTRRComponent},
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
