@@ -53,6 +53,7 @@ import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
+import { MerchComponent } from './modules/merch/merch.component';
 
 @NgModule({
   declarations: [
@@ -121,6 +122,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
       {path: 'cookbook', component: RecipesComponent},
       {path: 'soundboard', component: SoundboardComponent},
       {path: 'ppcxtrr', component: PPCxTRRComponent},
+      {path: 'merch', component: MerchComponent},
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
