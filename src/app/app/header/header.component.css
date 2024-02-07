@@ -13,3 +13,6 @@
 li {
     list-style-type:none;
 }
+.offcanvas-body,.offcanvas-header{
+    background-color: #212529;
+}

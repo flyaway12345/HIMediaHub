@@ -54,6 +54,7 @@ import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 import { MerchComponent } from './modules/merch/merch.component';
+import { SubathonComponent } from './modules/subathon/subathon.component';
 
 @NgModule({
   declarations: [
@@ -123,6 +124,7 @@ import { MerchComponent } from './modules/merch/merch.component';
       {path: 'soundboard', component: SoundboardComponent},
       {path: 'ppcxtrr', component: PPCxTRRComponent},
       {path: 'merch', component: MerchComponent},
+      {path: 'subathon', component: SubathonComponent},
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
