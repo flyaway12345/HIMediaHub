@@ -127,6 +127,7 @@ import { NerdNewsComponent } from './modules/podcasts/nerd-news/nerdnews.compone
       {path: 'merch', component: MerchComponent},
       {path: 'subathon', component: SubathonComponent},
       {path: 'nerdnews', component: NerdNewsComponent},
+      {path: 'discord', component: DiscordComponent},
       {path: '**' ,component: Error404Component}
     ]),
     BrowserAnimationsModule,
