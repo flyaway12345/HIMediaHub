@@ -16,3 +16,6 @@ li {
 .offcanvas-body,.offcanvas-header{
     background-color: #212555;
 }
+.btn-close{
+    background-color: white;
+}
