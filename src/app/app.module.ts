@@ -56,6 +56,11 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 import { MerchComponent } from './modules/merch/merch.component';
 import { SubathonComponent } from './modules/subathon/subathon.component';
 import { NerdNewsComponent } from './modules/podcasts/nerd-news/nerdnews.component';
+import { HISoapboxComponent } from './modules/podcasts/hisoapbox/hisoapbox.component'
+import { ThePaldeckFilesComponent } from './modules/podcasts/the-paldeck-files/thepaldeckfiles.component'
+import { TheRundownComponent } from './modules/podcasts/the-rundown/therundown.component'
+import { WinstonMasterDuelRoundtableComponent } from './modules/podcasts/wmdroundtable/wmdroundtable.component'
+
 
 @NgModule({
   declarations: [
@@ -86,6 +91,11 @@ import { NerdNewsComponent } from './modules/podcasts/nerd-news/nerdnews.compone
     HimediatvNewsUpdateComponent,
     PodcastsComponent,
     AudiodexPlayerComponent,
+    HISoapboxComponent,
+    ThePaldeckFilesComponent,
+    TheRundownComponent,
+    WinstonMasterDuelRoundtableComponent,
+    NerdNewsComponent,
     PPCxTRRComponent,
     
     
@@ -127,6 +137,10 @@ import { NerdNewsComponent } from './modules/podcasts/nerd-news/nerdnews.compone
       {path: 'merch', component: MerchComponent},
       {path: 'subathon', component: SubathonComponent},
       {path: 'nerdnews', component: NerdNewsComponent},
+      {path: 'hisoapbox', component: HISoapboxComponent},
+      {path: 'thepaldeckfiles', component: ThePaldeckFilesComponent},
+      {path: 'therundown', component: TheRundownComponent},
+      {path: 'wmdroundtable', component: WinstonMasterDuelRoundtableComponent},
       {path: 'discord', component: DiscordComponent},
       {path: '**' ,component: Error404Component}
     ]),
