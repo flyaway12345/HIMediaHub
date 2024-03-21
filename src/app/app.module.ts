@@ -112,6 +112,7 @@ import { WinstonMasterDuelRoundtableComponent } from './modules/podcasts/wmdroun
       {path: 'HIMediaHub', component: WatchboxComponent},
       {path: 'links', component: LinksComponent},
       {path: 'donate', component: DonateComponent},
+      {path: 'tip', component: DonateComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'live', component: WatchboxComponent},
