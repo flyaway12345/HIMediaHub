@@ -114,6 +114,7 @@ import { WinstonMasterDuelRoundtableComponent } from './modules/podcasts/wmdroun
       {path: 'donate', component: DonateComponent},
       {path: 'tip', component: DonateComponent},
       {path: 'thewinstoncup', component: TheWinstonCupComponent},
+      {path: 'twc', component: TheWinstonCupComponent},
       {path: 'hotubanlist', component: HotubanlistComponent},
       {path: 'live', component: WatchboxComponent},
       {path: 'appDir', component: AppDirectoryComponent},
