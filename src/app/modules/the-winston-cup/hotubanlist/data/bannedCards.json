@@ -1,13 +1,134 @@
 [
     {
-      "cardname": "Gozen Match",
+      "cardname": "Accesscode Talker",
       "cardq": 2,
-      "cardrarity": "Common",
+      "cardrarity": "Secret Rare",
       "cardcondition": "M",
       "card_edition": "1st Edition",
-      "cardset": "Crossroads of Chaos",
-      "cardcode": "CSOC-EN079",
-      "cardid": 53334471,
+      "cardset": "Eternity Code",
+      "cardcode": "ETCO-EN046",
+      "cardid": 86066372,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Amorphactor Pain, the Imagination Dracoverlord",
+      "cardq": 3,
+      "cardrarity": "Super Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Shining Victories",
+      "cardcode": "SHVI-EN044",
+      "cardid": 98287529,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Apollousa, Bow of the Goddess",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Rising Rampage",
+      "cardcode": "RIRA-EN048",
+      "cardid": 4280258,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Baronne de Fleur",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Maze of Memories",
+      "cardcode": "MAZE-EN051",
+      "cardid": 84815190,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Cactus Bouncer",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Absolute Powerforce",
+      "cardcode": "ABPF-EN084",
+      "cardid": 31615285,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Destiny HERO - Destroyer Phoenix Enforcer",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Burst of Destiny",
+      "cardcode": "BODE-EN039",
+      "cardid": 60461804,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Destiny HERO - Malicious",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Legendary Hero Decks",
+      "cardcode": "LEHD-ENA04",
+      "cardid": 9411399,
+      "status": "Semi-Limited"
+    },
+    {
+      "cardname": "Diabellstar the Black Witch",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Age of Overlord",
+      "cardcode": "AGOV-EN006",
+      "cardid": 72270339,
+      "status": "Limited"
+    },
+    {
+      "cardname": "Dimension Shifter",
+      "cardq": 2,
+      "cardrarity": "Prismatic Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "Limited",
+      "cardset": "2019 Gold Sarcophagus Tin",
+      "cardcode": "TN19-EN012",
+      "cardid": 91800273,
+      "status": "Limited"
+    },
+    {
+      "cardname": "Dimensional Barrier",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Invasion: Vengeance",
+      "cardcode": "INOV-EN078",
+      "cardid": 83326048,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Divine Arsenal AA-ZEUS - Sky Thunder",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Phantom Rage",
+      "cardcode": "PHRA-EN045",
+      "cardid": 90448279,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Droll & Lock Bird",
+      "cardq": 2,
+      "cardrarity": "Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Starstrike Blast",
+      "cardcode": "STBL-EN082",
+      "cardid": 94145021,
       "status": "Limited"
     },
     {
@@ -41,17 +162,6 @@
       "cardset": "The New Challengers",
       "cardcode": "NECH-EN045",
       "cardid": 48546368,
-      "status": "Banned"
-    },
-    {
-      "cardname": "Kelbek the Ancient Vanguard",
-      "cardq": 2,
-      "cardrarity": "Ultra Rare",
-      "cardcondition": "M",
-      "card_edition": "1st Edition",
-      "cardset": "Magnificent Mavens",
-      "cardcode": "MAMA-EN027",
-      "cardid": 25926710,
       "status": "Banned"
     },
     {

@@ -55,7 +55,14 @@ Floowandereeze
 <br>
 </p>
 
-<h3>Banned/Limited Cards in Addendum:</h3>
+
+<button class="btn btn-primary" *ngIf="!liveswitch" (click)="onClick()">Text View</button>
+<button class="btn btn-outline-primary" *ngIf="!liveswitch">Image View</button>
+<button class="btn btn-outline-primary" *ngIf="liveswitch">Text View</button>
+<button class="btn btn-primary" *ngIf="liveswitch" (click)="onClick()">Image View</button>
+
+<div class="container" *ngIf="liveswitch">
+    <h3>Banned/Limited Cards in Addendum:</h3>
 <p>
 <br>======Banned=======
 <br>    Monsters-
@@ -120,23 +127,21 @@ Floowandereeze
 <br>        Link-
 <br>    -Spells
 <br>    -Traps
-<br> 
-<br>
-<br>
-<br>Banlists are subject to change and will ebb and flow with time
-<br>==================================================================
-<br>Prizing: I cashapp you 10 bucks(On Hold ATM BC i am currently unemployed and poor)
-<br>
-<br>
-<br>About the format:
-<br>Heart of the Underdog is an alternate format for local tournaments that is offered by Official Tournament Stores (OTS) that is designed to encourage Duelists to flex their Deck building skills in a fun and creative way. The format is primarily intended to be fun and casual, rather than being competitive, allowing Duelists different ways to enjoy participating in Yu-Gi-Oh! TRADING CARD GAME (TCG) tournaments.
-
-Heart of the Underdog tournaments require all Duelists build a Deck using a Deck Type that is not prominent in the current metagame. The final determination of whether a Deck Type is allowed is at the discretion of the OTS, so make sure to reach out to your OTS before you start building your Heart of the Underdog Deck!
-
-As with all local tournaments, each OTS determines the tournament entry and prizing. So please check with your OTS for these details. Each Duelist will receive Yu-Gi-Oh! TCG product prizing with a value equal to or greater than the entry fee.
-
-The tournament can use either the Advanced or Traditional Forbidden & Limited List, so make sure you check in with your OTS on which Forbidden & Limited list to prepare for.
 </p>
-<p>Citation: <a href="https://www.yugioh-card.com/en/play/alternate_format_tournaments/heart-of-the-underdog/" target="_blank">yugioh-card.com</a></p>
-<br>
-<p>Sign Ups: <a href="https://challonge.com/communities/TheWinstonCup" target="_blank">https://challonge.com/communities/TheWinstonCup</a></p>
+</div>
+<div class="container" *ngIf="!liveswitch">
+    <div *ngFor="let card of banlist" class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.ygoprodeck.com/images/cards/{{card.cardid}}.jpg" alt="image" width="auto" height="100%">
+      <div class="card-body">
+        <h2 class="card-title">
+          {{card.cardname}}
+        </h2>
+        <p class="card-text">
+          
+        </p>
+        <a href="#" class="btn btn-primary" target="_blank">{{card.status}}</a>
+      </div>
+  </div>
+  </div>
+
+<h4>Banlists are subject to change and will ebb and flow with time</h4>

@@ -9,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class HotubanlistComponent implements OnInit {
 
   banlist: any;
-  url: string = '';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/the-winston-cup/hotubanlist/data/bannedCards.json';
   public constructor(private http: HttpClient) {}
-
+  
+  liveswitch:boolean = false;
+  onClick(){
+    this.liveswitch = !this.liveswitch
+  }
 
 
   ngOnInit(): void {
