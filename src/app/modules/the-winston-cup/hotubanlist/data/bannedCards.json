@@ -1,0 +1,178 @@
+[
+    {
+      "cardname": "Gozen Match",
+      "cardq": 2,
+      "cardrarity": "Common",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Crossroads of Chaos",
+      "cardcode": "CSOC-EN079",
+      "cardid": 53334471,
+      "status": "Limited"
+    },
+    {
+      "cardname": "Guardragon Pisty",
+      "cardq": 2,
+      "cardrarity": "Super Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Savage Strike",
+      "cardcode": "SAST-EN052",
+      "cardid": 13143275,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Herald of Perfection",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "The Shining Darkness",
+      "cardcode": "TSHD-EN039",
+      "cardid": 44665365,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Herald of Ultimateness",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "Unlimited",
+      "cardset": "The New Challengers",
+      "cardcode": "NECH-EN045",
+      "cardid": 48546368,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Kelbek the Ancient Vanguard",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Magnificent Mavens",
+      "cardcode": "MAMA-EN027",
+      "cardid": 25926710,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Mathmech Circular",
+      "cardq": 2,
+      "cardrarity": "Super Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Power of the Elements",
+      "cardcode": "POTE-EN028",
+      "cardid": 36521307,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Maxx \"C",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Storm of Ragnarok",
+      "cardcode": "STOR-EN086",
+      "cardid": 23434538,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Mekk-Knight Crusadia Avramax",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Dark Neostorm",
+      "cardcode": "DANE-EN047",
+      "cardid": 21887175,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Numeron Network",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Battles of Legend: Armageddon",
+      "cardcode": "BLAR-EN026",
+      "cardid": 41418852,
+      "status": "Limited"
+    },
+    {
+      "cardname": "Predaplant Verte Anaconda",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Duel Overload",
+      "cardcode": "DUOV-EN021",
+      "cardid": 70369116,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Psychic End Punisher",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Dimension Force",
+      "cardcode": "DIFO-EN043",
+      "cardid": 60465049,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Rivalry of Warlords",
+      "cardq": 2,
+      "cardrarity": "Collector's Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "King's Court",
+      "cardcode": "KICO-EN058",
+      "cardid": 90846359,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Royal Decree",
+      "cardq": 2,
+      "cardrarity": "Ultra Rare",
+      "cardcondition": "M",
+      "card_edition": "Unlimited",
+      "cardset": "Tournament Pack 4",
+      "cardcode": "TP4-001",
+      "cardid": 51452091,
+      "status": "Limited"
+    },
+    {
+      "cardname": "Skill Drain",
+      "cardq": 2,
+      "cardrarity": "Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Dark Crisis",
+      "cardcode": "DCR-049",
+      "cardid": 82732705,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Superheavy Samurai Prodigy Wakaushi",
+      "cardq": 2,
+      "cardrarity": "Super Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Cyberstorm Access",
+      "cardcode": "CYAC-EN006",
+      "cardid": 82112494,
+      "status": "Banned"
+    },
+    {
+      "cardname": "Underworld Goddess of the Closed World",
+      "cardq": 2,
+      "cardrarity": "Secret Rare",
+      "cardcondition": "M",
+      "card_edition": "1st Edition",
+      "cardset": "Blazing Vortex",
+      "cardcode": "BLVO-EN050",
+      "cardid": 98127546,
+      "status": "Banned"
+    }
+  ]
