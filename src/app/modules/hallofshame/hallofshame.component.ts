@@ -15,7 +15,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HallofshameComponent implements OnInit {
   listOfNames: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/the-winston-cup/leaderboard/data/leaderboard.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/hallofshame/data/shameList.json';
   public constructor(private http: HttpClient) {}
 
 
@@ -23,4 +23,5 @@ export class HallofshameComponent implements OnInit {
     this.http.get(this.url).subscribe(res => {
       this.listOfNames = res;
   });
+}
 }
