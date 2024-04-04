@@ -6,8 +6,8 @@
         <div class="col-md-8">
             <h2>Watch Previous Winston Cups</h2>
             <iframe
-                width="560"
-                height="315" 
+                width="100%"
+                height="80%" 
                 src="https://www.youtube.com/embed/videoseries?si=sqSAy-uoVrmsCQHq&amp;list=PLrdsRuM2eycWTSNF10ivDKvcw8TcxGnwz" 
                 title="YouTube video player" 
                 frameborder="0" 
@@ -46,15 +46,16 @@
         </div>
 
     </div>
+    <div class="row">
+
+        
+    </div>
 </div>
-<div></div>
+        <button class="btn btn-primary" (click)="onClickBanlist()">Banlist</button>
+        <button class="btn btn-primary" (click)="onClickLeaderboard()">Leaderboard</button>
+        <app-hotubanlist *ngIf="banlistDisplay"></app-hotubanlist>
+        <app-leaderboard *ngIf="leaderboardDisplay"></app-leaderboard>
 
 
-<button class="btn btn-primary" (click)="onClickBanlist()">Banlist</button>
-<button class="btn btn-primary" (click)="onClickLeaderboard()">Leaderboard</button>
-<app-hotubanlist *ngIf="banlistDisplay"></app-hotubanlist>
 
-<div *ngIf="leaderboardDisplay">
-    <app-leaderboard></app-leaderboard>
-</div>
 

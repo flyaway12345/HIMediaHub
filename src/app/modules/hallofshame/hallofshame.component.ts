@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -13,10 +14,13 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./hallofshame.component.css']
 })
 export class HallofshameComponent implements OnInit {
+  listOfNames: any;
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/the-winston-cup/leaderboard/data/leaderboard.json';
+  public constructor(private http: HttpClient) {}
 
-  constructor() { }
 
   ngOnInit(): void {
-  }
-
+    this.http.get(this.url).subscribe(res => {
+      this.listOfNames = res;
+  });
 }
