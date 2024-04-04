@@ -1,9 +1,5 @@
-<a class="btn btn-primary" href="https://discord.com/invite/gJbQ4Dvz76" target="_blank">Sign Up</a>
-<a class="btn btn-primary" routerLink="../hotubanlist">Banlist</a>
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeaderBoard" aria-controls="offcanvasLeaderBoard">
-    LeaderBoard
-</button>
 
+ 
 
 <div class="container">
     <div class="row">
@@ -22,6 +18,8 @@
         </div>
         <div class="col-md-4">
             <h3>Tourny Is Hosted On <a href="https://discord.com/invite/gJbQ4Dvz76" target="_blank">Discord</a></h3>
+            <a class="btn btn-primary" href="https://discord.com/invite/gJbQ4Dvz76" target="_blank" width="100%">Sign Up</a>
+
             <h1>Formats:</h1>
             <h2>Standard:
                 <h3>Follows Standard MD Banlist <br>
@@ -44,24 +42,19 @@
                 War Crimes:
                 <h3>Unlimited</h3>
             </h2>
+            
         </div>
+
     </div>
 </div>
-<app-hotubanlist></app-hotubanlist>
+<div></div>
 
 
-<!---SideBAr-->
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasLeaderBoard" aria-labelledby="offcanvasLeaderBoardLabel">
-<div class="offcanvas-LeaderBoard">
-    <h2 class="offcanvas-title" id="offcanvasLeaderBoardLabel">TWC Leaderboard</h2>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<button class="btn btn-primary" (click)="onClickBanlist()">Banlist</button>
+<button class="btn btn-primary" (click)="onClickLeaderboard()">Leaderboard</button>
+<app-hotubanlist *ngIf="banlistDisplay"></app-hotubanlist>
+
+<div *ngIf="leaderboardDisplay">
+    <app-leaderboard></app-leaderboard>
 </div>
-<!--Sidebar Links-->
-<div class="offcanvas-body">
-    <ol *ngFor="let player of leaderboard">
-        <li>{{player.name}}</li>
-    </ol>
-    
-    
-      <app-live></app-live>
-</div>
+

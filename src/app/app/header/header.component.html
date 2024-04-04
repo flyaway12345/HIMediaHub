@@ -16,40 +16,12 @@
         </div>
         <!--Sidebar Links-->
         <div class="offcanvas-body">
-            <li><a class="btn btn-primary"routerLink="../">Links</a></li>
-            <li><a class="btn btn-primary" routerLink="../live">Watchbox </a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Podcasts</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="btn btn-primary" routerLink="../audiodex">Audiodex</a></li>                        
-                        <li><a class="btn btn-primary" routerLink="../ICSUUYTMT">I Can't Shut Up Unless You Tell Me To</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">The Winston Cup</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="btn btn-primary" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a></li>
-                        <li><a class="btn btn-primary" routerLink="../hotubanlist">YGO Banlist</a></li>                        
-                        <li><a class="btn btn-primary" routerLink="../thewinstoncup">See All</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">App Directory</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="btn btn-primary" routerLink="../hallofshame">Hall Of Shame</a></li>
-                        <li><a class="btn btn-primary" routerLink="../games">Games</a></li>
-                        <li><a class="btn btn-primary" routerLink="../cookbook">Cookbook</a></li>
-                        <li><a class="btn btn-primary" href="../audiodex">Audiodex</a></li>
-                        <li><a class="btn btn-primary" routerLink="appDir">See All</a></li>
-                    </ul>
-                </div>
-            </li>
-              <app-live></app-live>
+            <li><a class="btn btn-primary"routerLink="./">Links</a></li>
+            <li><a class="btn btn-primary" routerLink="./live">Watchbox </a></li>
+            <li><button class="btn btn-primary " type="button" routerLink="./podcasts">Podcasts</button></li>
+            <li><button class="btn btn-primary" type="button" routerLink="./thewinstoncup">The Winston Cup</button></li>
+            <li><button class="btn btn-primary" type="button" routerLink="./appDir">App Directory</button></li>
+            <app-live></app-live>
         </div>
         </div>  
     </div>

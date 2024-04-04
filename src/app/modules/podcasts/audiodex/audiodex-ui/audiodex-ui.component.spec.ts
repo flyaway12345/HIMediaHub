@@ -8,8 +8,8 @@ describe('AudiodexUiComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AudiodexUiComponent ]
-    })
+    imports: [AudiodexUiComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(AudiodexUiComponent);

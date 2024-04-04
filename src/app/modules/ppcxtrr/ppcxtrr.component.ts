@@ -1,6 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { DiscordComponent } from '../links/discord/discord.component';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
-  selector: 'app-ppcxtrr',
+  selector: 'app-ppcxtrr', 
+  standalone: true,
+  imports: [
+    DiscordComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './ppcxtrr.component.html',
   styleUrls: ['./ppcxtrr.component.css']
 })

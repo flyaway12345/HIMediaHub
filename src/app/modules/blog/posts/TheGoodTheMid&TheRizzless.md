@@ -1,5 +1,5 @@
-# -Intro-
-#### Because What Even Is Why
+# -The Good The Mid & The Rizzless-
+#### Media Matters
 
 The following disjointed ramblings of a madman are nothing. I am not important and It is very unlikely at time of writing that anything that I do or create will be of great historical impact. And yet This book of work still exists, because at the end of the day while I am well aware of the fact of my own irrelevance is it not quintessentially human to want to be heard? To be noticed in the huddled masses of history, the billions of souls who have died living lives of no note and equally forgotten by history? 
 

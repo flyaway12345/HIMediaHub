@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HotubanlistComponent } from './hotubanlist.component';
+import { LeaderboardComponent } from './leaderboard.component';
 
-describe('HotubanlistComponent', () => {
-  let component: HotubanlistComponent;
-  let fixture: ComponentFixture<HotubanlistComponent>;
+describe('LeaderboardComponent', () => {
+  let component: LeaderboardComponent;
+  let fixture: ComponentFixture<LeaderboardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [HotubanlistComponent]
-})
+      imports: [LeaderboardComponent]
+    })
     .compileComponents();
-
-    fixture = TestBed.createComponent(HotubanlistComponent);
+    
+    fixture = TestBed.createComponent(LeaderboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,24 +1,32 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { HotubanlistComponent } from './hotubanlist/hotubanlist.component';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-the-winston-cup',
+  selector: 'app-the-winston-cup', 
+  standalone: true,
+  imports:[LeaderboardComponent,
+            HotubanlistComponent,
+            CommonModule,
+            RouterOutlet,
+            RouterLink,
+            RouterLinkActive
+          ],
   templateUrl: './the-winston-cup.component.html',
   styleUrls: ['./the-winston-cup.component.css']
 })
-export class TheWinstonCupComponent implements OnInit {
-  leaderboard: any;
-  url: string = 'D:\\Code\\HIMediaHub\\src\\app\\modules\\the-winston-cup\\data\\leaderboard.json';
-  public constructor(private http: HttpClient) {}
+export class TheWinstonCupComponent {
+  banlistDisplay:boolean = false;
+  leaderboardDisplay:boolean = false;
+  public constructor() {}
   
-  public orderByPoints(): void {
-    // this.leaderboard = this.leaderboard.sort((a,b) => a.points - b.points);
+  onClickBanlist(){
+    this.banlistDisplay = !this.banlistDisplay;
+  }
+  onClickLeaderboard(){
+    this.leaderboardDisplay = !this.leaderboardDisplay;
   }
 
-  ngOnInit(): void {
-    this.http.get(this.url).subscribe(res => {
-      this.leaderboard = res;
-  });
-  
-}
-}
+  }

@@ -8,8 +8,8 @@ describe('AgeOfWarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AgeOfWarComponent ]
-    })
+    declarations: [AgeOfWarComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(AgeOfWarComponent);

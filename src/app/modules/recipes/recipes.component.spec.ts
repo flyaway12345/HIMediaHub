@@ -8,8 +8,8 @@ describe('PopeyesBiscutsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RecipesComponent]
-    });
+    imports: [RecipesComponent]
+});
     fixture = TestBed.createComponent(RecipesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

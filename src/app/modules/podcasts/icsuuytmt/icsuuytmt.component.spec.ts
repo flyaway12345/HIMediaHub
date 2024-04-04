@@ -8,8 +8,8 @@ describe('ICSUUYTMTComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ICSUUYTMTComponent ]
-    })
+    imports: [ICSUUYTMTComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ICSUUYTMTComponent);

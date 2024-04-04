@@ -8,8 +8,8 @@ describe('HimediatvNewsUpdateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HimediatvNewsUpdateComponent ]
-    })
+    imports: [HimediatvNewsUpdateComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(HimediatvNewsUpdateComponent);

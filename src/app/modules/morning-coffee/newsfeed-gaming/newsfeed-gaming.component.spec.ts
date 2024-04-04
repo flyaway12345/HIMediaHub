@@ -8,8 +8,8 @@ describe('NewsfeedGamingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewsfeedGamingComponent ]
-    })
+    imports: [NewsfeedGamingComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(NewsfeedGamingComponent);

@@ -1,14 +1,21 @@
 import { Component, SimpleChanges, OnInit, Output, Input } from '@angular/core';
 import { PokeapiService } from '../services/pokeapi.service';
+import { AudiodexPlayerComponent } from '../audiodex-player/audiodex-player.component';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-audiodex-ui',
+  selector: 'app-audiodex-ui', 
+  standalone: true,
+  imports: [
+    AudiodexPlayerComponent,
+    NgIf
+  ],
   templateUrl: './audiodex-ui.component.html',
   styleUrls: ['./audiodex-ui.component.css']
 })
 export class AudiodexUiComponent implements OnInit{
   title = 'Audiodex';
-  audiodexSearchReady:boolean = true;
+  audiodexSearchReady:boolean = false;
 
   // updatePokedexLength(){
   //   if(this.pokedexLength == NaN 

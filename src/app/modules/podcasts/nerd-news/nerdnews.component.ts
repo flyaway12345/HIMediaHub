@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nerdnews',
+  selector: 'app-nerdnews', 
+  standalone: true,
+  imports: [
+    
+  ],
   templateUrl: './nerdnews.component.html',
   styleUrls: ['./nerdnews.component.css']
 })

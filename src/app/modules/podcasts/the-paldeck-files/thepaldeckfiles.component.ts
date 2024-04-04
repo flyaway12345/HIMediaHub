@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-thepaldeckfiles',
+  selector: 'app-thepaldeckfiles', 
+  standalone: true,
+  imports: [
+    
+  ],
   templateUrl: './thepaldeckfiles.component.html',
   styleUrls: ['./thepaldeckfiles.component.css']
 })

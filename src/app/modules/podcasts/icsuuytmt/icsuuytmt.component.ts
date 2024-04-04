@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-icsuuytmt',
+  selector: 'app-icsuuytmt', 
+  standalone: true,
+  imports: [
+    
+  ],
   templateUrl: './icsuuytmt.component.html',
   styleUrls: ['./icsuuytmt.component.css']
 })

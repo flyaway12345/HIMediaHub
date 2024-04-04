@@ -8,8 +8,8 @@ describe('NerdNewsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ThePaldeckFilesComponent ]
-    })
+    imports: [ThePaldeckFilesComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ThePaldeckFilesComponent);

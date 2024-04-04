@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 import { LiveComponent } from '../watchbox/live/live.component';
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-blog', 
   standalone: true,
-  imports: [CommonModule,MarkdownModule],
+  imports: [CommonModule,MarkdownModule,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })

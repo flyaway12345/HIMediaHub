@@ -8,8 +8,8 @@ describe('PPCxTRRComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PPCxTRRComponent ]
-    })
+    imports: [PPCxTRRComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(PPCxTRRComponent);

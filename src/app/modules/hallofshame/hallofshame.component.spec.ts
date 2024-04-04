@@ -8,8 +8,8 @@ describe('HallofshameComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HallofshameComponent ]
-    })
+    imports: [HallofshameComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(HallofshameComponent);

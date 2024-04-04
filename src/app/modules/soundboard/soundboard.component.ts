@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-soundboard',
   standalone: true,
-  imports: [],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './soundboard.component.html',
   styleUrl: './soundboard.component.css'
 })

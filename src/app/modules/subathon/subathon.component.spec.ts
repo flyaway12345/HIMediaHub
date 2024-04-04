@@ -8,8 +8,8 @@ describe('SubathonComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubathonComponent ]
-    })
+    declarations: [SubathonComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(SubathonComponent);

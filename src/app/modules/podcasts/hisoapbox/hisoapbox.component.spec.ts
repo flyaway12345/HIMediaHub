@@ -8,8 +8,8 @@ describe('HISoapboxComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HISoapboxComponent ]
-    })
+    imports: [HISoapboxComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(HISoapboxComponent);

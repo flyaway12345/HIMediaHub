@@ -8,8 +8,8 @@ describe('WinstonMasterDuelRoundtableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WinstonMasterDuelRoundtableComponent ]
-    })
+    imports: [WinstonMasterDuelRoundtableComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(WinstonMasterDuelRoundtableComponent);
