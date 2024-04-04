@@ -17,7 +17,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class LeaderboardComponent implements OnInit{
   leaderboard: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/the-winston-cup/data/leaderboard.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/the-winston-cup/leaderboard/data/leaderboard.json';
   public constructor(private http: HttpClient) {}
   
   public orderByPoints(): void {
