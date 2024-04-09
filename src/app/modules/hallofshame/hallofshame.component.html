@@ -17,7 +17,7 @@
     <button class="btn btn-outline-primary" *ngIf="!card">Image View</button>
     <button class="btn btn-outline-primary" *ngIf="card">Text View</button>
     <button class="btn btn-primary" *ngIf="card" (click)="onClick()">Card View</button>
-    
+
     <div *ngIf="card">
         <p *ngFor="let user of listOfNames">{{user.name}},</p>
     </div>

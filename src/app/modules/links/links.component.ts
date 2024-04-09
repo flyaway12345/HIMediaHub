@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DiscordComponent } from './discord/discord.component';
-import { SocialsComponent } from './socials/socials.component';
-import { LiveComponent } from '../watchbox/live/live.component';
+import { DiscordComponent } from '../../app/header/discord/discord.component';
+import { SocialsComponent } from '../../app/header/socials/socials.component';
+import { LiveComponent } from '../../app/header/live/live.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { TheWinstonCupComponent } from '../the-winston-cup/the-winston-cup.component';
 

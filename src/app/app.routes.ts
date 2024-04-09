@@ -9,7 +9,7 @@ import { GameSelectComponent } from './modules/games/game-select/game-select.com
 import { KittenCannonComponent } from './modules/games/game-select/kitten-cannon/kitten-cannon.component';
 import { GamesComponent } from './modules/games/games.component';
 import { HallofshameComponent } from './modules/hallofshame/hallofshame.component';
-import { DiscordComponent } from './modules/links/discord/discord.component';
+import { DiscordComponent } from '../app/app/header/discord/discord.component';
 import { LinksComponent } from './modules/links/links.component';
 import { MerchComponent } from './modules/merch/merch.component';
 import { MorningCoffeeComponent } from './modules/morning-coffee/morning-coffee.component';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LiveComponent } from './live/live.component';
+import { LiveComponent } from '../../app/header/live/live.component';
 import { VideosComponent } from './videos/videos.component';
 import { CommonModule } from '@angular/common';
 

@@ -3,8 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MarkdownService,MarkdownModule } from 'ngx-markdown';
-import { LiveComponent } from '../watchbox/live/live.component';
-
 @Component({
   selector: 'app-blog', 
   standalone: true,

@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { AppDirectoryComponent } from 'src/app/modules/app-directory.component';
-import { SocialsComponent } from 'src/app/modules/links/socials/socials.component';
+import { SocialsComponent } from '../header/socials/socials.component';
 
 @Component({
   selector: 'app-error404', 
   standalone: true,
   imports: [
     SocialsComponent,
-    AppDirectoryComponent,
     RouterOutlet,
     RouterLink,
     RouterLinkActive

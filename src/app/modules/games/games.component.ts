@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LiveComponent } from '../watchbox/live/live.component';
+import { LiveComponent } from '../../app/header/live/live.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
