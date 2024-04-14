@@ -5,15 +5,18 @@
 <div class="d-flex justify-content-center">
     <iframe src="https://free.timeanddate.com/clock/i9575wku/fn5/fs26/ftbi/tt1" frameborder="0" width="344" height="33"></iframe>
 </div>
-
+<div class="d-flex justify-content-center">
+    <h4>Quote Of The Day</h4>
+</div>
+<div class="d-flex justify-content-center">
+    <h6>{{quotes.data[0].quoteText}}</h6>    
+</div>
+<div class="d-flex justify-content-center">
+    <p><em>-{{quotes.data[0].quoteAuthor}}</em></p>
+</div>
 
 <div class="container ">
     <div class="row">
-        <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
-            <h4>Quote Of The Day</h4>
-            <h6>{{quotes.data[0].quoteText}}</h6>
-            <p><em>-{{quotes.data[0].quoteAuthor}}</em></p>
-        </div>
         <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
             <div class="d-flex justify-content-center">
                 <h4>A Dog To Fetch Your Slippers</h4>
@@ -37,13 +40,13 @@
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-primary" (click)="newsSwap()">Read Instead 📰</a>
                 </div>     
-                <app-himediatv-news-update></app-himediatv-news-update>
-            </div>
+                <div class="d-flex justify-content-center">
+                    <h4>HIMediaTV News Update</h4>
+                  </div>
+                  <app-himediatv-news-update></app-himediatv-news-update>
+                </div>
             
         </div>
-
-    </div>
-    <div class="row">
         <div class="col-md-3 card shadow-sm p-3 mb-5 bg-white rounded">
             <div class="d-flex justify-content-center">
                 <h4>Say Good Morning To Chat</h4>
@@ -58,5 +61,8 @@
             width="100%">
         </iframe>
         </div>
+    </div>
+    <div class="row">
+
     </div>
 </div>
