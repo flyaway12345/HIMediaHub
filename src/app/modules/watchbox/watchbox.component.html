@@ -1,15 +1,13 @@
 <div class=".container-fluid">
     <!-- Watchbox -->
+    <div class="d-flex justify-content-center">
+        <h2>Live Watchbox
+            <a class="btn kick" href="https://kick.com/himediatv" target="_blank"><i class="fa-brands fa-kickstarter-k"></i></a>
+            <a class="btn youtube" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a class="btn twitch" href="https://www.twitch.tv/himediatv" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+        </h2>
+    </div>
     <div class="row" *ngIf="liveswitch">
-        <div class="d-flex justify-content-center">
-            <h2>Live Watchbox <a class="btn btn-primary" herf="#" (click)="onClick()"><i class="fa-regular fa-hand-pointer"></i> Mobile View</a>
-                <a class="btn kick" href="https://kick.com/himediatv" target="_blank"><i class="fa-brands fa-kickstarter-k"></i></a>
-                <a class="btn youtube" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a class="btn twitch" href="https://www.twitch.tv/himediatv" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            </h2>
-
-        </div>
-        
         <div class="d-flex justify-content-center">
             <iframe src="https://player.twitch.tv/?channel=himediatv&parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
              frameborder="0"
@@ -25,18 +23,8 @@
                 width="250">
             </iframe>
         </div>
-
-
     </div>
     <div class="row" *ngIf="!liveswitch">
-        <div class="d-flex justify-content-center">
-            <h2>Live Watchbox <a class="btn btn-primary" herf="#" (click)="onClick()"><i class="fa-regular fa-hand-pointer"></i> Desktop View</a>
-                <a class="btn kick" href="https://kick.com/himediatv" target="_blank"><i class="fa-brands fa-kickstarter-k"></i></a>
-                <a class="btn youtube" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a class="btn twitch" href="https://www.twitch.tv/himediatv" target="_blank"><i class="fa-brands fa-twitch"></i></a>
-            </h2>
-            
-        </div>
         <div class="d-flex justify-content-center">
             <app-live></app-live>
         </div>
@@ -46,16 +34,12 @@
     <!-- Videos -->
     <div class="row">
         <div class="gap"></div>
-        <app-videos></app-videos>
+        <app-live-menu></app-live-menu>
 
     </div>
     <!-- Discord -->
     <div class="row d-flex justify-content-center">            
-        <div class="d-flex justify-content-center">
-            <h2>Join Our Community!</h2>
-        </div>
-        <iframe src="https://discord.com/widget?id=426459490725134339&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
+        <app-discord></app-discord>
     </div>
 
 

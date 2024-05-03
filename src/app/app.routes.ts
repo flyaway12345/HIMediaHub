@@ -26,7 +26,7 @@ import { WinstonMasterDuelRoundtableComponent } from './modules/podcasts/wmdroun
 import { PPCxTRRComponent } from './modules/ppcxtrr/ppcxtrr.component';
 import { RecipesComponent } from './modules/recipes/recipes.component';
 import { SoundboardComponent } from './modules/soundboard/soundboard.component';
-import { SubathonComponent } from './modules/subathon/subathon.component';
+import { LiveMenuComponent } from './modules/watchbox/live-menu/live-menu.component';
 import { HotubanlistComponent } from './modules/the-winston-cup/hotubanlist/hotubanlist.component';
 import { LeaderboardComponent } from './modules/the-winston-cup/leaderboard/leaderboard.component';
 import { TheWinstonCupComponent } from './modules/the-winston-cup/the-winston-cup.component';
@@ -65,12 +65,13 @@ export const routes: Routes = [
 {path: 'soundboard', component: SoundboardComponent},
 {path: 'ppcxtrr', component: PPCxTRRComponent},
 {path: 'merch', component: MerchComponent},
-{path: 'subathon', component: SubathonComponent},
+{path: 'live-menu', component: LiveMenuComponent},
 {path: 'nerdnews', component: NerdNewsComponent},
 {path: 'hisoapbox', component: HISoapboxComponent},
 {path: 'thepaldeckfiles', component: ThePaldeckFilesComponent},
 {path: 'therundown', component: TheRundownComponent},
 {path: 'wmdroundtable', component: WinstonMasterDuelRoundtableComponent},
 {path: 'discord', component: DiscordComponent},
+{path: 'subathon', component: WatchboxComponent},
 {path: '**' ,component: Error404Component}
 ];
