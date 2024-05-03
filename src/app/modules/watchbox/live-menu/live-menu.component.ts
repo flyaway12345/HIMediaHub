@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TimerMenuComponent } from "./timer-menu/timer-menu.component";
 import { InteractionMenuComponent } from "./interaction-menu/interaction-menu.component";
+import { DiscordComponent } from "../../../app/header/discord/discord.component";
 
 @Component({
     selector: 'app-live-menu',
@@ -13,7 +14,8 @@ import { InteractionMenuComponent } from "./interaction-menu/interaction-menu.co
         RouterLink,
         RouterLinkActive,
         TimerMenuComponent,
-        InteractionMenuComponent
+        InteractionMenuComponent,
+        DiscordComponent
     ]
 })
 export class LiveMenuComponent implements OnInit {

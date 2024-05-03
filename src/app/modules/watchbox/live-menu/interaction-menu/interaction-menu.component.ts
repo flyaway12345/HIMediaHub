@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { CommandsComponent } from "./commands/commands.component";
 
 @Component({
-  selector: 'app-interaction-menu',
-  standalone: true,
-  imports: [],
-  templateUrl: './interaction-menu.component.html',
-  styleUrl: './interaction-menu.component.css'
+    selector: 'app-interaction-menu',
+    standalone: true,
+    templateUrl: './interaction-menu.component.html',
+    styleUrl: './interaction-menu.component.css',
+    imports: [CommandsComponent]
 })
 export class InteractionMenuComponent {
   mobHeight: any;
@@ -17,4 +18,5 @@ export class InteractionMenuComponent {
       console.log(this.mobHeight);
       console.log(this.mobWidth)
   }
+
 }
