@@ -1,22 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { LiveDesktopComponent } from "./live-desktop/live-desktop.component";
-import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'app-live',
-    standalone: true,
-    templateUrl: './live.component.html',
-    styleUrls: ['./live.component.css'],
-    imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
-        LiveDesktopComponent,
-        CommonModule
-    ]
+  selector: 'app-live-mobile',
+  standalone: true,
+  imports:[
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+  ],
+  templateUrl: './live-mobile.component.html',
+  styleUrls: ['./live-mobile.component.css']
 })
-export class LiveComponent implements OnInit {
+export class LiveMobileComponent implements OnInit {
   mobHeight: any;
   mobWidth: any;
   liveswitch:boolean = false;
@@ -34,11 +30,4 @@ export class LiveComponent implements OnInit {
       this.liveswitch = true;
     }
   }
-  
-
-  
-  onClick(){
-    this.liveswitch = !this.liveswitch
-  }
-  
 }

@@ -7,28 +7,8 @@
             <a class="btn twitch" href="https://www.twitch.tv/himediatv" target="_blank"><i class="fa-brands fa-twitch"></i></a>
         </h2>
     </div>
-    <div class="row" *ngIf="liveswitch">
-        <div class="d-flex justify-content-center">
-            <iframe src="https://player.twitch.tv/?channel=himediatv&parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
-             frameborder="0"
-              allowfullscreen="true"
-               scrolling="no"
-                height="700"
-                 width="1200px">
-            </iframe>
-            <iframe
-                id="chat_embed"
-                src="https://www.twitch.tv/embed/himediatv/chat?parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
-                height="700"
-                width="250">
-            </iframe>
-        </div>
-    </div>
-    <div class="row" *ngIf="!liveswitch">
-        <div class="d-flex justify-content-center">
-            <app-live></app-live>
-        </div>
 
+    <app-live></app-live>
 
     </div>
     <!-- Videos -->

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { SocialsComponent } from './socials/socials.component';
 import { LiveComponent } from "./live/live.component";
+import { LiveMobileComponent } from "./live-mobile/live-mobile.component";
 
 @Component({
     selector: 'app-header',
@@ -13,7 +14,8 @@ import { LiveComponent } from "./live/live.component";
         LiveComponent,
         RouterOutlet,
         RouterLink,
-        RouterLinkActive
+        RouterLinkActive,
+        LiveMobileComponent
     ]
 })
 export class HeaderComponent{

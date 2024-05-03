@@ -20,31 +20,8 @@ import { CommandsComponent } from "./live-menu/interaction-menu/commands/command
         CommandsComponent
     ]
 })
-export class WatchboxComponent implements OnInit {
-  mobHeight: any;
-  mobWidth: any;
-  liveswitch:boolean = false;
-  constructor() { 
-    this.mobHeight = (window.screen.height) + "px";
-    this.mobWidth = (window.screen.width) + "px";
-      console.log(this.mobHeight);
-      console.log(this.mobWidth)
-  }
+export class WatchboxComponent {
 
-  ngOnInit(): void {
-    if(this.mobWidth < this.mobHeight){
-      this.liveswitch = false;
-    }else {
-      this.liveswitch = true;
-    }
-  }
-  
-
-  
-  onClick(){
-    this.liveswitch = !this.liveswitch
-  }
-  
 }
 
 
