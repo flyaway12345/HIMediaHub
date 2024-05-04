@@ -1,3 +1,5 @@
+import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -7,15 +9,23 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   imports:[
     RouterOutlet,
     RouterLink,
-    RouterLinkActive],
+    RouterLinkActive,
+    CommonModule],
   templateUrl: './game-select.component.html',
   styleUrls: ['./game-select.component.css']
 })
 export class GameSelectComponent implements OnInit {
+  gameData: any;
+  url: string = 'D:\\Code\\HIMediaHub\\src\\app\\modules\\games\\game-select\\data\\gameData.json';
+  public constructor(private http: HttpClient) {}
 
-  constructor() { }
+
 
   ngOnInit(): void {
+    this.http.get(this.url).subscribe(res => {
+      this.gameData = res;
+    });
+
   }
 
 }

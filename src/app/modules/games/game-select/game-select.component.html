@@ -12,18 +12,27 @@
   <div class="card-body">
     <h5 class="card-title">Age Of War</h5>
     <p class="card-text">
-      Age of War is an epic, classic strategy game. Advance through the ages in a struggle to 
-      destroy your enemy’s base before they can destroy yours in this real-time strategy game. </p>
+      Age of War is an epic, classic strategy game. Advance through the ages in a struggle to destroy your enemy’s base before they can destroy yours in this real-time strategy game. </p>
       <a class="btn btn-primary" routerLink="ageOfWar">Age Of War</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="https://images.crazygames.com/games/kitten-cannon/cover-1636451021149.png" alt="Bloons TD 4">
   <div class="card-body">
-    <h5 class="card-title">Kitten Canon</h5>
+    <h5 class="card-title">Kitten Cannon</h5>
     <p class="card-text">
-      Kitten Cannon is a classic physics game. Fluffy has found his way into your cannon again, that dang cat just never listens and doesn't care! 
-      The only way you can teach it a lesson is by firing that cannon into a field of bombs, spikes, springs, and other awesome obstacles! </p>
+      Kitten Cannon is a classic physics game. Fluffy has found his way into your cannon again, that dang cat just never listens and doesn't care! The only way you can teach it a lesson is by firing that cannon into a field of bombs, spikes, springs, and other awesome obstacles! </p>
       <a class="btn btn-primary" routerLink="kittenCannon">Kitten Cannon</a>
   </div>
+</div>
+
+<div class="container">
+  <div *ngFor="let game of gameData" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{game.img}}" alt="Bloons TD 4">
+  <div class="card-body">
+    <h5 class="card-title">{{game.name}}</h5>
+    <p class="card-text">
+      {{game.discription}}</p>
+      <a class="btn btn-primary" routerLink="kittenCannon">#</a>
+</div>
 </div>
