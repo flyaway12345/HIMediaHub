@@ -16,16 +16,22 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class GameSelectComponent implements OnInit {
   gameData: any;
+  selectedGame: string = "#";
+  showGame:boolean = false;
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/games/game-select/data/gameData.json';
   public constructor(private http: HttpClient) {}
 
-
+  onClick(index:number){
+    this.gameData[index].src = this.selectedGame;
+    
+    this.showGame = true;
+  }
 
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.gameData = res;
     });
-
+    console.log(this.gameData);
   }
 
 }
