@@ -16,7 +16,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class GameSelectComponent implements OnInit {
   gameData: any;
-  url: string = 'D:\\Code\\HIMediaHub\\src\\app\\modules\\games\\game-select\\data\\gameData.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/games/game-select/data/gameData.json';
   public constructor(private http: HttpClient) {}
 
 
