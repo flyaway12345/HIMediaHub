@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LiveComponent } from '../../app/header/live/live.component';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { LiveMobileComponent } from "../../app/header/live-mobile/live-mobile.component";
+import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
 
 @Component({
     selector: 'app-games',
