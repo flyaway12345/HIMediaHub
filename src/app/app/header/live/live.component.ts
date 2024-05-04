@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { LiveDesktopComponent } from "./live-desktop/live-desktop.component";
 import { CommonModule } from '@angular/common';
+import { LiveMobileComponent } from "./live-mobile/live-mobile.component";
 
 @Component({
     selector: 'app-live',
@@ -13,7 +14,8 @@ import { CommonModule } from '@angular/common';
         RouterLink,
         RouterLinkActive,
         LiveDesktopComponent,
-        CommonModule
+        CommonModule,
+        LiveMobileComponent
     ]
 })
 export class LiveComponent implements OnInit {
