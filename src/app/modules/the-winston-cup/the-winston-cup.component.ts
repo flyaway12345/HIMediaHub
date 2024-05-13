@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { HotubanlistComponent } from './hotubanlist/hotubanlist.component';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { CrownLeaderboardComponent } from '../crown-leaderboard/crown-leaderboard.component';
 
 @Component({
   selector: 'app-the-winston-cup', 
   standalone: true,
-  imports:[LeaderboardComponent,
+  imports:[CrownLeaderboardComponent,
             HotubanlistComponent,
             CommonModule,
             RouterOutlet,
