@@ -3,14 +3,15 @@
     <div *ngFor="let player of leaderboard" class="card" style="width: 18rem;">
       <div class="card-body">
         <h2 class="card-title">
-          {{player.name}}
+          {{player.name}}(👑{{player.crowns}})
         </h2>
-        <h4 class="card-text">
-          Point Total: {{player.points}}
-        </h4>
-        <h5>Challenge Titles:</h5>
+        <h3 class="card-text">
+          <strong>The Winston Cup Level: </strong>{{player.points}}
+        </h3>
+        <h4><strong>Challenge Titles:</strong></h4>
         <p>{{player.titles}}</p>
         <a href="https://discordlookup.com/user/{{player.UserID}}" class="btn btn-primary" target="_blank">Profile</a>
+        <a href="{{player.social}}" class="btn btn-primary" target="_blank">Profile</a>
       </div>
   </div>
   </div>

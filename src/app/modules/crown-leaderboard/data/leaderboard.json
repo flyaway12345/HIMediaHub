@@ -1,98 +1,126 @@
 [{
     "name": "Not Chara",
-    "points": "22",
+    "points_twc": "22",
+    "crowns":"0",
     "UserID": "235398210133295104",
     "social": "https://www.youtube.com/channel/UCnAjxje5yLTNAWQ9miOIvEw",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "aceofblades_707",
-    "points": "1",
+    "points_twc": "1",
+    "crowns":"0",
     "UserID": "472779345061085185",
     "social": "https://www.twitch.tv/aceofblades_707",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "thedarkmagician",
-    "points": "7",
+    "points_twc": "7",
+    "crowns":"0",
     "UserID": "394954836409581588",
     "social": "",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Rose Duelist",
-    "points": "1",
+    "points_twc": "1",
+    "crowns":"0",
     "UserID": "1136359765652545706",
     "social": "https://www.youtube.com/channel/UCUVZxnFFV0JMHcwrO8BE3ag",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Jabroni",
-    "points": "3",
+    "points_twc": "3",
+    "crowns":"0",
     "UserID": "247537255311343617",
     "social": "",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Sylzzle",
-    "points": "0",
+    "points_twc": "0",
+    "crowns":"0",
     "UserID": "759658108745809932",
     "social": "",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Professor Blue",
-    "points": "7",
+    "points_twc": "7",
+    "crowns":"0",
     "UserID": "809619685460541440",
     "social": "https://www.youtube.com/channel/UCSENiU9Tl5dtiP1zF9RdaaQ",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "FlintSteel",
-    "points": "3",
+    "points_twc": "3",
+    "crowns":"0",
     "UserID": "141287983516090368",
     "social": "",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Crispy Synchron",
-    "points": "10",
+    "points_twc": "10",
+    "crowns":"0",
     "UserID": "155943002525663232",
     "social": "https://www.youtube.com/@crispy_synchron",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Nairless_",
-    "points": "9",
+    "points_twc": "9",
+    "crowns":"0",
     "UserID": "642883968223412224",
     "social": "https://www.youtube.com/@Nairless_",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "RedS7orm29",
-    "points": "6",
+    "points_twc": "6",
+    "crowns":"0",
     "UserID": "515024732219768832",
     "social": "https://www.twitch.tv/reds7orm29",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "Chessburger",
-    "points": "8",
+    "points_twc": "8",
+    "crowns":"0",
     "UserID": "767929975617224704",
     "social": "",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 },
 {
     "name": "HIMediaTV",
-    "points": "32",
+    "points_twc": "21",
+    "crowns":"1",
     "UserID": "253930957793394708",
     "social": "https://www.youtube.com/@himediatv",
-    "titles": "Hydrated, Elden Lord"
+    "titles": "Hydrated, Elden Lord",
+    "placeholder": "placeholder"
 },
 {
     "name": "YGO Devil",
-    "points": "0",
+    "points_twc": "0",
+    "crowns":"0",
     "UserID": "1091423395360538764",
     "social": "https://www.youtube.com/channel/UCoadZzDrq29mnOKC8w57Krw",
-    "titles": ""
+    "titles": "",
+    "placeholder": "placeholder"
 }]
