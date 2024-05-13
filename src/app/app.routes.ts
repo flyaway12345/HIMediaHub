@@ -28,9 +28,9 @@ import { RecipesComponent } from './modules/recipes/recipes.component';
 import { SoundboardComponent } from './modules/soundboard/soundboard.component';
 import { LiveMenuComponent } from './modules/watchbox/live-menu/live-menu.component';
 import { HotubanlistComponent } from './modules/the-winston-cup/hotubanlist/hotubanlist.component';
-import { LeaderboardComponent } from './modules/the-winston-cup/leaderboard/leaderboard.component';
 import { TheWinstonCupComponent } from './modules/the-winston-cup/the-winston-cup.component';
 import { WatchboxComponent } from './modules/watchbox/watchbox.component';
+import { CrownLeaderboardComponent } from './modules/crown-leaderboard/crown-leaderboard.component';
 
 export const routes: Routes = [
     {path: '' ,component: LinksComponent},
@@ -43,7 +43,7 @@ export const routes: Routes = [
 {path: 'twc', component: TheWinstonCupComponent},
 {path: 'hotubanlist', component: HotubanlistComponent},
 {path: 'banlist', component: HotubanlistComponent},
-{path: 'leaderboard', component: LeaderboardComponent},
+{path: 'leaderboard', component: CrownLeaderboardComponent},
 {path: 'live', component: WatchboxComponent},
 {path: 'appDir', component: AppDirectoryComponent},
 {path: 'hallofshame', component: HallofshameComponent},
@@ -73,5 +73,6 @@ export const routes: Routes = [
 {path: 'wmdroundtable', component: WinstonMasterDuelRoundtableComponent},
 {path: 'discord', component: DiscordComponent},
 {path: 'subathon', component: WatchboxComponent},
+{path: 'crowns', component: CrownLeaderboardComponent},
 {path: '**' ,component: Error404Component}
 ];
