@@ -20,15 +20,19 @@ export class CrownLeaderboardComponent implements OnInit{
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/crown-leaderboard/data/leaderboard.json';
   public constructor(private http: HttpClient) {}
   
-  public orderByPoints(): void {
-    this.leaderboard = this.leaderboard.sort((a: { points: number; }, b: { points: number; }) => b.points - a.points);
+  public orderByWinstonCupLevel(): void {
+    this.leaderboard = this.leaderboard.sort((a: { points_twc: number; }, b: { points_twc: number; }) => b.points_twc - a.points_twc);
+    console.log("sorted");
+  }
+  public orderByCrowns(): void {
+    this.leaderboard = this.leaderboard.sort((a: { crowns: number; }, b: { crowns: number; }) => b.crowns - a.crowns);
     console.log("sorted");
   }
 
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.leaderboard = res;
-      this.orderByPoints();
+      this.orderByCrowns();
   });
   
 }

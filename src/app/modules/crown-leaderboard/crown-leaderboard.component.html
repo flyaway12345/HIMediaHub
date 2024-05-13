@@ -1,4 +1,7 @@
-
+<h1 style="color: white;">
+    <button class="btn btn-primary" (click)="orderByWinstonCupLevel()">Order By Winston Cup Level</button>
+    <button class="btn btn-primary" (click)="orderByCrowns()">Order By Crowns</button>
+</h1>
 <div class="container">
     <div *ngFor="let player of leaderboard" class="card" style="width: 18rem;">
       <div class="card-body">
@@ -6,7 +9,7 @@
           {{player.name}}(👑{{player.crowns}})
         </h2>
         <h3 class="card-text">
-          <strong>The Winston Cup Level: </strong>{{player.points}}
+          <strong>The Winston Cup Level: </strong>{{player.points_twc}}
         </h3>
         <h4><strong>Challenge Titles:</strong></h4>
         <p>{{player.titles}}</p>
