@@ -4,6 +4,7 @@
 </h1>
 <div class="container">
     <div *ngFor="let player of leaderboard" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{player.profilePicture}}" alt="Card image cap">
       <div class="card-body">
         <h2 class="card-title">
           {{player.name}}(👑{{player.crowns}})

@@ -28,6 +28,7 @@ export class CrownLeaderboardComponent implements OnInit{
     this.leaderboard = this.leaderboard.sort((a: { crowns: number; }, b: { crowns: number; }) => b.crowns - a.crowns);
     console.log("sorted");
   }
+  
 
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
