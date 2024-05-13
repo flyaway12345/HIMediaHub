@@ -4,7 +4,7 @@
 </h1>
 <div class="container">
     <div *ngFor="let player of leaderboard" class="card" style="width: 18rem;">
-    <img class="card-img-top" src="{{player.profilePicture}}" alt="Card image cap">
+    <img class="card-img-top" src="{{player.profilePicture}}" alt="Profile Pic">
       <div class="card-body">
         <h2 class="card-title">
           {{player.name}}(👑{{player.crowns}})
@@ -15,7 +15,7 @@
         <h4><strong>Challenge Titles:</strong></h4>
         <p>{{player.titles}}</p>
         <a href="https://discordlookup.com/user/{{player.UserID}}" class="btn btn-primary" target="_blank">Profile</a>
-        <a href="{{player.social}}" class="btn btn-primary" target="_blank">Profile</a>
+        <a href="{{player.social}}" class="btn btn-primary" target="_blank">Social</a>
       </div>
   </div>
   </div>
