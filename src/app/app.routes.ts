@@ -31,6 +31,9 @@ import { HotubanlistComponent } from './modules/the-winston-cup/hotubanlist/hotu
 import { TheWinstonCupComponent } from './modules/the-winston-cup/the-winston-cup.component';
 import { WatchboxComponent } from './modules/watchbox/watchbox.component';
 import { CrownLeaderboardComponent } from './modules/crown-leaderboard/crown-leaderboard.component';
+import { CommandsComponent } from './modules/watchbox/live-menu/interaction-menu/commands/commands.component';
+import { DefaultCommandsComponent } from './modules/watchbox/live-menu/interaction-menu/commands/default-commands/default-commands.component';
+import { SoundAlertsComponent } from './modules/watchbox/live-menu/interaction-menu/commands/sound-alerts/sound-alerts.component';
 
 export const routes: Routes = [
     {path: '' ,component: LinksComponent},
@@ -74,5 +77,7 @@ export const routes: Routes = [
 {path: 'discord', component: DiscordComponent},
 {path: 'subathon', component: WatchboxComponent},
 {path: 'crowns', component: CrownLeaderboardComponent},
+{path: 'default-commands', component: DefaultCommandsComponent},
+{path: 'sound-alerts', component: SoundAlertsComponent},
 {path: '**' ,component: Error404Component}
 ];
