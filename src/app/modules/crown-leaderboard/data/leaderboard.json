@@ -105,7 +105,7 @@
     "UserID": "515024732219768832",
     "social": "https://www.twitch.tv/reds7orm29",
     "titles": "",
-    "profilePicture": "https://pbs.twimg.com/profile_images/1652080045421375488/x9eFSwc-_400x400.jpg",
+    "profilePicture": "https://cdn.discordapp.com/avatars/515024732219768832/f9e87d9e93408da3031a14a842eabf57.webp",
     "placeholder": "placeholder"
 },
 {
@@ -137,4 +137,15 @@
     "titles": "",
     "profilePicture": "https://pbs.twimg.com/profile_images/1652080045421375488/x9eFSwc-_400x400.jpg",
     "placeholder": "placeholder"
-}]
+},
+{
+    "name": "Tobias Of Tantalus",
+    "points_twc": "0",
+    "crowns":"1",
+    "UserID": "196733875186171905",
+    "social": "https://bsky.app/profile/tantalusstudios.bsky.social",
+    "titles": "Hydrated",
+    "profilePicture": "https://cdn.discordapp.com/avatars/196733875186171905/0ef19541b99ce909833edc86a46d742b.webp",
+    "placeholder": "placeholder"
+}
+]
