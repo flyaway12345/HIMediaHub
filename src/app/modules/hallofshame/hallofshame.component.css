@@ -9,3 +9,18 @@ p{
     margin-left: 2%;
     margin-bottom: 2%;
 }
+.youtube {
+    background-color: #FF0000;
+}
+.kick {
+    background-color: #00e701;
+}
+.twitch {
+    background-color: #5b24c2;
+}
+.discord {
+    background-color: #7785cc;
+}
+.fa-brands{
+    color:white;
+}
