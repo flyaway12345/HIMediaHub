@@ -19,7 +19,7 @@ export class HallofshameComponent implements OnInit {
   listOfNames: any;
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/hallofshame/data/shameList.json';
   public constructor(private http: HttpClient) {}
-  card:boolean = true;
+  card:boolean = false;
 
   onClick(){
     this.card = !this.card;

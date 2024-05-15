@@ -21,6 +21,18 @@ p{
 .discord {
     background-color: #7785cc;
 }
+.instagram {
+    background-color: #e1306c;
+}
 .fa-brands{
     color:white;
+}
+.container {
+    margin-top: 1em;
+}
+.btn{
+    margin-left: 0.1em;
+}
+h4{
+    color:black;
 }
