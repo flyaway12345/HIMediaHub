@@ -79,5 +79,6 @@ export const routes: Routes = [
 {path: 'crowns', component: CrownLeaderboardComponent},
 {path: 'default-commands', component: DefaultCommandsComponent},
 {path: 'sound-alerts', component: SoundAlertsComponent},
+{path: 'HIMediaTVNewsUpdate', component: HimediatvNewsUpdateComponent},
 {path: '**' ,component: Error404Component}
 ];

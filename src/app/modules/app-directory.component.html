@@ -10,28 +10,17 @@
 <div class="d-flex justify-content-center">
     <h1 style="color: white;">App Directory</h1>
 </div>
-
+<!-- <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search For An App" aria-label="Search For An App" aria-describedby="basic-addon2" [(ngModel)]="textSearch">
+    <div class="input-group-append">
+      <a class="btn btn-primary" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div> -->
 <div class="row">
-    <!-- game wedget -->
-    <div  class="card" style="width: 18rem;">
-        <div class="card-body">
-          <img src="https://gameforge.com/de-DE/littlegames/includes/images/games/13426_5ec634fec15e3.jpg" alt="">
-          <h2 class="card-title">
-            Games
-          </h2>
-          <p class="card-text">
-            Play Flash Games Natively In App
-            <br>
-            Requires Internet Connection
-          </p>
-          <a class="btn btn-primary" routerLink="../games">Games</a>
-        </div>
-    </div>
         <!-- Leaderboard wedget -->
         <div  class="card" style="width: 18rem;">
             <div class="card-body">
               <img src="https://gamipress.com/wp-content/uploads/2018/12/leaderboards.svg" alt="">
-              <h2 class="card-title">
+              <h2 class="$(this).find('h5').text().toLowerCase().indexOf(value)">
                 Leaderboard
               </h2>
               <p class="card-text">
@@ -39,24 +28,39 @@
                 <br>
                 
               </p>
-              <a class="btn btn-primary" routerLink="../leaderboard">Games</a>
+              <a class="btn btn-primary" routerLink="../leaderboard">Leaderboard</a>
             </div>
         </div>
     <!-- watchbox wedget -->
     <div  class="card" style="width: 18rem;">
         <div class="card-body">
-          <img src="https://yt3.googleusercontent.com/vxpVWd_CIvd6kGjneannq3pTfzmq7UkV0EAXnIA6NlCxm3-B9h-bHwTSC741N3PO1iRKj1i-aQ=s900-c-k-c0x00ffffff-no-rj" alt="">
+          <img src="https://media.istockphoto.com/id/1178889512/vector/retro-tv-set-with-antenna-and-stripes-on-the-screen-vintage-style-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=kpZ9XIQ_H5D7_r0vmWSgIyiBo6VpSL4FsCCEVh3jQng=" alt="">
           <h2 class="card-title">
             Watchbox
           </h2>
           <p class="card-text">
             Watch HIMediaTV Stream Live
             <br>
-            Comes in Mobile Orentaintion by defualt but can be switched with a click of a button
+            View Chat Commands and Access The Crowd Control Dashboard
           </p>
           <a class="btn btn-primary" routerLink="../live">Watchbox </a>
         </div>
     </div>
+        <!-- Podcasts wedget -->
+        <div  class="card" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://www.apple.com/v/apple-podcasts/e/images/meta/apple-podcasts__b2lbt81axo2u_og.png" alt="">
+              <h2 class="card-title">
+                Podcasts
+              </h2>
+              <p class="card-text">
+                Listen To HIMediaTV Porduced Podcasts
+                <br>
+                Requires Internet Connection
+              </p>
+              <a class="btn btn-primary" routerLink="../podcasts">Podcasts</a>
+            </div>
+        </div>
     <!-- Cookbook wedget -->
     <div  class="card" style="width: 18rem;">
         <div class="card-body">
@@ -71,6 +75,21 @@
             <a class="btn btn-primary" routerLink="../cookbook">Cookbook</a>
         </div>
     </div>
+        <!-- game wedget -->
+        <div  class="card" style="width: 18rem;">
+            <div class="card-body">
+              <img src="https://gameforge.com/de-DE/littlegames/includes/images/games/13426_5ec634fec15e3.jpg" alt="">
+              <h2 class="card-title">
+                Games
+              </h2>
+              <p class="card-text">
+                Play Flash Games Natively In App
+                <br>
+                Requires Internet Connection
+              </p>
+              <a class="btn btn-primary" routerLink="../games">Games</a>
+            </div>
+        </div>
     <!-- Blog wedget -->
     <div  class="card" style="width: 18rem;">
         <div class="card-body">

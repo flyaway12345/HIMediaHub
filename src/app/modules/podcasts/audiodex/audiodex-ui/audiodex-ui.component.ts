@@ -2,13 +2,15 @@ import { Component, SimpleChanges, OnInit, Output, Input } from '@angular/core';
 import { PokeapiService } from '../services/pokeapi.service';
 import { AudiodexPlayerComponent } from '../audiodex-player/audiodex-player.component';
 import { CommonModule, NgIf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-audiodex-ui', 
   standalone: true,
   imports: [
     AudiodexPlayerComponent,
-    NgIf
+    CommonModule,
+    FormsModule
   ],
   templateUrl: './audiodex-ui.component.html',
   styleUrls: ['./audiodex-ui.component.css']
