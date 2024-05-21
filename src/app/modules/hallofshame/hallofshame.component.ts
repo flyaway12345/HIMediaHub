@@ -24,7 +24,10 @@ export class HallofshameComponent implements OnInit {
   onClick(){
     this.card = !this.card;
   }
-
+  public orderByCrowns(): void {
+    this.listOfNames = this.listOfNames.sort((a: { id: number; }, b: { id: number; }) => b.id - a.id);
+    console.log("sorted");
+  }
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.listOfNames = res;
