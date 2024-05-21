@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { TwitchComponent } from './twitch/twitch.component';
 
 @Component({
   selector: 'app-live-mobile',
@@ -7,7 +8,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
   imports:[
     RouterOutlet,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    TwitchComponent
   ],
   templateUrl: './live-mobile.component.html',
   styleUrls: ['./live-mobile.component.css']

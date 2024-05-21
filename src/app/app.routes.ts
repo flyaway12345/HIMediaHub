@@ -49,7 +49,7 @@ export const routes: Routes = [
 {path: 'leaderboard', component: CrownLeaderboardComponent},
 {path: 'live', component: WatchboxComponent},
 {path: 'appDir', component: AppDirectoryComponent},
-{path: 'hallofshame', component: HallofshameComponent},
+// {path: 'hallofshame', component: HallofshameComponent},
 {path: 'games', component: GamesComponent, children: [
   {path: '', component: GameSelectComponent},
   {path: 'gameSelect', component: GameSelectComponent},
