@@ -424,12 +424,35 @@
     "id":"70",
     "name": "veimily", 
     "dateBanned": "5/21/24",
-    "reasonForBan": "Solicitor, Bot"
+    "reasonForBan": "Solicitor, Botting"
+    },
+    {
+    "id":"71",
+    "name": "maliciousrepa", 
+    "dateBanned": "5/21/24",
+    "reasonForBan": "Solicitor"
+    },
+    {
+    "id":"72",
+    "name": "AvaW­illi­am14­1", 
+    "dateBanned": "5/23/24",
+    "reasonForBan": "Botting"
+    },
+    {
+    "id":"73",
+    "name": "lily_clark_", 
+    "dateBanned": "5/23/24",
+    "reasonForBan": "Botting"
+    },
+    {
+    "id":"74",
+    "name": "auro­ra10­59", 
+    "dateBanned": "5/23/24",
+    "reasonForBan": "Botting"
     },
     {
     "id":"",
     "name": "", 
-    "discordUserID": "",
     "dateBanned": "",
     "reasonForBan": ""
     }
