@@ -2,24 +2,22 @@
     {
         "title": "The Gatekeeper Conundrum",
         "subject":"Culture",
-        "img": "https://scroar.net/wp-content/uploads/2020/11/Gatekeeping-BW-Sarah-Olson-1-e1604287956593-900x742.png"
+        "img": "https://scroar.net/wp-content/uploads/2020/11/Gatekeeping-BW-Sarah-Olson-1-e1604287956593-900x742.png",
+        "date": "01/01/2024",
+        "placeholder": ""
     },{
         "title": "We Work To Earn The Right To Work",
         "subject":"Gaming",
-        "img": "https://i.ytimg.com/vi/vvANy49Kqhw/maxresdefault.jpg"
+        "img": "https://i.ytimg.com/vi/vvANy49Kqhw/maxresdefault.jpg",
+        "date": "01/01/2024",
+        "placeholder": ""
     },{
         "title": "The Good The Mid & The Rizzless",
         "subject":"Media",
-        "img": "https://libnews.umn.edu/wp-content/uploads/2018/04/EU-Media-Futures-Forum-pic_1.jpg"
-    },
-    {
-        "title": "Death Cult America",
-        "subject":"Politics",
-        "img": "https://compote.slate.com/images/21a8fff0-6b0e-4527-bf81-98b7b94d4387.jpeg?width=1200&rect=1560x1040&offset=0x0"
-    },{
-        "title": "Intro",
-        "subject":"Sad Boi Shpeel",
-        "img": "https://yt3.googleusercontent.com/zkkU0vLqq5fYK1nD9M9gNVWvMmgS0o1GRfc-gwRW2DzEuC6si3kegtUTkKtX9_uAjeYiGjZ5ag=s900-c-k-c0x00ffffff-no-rj"
+        "img": "https://libnews.umn.edu/wp-content/uploads/2018/04/EU-Media-Futures-Forum-pic_1.jpg",
+        "date": "01/01/2024",
+        "placeholder": ""
     }
+
  
 ]

@@ -11,7 +11,7 @@
 {
     "name": "aceofblades_707",
     "points_twc": "1",
-    "crowns":"1",
+    "crowns":"5",
     "UserID": "472779345061085185",
     "social": "https://www.twitch.tv/aceofblades_707",
     "titles": "None",
@@ -21,7 +21,7 @@
 {
     "name": "thedarkmagician",
     "points_twc": "7",
-    "crowns":"7",
+    "crowns":"10",
     "UserID": "394954836409581588",
     "social": "https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w",
     "titles": "None",
@@ -90,13 +90,13 @@
 },
 {
     "name": "Nairless_",
-    "points_twc": "9",
+    "points_twc": "24",
     "crowns":"10",
     "UserID": "642883968223412224",
     "social": "https://www.youtube.com/@Nairless_",
-    "titles": "None",
+    "titles": "Hydrated, Winston Cup (5/29)",
     "profilePicture": "https://cdn.discordapp.com/avatars/642883968223412224/a6eab7b4e6d0b40108dd373cb4bfe1eb.webp",
-    "placeholder": "Hydrated"
+    "placeholder": ""
 },
 {
     "name": "RedS7orm29",
@@ -157,6 +157,16 @@
     "titles": "None",
     "profilePicture": "https://cdn.discordapp.com/avatars/1109906899450732564/7f118fcf4b16e9c6e3bfa42d157fd26d.webp",
     "placeholder": "Touched Grass"
+},
+{
+    "name": "nightraid_lp",
+    "points_twc": "0",
+    "crowns":"2",
+    "UserID": "712495640743116861",
+    "social": "https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w",
+    "titles": "None",
+    "profilePicture": "https://cdn.discordapp.com/avatars/712495640743116861/86a8cc26dfd989ed41c4f916c4386e26.webp",
+    "placeholder": "placeholder"
 },
 {
     "name": "This Could Be You!",
