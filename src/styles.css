@@ -1,2 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css"
+html, body { 
+     height: 100%;
+ }
+body { 
+     margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif;
+     background-color: #313131;
+}
+p,h1,h2,h3,h4,h5,h6 {
+     color:white
+}
+
+.btn {
+      margin-left:0.1em;
+}

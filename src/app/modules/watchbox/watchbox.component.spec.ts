@@ -8,8 +8,8 @@ describe('WatchboxComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WatchboxComponent ]
-    })
+    imports: [WatchboxComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(WatchboxComponent);

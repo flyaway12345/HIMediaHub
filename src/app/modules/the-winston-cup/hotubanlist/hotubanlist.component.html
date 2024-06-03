@@ -1,24 +1,25 @@
-<a class="btn btn-primary" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a>
 
+<h1>Banlist:  
+  <button class="btn btn-primary" (click)="onClickBanlistChanges()">Changes</button>
+</h1>
+<div class="container" *ngIf="!banlistChanges">
+  <p>
+    <!-- Comments On This Page Are Possible Changes To The Next Banlist -->
+    <br>-Effective: 3/28/24-
+    <br>Banned: Snake-Eyes, Superheavy Samurai Prodigy Wakaushi, Mathmech Circular
+    <br>Limited: Diabellstar the Black Witch
+    <br>Semi-Limited: no changes
+    <br>Unlimited: Spright
+    <br>
+    <br><button class="btn btn-primary" href="https://youtu.be/Xn1AlBETDnU" target="_blank">Video Update</button>
+    </p>
+</div>
 
+<div class="container">
+  <h3>Banned Archetypes:</h3>
 <p>
-<!-- Comments On This Page Are Possible Changes To The Next Banlist -->
-<br>When: (tentatively) Every Wednesday at approximately 8pm EST
-<br>
-<br>Where: <a href="https://discord.com/servers/hi-media-426459490725134339" target="_blank">HI Media Discord</a>
-<br>
-<br>-Changes(10/26/2023)-
-<br>Banned: Spright(All),Maxx "C", Mekk-Knight Crusadia Avramax
-<br>Limited: Droll & Lock Bird, Dimension Shifter
-<br>Semi-Limited: Super Polymerization
-<br>Unlimited: Mathmech Circular
-<br>
-<br>Banlist: the official Masterduel Banlist Along with the following -
-<br>Banned Archetypes:
-<br>Tearlament
-<br>Floowandereeze
+Floowandereeze
 <br>Runick
-<br>Swordsoul
 <br>Adamancipator
 <br>Eldlich
 <br>Labrynth
@@ -28,91 +29,101 @@
 <br>Kashtira
 <br>Purrely
 <br>Vanity's
-<br>Spright
-<!-- <br>Dragon Rulers -->
+<br>Dragon Rulers
+<br>Tearlament
+<br>Snake-Eyes
 <br>
-<br>
-<br>Banned/Limited Cards in Addendum:
-<br>======Banned=======
-<br>    Monsters-
-<br>        -Main Deck Monsters
-<br>            Kelbek the Ancient Vanguard
-<br>            Maxx "C"
-<br>            Agido the Ancient Sentry
-<br>            Cactus Bouncer
-<br>        -Ritual Monsters
-<br>            Herald of Ultimateness
-<br>            Herald of Perfection
-<br>            Amorphactor Pain, the Imagination Dracoverlord
-<br>   Extra Deck Monsters-
-<br>       Fusion-
-<br>           Destiny HERO - Destroyer Phoenix Enforcer
-<br>       Synchro-
-<br>           Barone De Fleur
-<br>       XYZ-
-<br>           Divine Arnsenal AA-Zeus - Sky Thunder
-<br>        Link-
-<br>           AccessCode Talker
-<br>           Apollousa Bow Of The Goddess
-<br>           Predaplant Verte Anaconda
-<br>           Heavymetalfoes Electrumite
-<br>           Guardragon Pisty
-<br>           Mekk-Knight Crusadia Avramax
-<br>           Underworld Goddess of the Closed World
-<br>
-<br>    -Spells
-<br>        Numeron Network
-<br>    -Traps
-<br>        Skill Drain
-<br>        Rivalry Of The Warlords
-<br>   Dimensional Barrier
-<br>   ======Limited======
-<br>    Monsters-
-<br>        -Main Deck Monsters
-<br>          Naturia Mole Cricket
-<br>          Dimension Shifter
-<br>          Droll & Lock Bird
-<br>        -Ritual Monsters
-<br>   Extra Deck Monsters-
-<br>       Fusion-
-<br>       Synchro-
-<br>       XYZ-
-<br>       Link-
-<br>   -Spells
-<br>    -Traps
-<br>        Gozen Match
-<br>        Royal Decree
-<br>======Semi Limited======
-<br>    Monsters-
-<br>        -Main Deck Monsters
-<br>            Destiny Hero Malicious
-<br>        -Ritual Monsters
-<br>    Extra Deck Monsters-
-<br>        Fusion-
-<br>        Synchro-
-<br>        XYZ-
-<br>        Link-
-<br>    -Spells
-<!-- Probably Should Go To 3 -->
-<br>        Super Polymerization 
-<br>    -Traps
-<br> 
-<br>
-<br>
-<br>Banlists are subject to change and will ebb and flow with time
-<br>==================================================================
-<br>Prizing: I cashapp you 10 bucks(On Hold ATM BC i am currently unemployed and poor)
-<br>
-<br>
-<br>About the format:
-<br>Heart of the Underdog is an alternate format for local tournaments that is offered by Official Tournament Stores (OTS) that is designed to encourage Duelists to flex their Deck building skills in a fun and creative way. The format is primarily intended to be fun and casual, rather than being competitive, allowing Duelists different ways to enjoy participating in Yu-Gi-Oh! TRADING CARD GAME (TCG) tournaments.
-
-Heart of the Underdog tournaments require all Duelists build a Deck using a Deck Type that is not prominent in the current metagame. The final determination of whether a Deck Type is allowed is at the discretion of the OTS, so make sure to reach out to your OTS before you start building your Heart of the Underdog Deck!
-
-As with all local tournaments, each OTS determines the tournament entry and prizing. So please check with your OTS for these details. Each Duelist will receive Yu-Gi-Oh! TCG product prizing with a value equal to or greater than the entry fee.
-
-The tournament can use either the Advanced or Traditional Forbidden & Limited List, so make sure you check in with your OTS on which Forbidden & Limited list to prepare for.
 </p>
-<p>Citation: <a href="https://www.yugioh-card.com/en/play/alternate_format_tournaments/heart-of-the-underdog/" target="_blank">yugioh-card.com</a></p>
-<br>
-<p>Sign Ups: <a href="https://challonge.com/communities/TheWinstonCup" target="_blank">https://challonge.com/communities/TheWinstonCup</a></p>
+</div>
+
+
+<div class="container">
+  <h2>Banned/Limited Cards in Addendum:</h2>
+<button class="btn btn-primary" *ngIf="!bannedCards" (click)="onClickCards()">Text View</button>
+<button class="btn btn-outline-primary" *ngIf="!bannedCards">Image View</button>
+<button class="btn btn-outline-primary" *ngIf="bannedCards">Text View</button>
+<button class="btn btn-primary" *ngIf="bannedCards" (click)="onClickCards()">Image View</button>
+  <div class="container" *ngIf="bannedCards">
+    
+    <p>
+    <br>======Banned=======
+    <br>    Monsters-
+    <br>        -Main Deck Monsters
+    <br>            Kelbek the Ancient Vanguard
+    <br>            Maxx "C"
+    <br>            Agido the Ancient Sentry
+    <br>            Cactus Bouncer
+    <br>            Mathmech Circular
+    <br>            Superheavy Samurai Prodigy Wakaushi 
+    <br>        -Ritual Monsters
+    <br>            Herald of Ultimateness
+    <br>            Herald of Perfection
+    <br>            Amorphactor Pain, the Imagination Dracoverlord
+    <br>   Extra Deck Monsters-
+    <br>       Fusion-
+    <br>           Destiny HERO - Destroyer Phoenix Enforcer
+    <br>       Synchro-
+    <br>           Barone De Fleur
+    <br>           Psychic End Punisher
+    <br>       XYZ-
+    <br>           Divine Arnsenal AA-Zeus - Sky Thunder
+    <br>        Link-
+    <br>           AccessCode Talker
+    <br>           Apollousa Bow Of The Goddess
+    <br>           Predaplant Verte Anaconda
+    <br>           Guardragon Pisty
+    <br>           Mekk-Knight Crusadia Avramax
+    <br>           Underworld Goddess of the Closed World
+    <br>
+    <br>    -Spells
+    <br>    -Traps
+    <br>        Skill Drain
+    <br>        Rivalry Of The Warlords
+    <br>   Dimensional Barrier
+    <br>   ======Limited======
+    <br>    Monsters-
+    <br>        -Main Deck Monsters
+    <br>          Dimension Shifter
+    <br>          Droll & Lock Bird
+    <br>          Diabellstar the Black Witch
+    <br>        -Ritual Monsters
+    <br>   Extra Deck Monsters-
+    <br>       Fusion-
+    <br>       Synchro-
+    <br>       XYZ-
+    <br>       Link-
+    <br>   -Spells
+    <br>        Numeron Network
+    <br>    -Traps
+    <br>        Gozen Match
+    <br>        Royal Decree
+    <br>======Semi Limited======
+    <br>    Monsters-
+    <br>        -Main Deck Monsters
+    <br>            Destiny Hero Malicious
+    <br>        -Ritual Monsters
+    <br>    Extra Deck Monsters-
+    <br>        Fusion-
+    <br>        Synchro-
+    <br>        XYZ-
+    <br>        Link-
+    <br>    -Spells
+    <br>    -Traps
+    </p>
+    </div>
+    <div class="container" *ngIf="!bannedCards">
+        <div *ngFor="let card of banlist" class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.ygoprodeck.com/images/cards/{{card.cardid}}.jpg" alt="image" width="auto" height="100%">
+          <div class="card-body">
+            <h2 class="card-title">
+              {{card.cardname}}
+            </h2>
+            <p class="card-text">
+              
+            </p>
+            <a href="#" class="btn btn-primary">{{card.status}}</a>
+          </div>
+      </div>
+      </div>
+</div>
+

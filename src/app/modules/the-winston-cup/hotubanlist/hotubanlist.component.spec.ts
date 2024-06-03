@@ -8,8 +8,8 @@ describe('HotubanlistComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HotubanlistComponent ]
-    })
+    imports: [HotubanlistComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(HotubanlistComponent);

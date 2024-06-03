@@ -3,12 +3,24 @@
 }
 
 .btn-primary{
-    margin-bottom: 1em;
+    margin: 1em;
     display: inline-block;
 }
 .navbar{
     margin-bottom: 4%;
 }
-li {
-    list-style-type:none;
+.card {
+    text-align: center;
+    margin:1em;
+  }
+
+  img {
+    
+    object-fit: cover;
+    object-position: center center;
+    width: 250px;
+    height: 250px;
+}
+p,h1,h2,h3,h4,h5,h6 {
+    color:black
 }

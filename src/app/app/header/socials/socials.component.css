@@ -1,0 +1,13 @@
+a {
+    display: inline-block;
+    margin: 0.1em;
+}
+.offcanvas{
+    background-color: #212555;
+}
+.btn-close{
+    background-color: white;
+}
+h2 {
+    color: white;
+}

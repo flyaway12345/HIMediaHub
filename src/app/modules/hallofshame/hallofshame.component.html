@@ -2,21 +2,38 @@
     <h1>-Hall Of Shame-</h1>
 </div>
 <div class="d-flex justify-content-center">
-    <h2>Bots, Scammers, & Solicitors</h2>
+    <h2>Bots, Scammers, Solicitors & Banned Users</h2>
 </div>
+
 <div class="d-flex justify-content-center">
-    <h5>list deliniated with commas for copy/paste compatibility with your blacklist</h5>
+    <a class="btn btn-primary" href="https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/hallofshame/data/shameList.json" target="_blank">JSON</a>
 </div>
 <br>
 <br>
 <br>
-<p>
-    lindamartin1,kianavtuber,rightwingcv,
-    confidencestream,maverickcarteer,gladdraf,
-    readableshutdo,dakidlosblackmysoul,superfluousva,
-    frenziedcouple,eternalspacebear98y,goremateoyf,
-    offermvp,handsnd,lifnars,sethan_123,leeyenditaa,ivanparkin,
-    jamesbryanzanette,lebozzniak67,kytokudo9ho65,benddover39,dedekagung
-    ,queijo321123,juumixq,h0ub4_,heresmuscle,gregmc20202,ohygoor,marciochapa,
-    xeruvim,ctheantisocial32175,sforever188,jmk14091982k2
-</p>
+    
+
+    <button class="btn btn-primary" *ngIf="card" (click)="onClick()">Text View</button>
+    <button class="btn btn-outline-primary" *ngIf="card">Image View</button>
+    <button class="btn btn-outline-primary" *ngIf="!card">Text View</button>
+    <button class="btn btn-primary" *ngIf="!card" (click)="onClick()">Card View</button>
+    <p>
+        <br>
+    </p>
+    <div *ngIf="card">
+        <p *ngFor="let user of listOfNames">{{user.name}},</p>
+    </div>
+    
+    
+    
+    <div class="container" *ngIf="!card">
+        <div *ngFor="let user of listOfNames" class="card" style="width: auto;">
+          <div class="card-body">
+            <h2 class="card-title">
+              {{user.name}}
+            </h2>
+            <h4><strong>Date Added:</strong> {{user.dateBanned}} <br></h4>
+            <h4><strong>Crime:</strong> {{user.reasonForBan}} <br></h4>
+          </div>
+      </div>
+      </div>

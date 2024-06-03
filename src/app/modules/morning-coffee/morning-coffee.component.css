@@ -1,0 +1,8 @@
+.card{
+    margin: 1em;
+    padding:0.3em;
+    box-shadow: 2px;
+}
+p,h4,h5,h6 {
+    color:black
+}

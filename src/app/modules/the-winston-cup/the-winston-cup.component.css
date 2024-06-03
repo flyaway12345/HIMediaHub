@@ -1,3 +1,25 @@
-.btn {
-    margin:5em
+.nav-link {
+    color: white;
+}
+
+.btn-primary{
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.navbar{
+    margin-bottom: 4%;
+}
+li {
+    list-style-type:none;
+    color:white;
+}
+.offcanvas-body,.offcanvas-header,.offcanvas-LeaderBoard{
+    background-color: #212555;
+}
+.btn-close{
+    background-color: white;
+}
+.row{
+    margin: 1em;
 }

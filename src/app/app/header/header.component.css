@@ -1,4 +1,4 @@
-.nav-link {
+.nav-link,h2 {
     color: white;
 }
 
@@ -12,4 +12,10 @@
 }
 li {
     list-style-type:none;
+}
+.offcanvas-body,.offcanvas-header{
+    background-color: #212555;
+}
+.btn-close{
+    background-color: white;
 }

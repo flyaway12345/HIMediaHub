@@ -1,0 +1,21 @@
+<!-- <h1 style="color: white;">
+    <button class="btn btn-primary" (click)="orderByWinstonCupLevel()">Order By Winston Cup Level</button>
+    <button class="btn btn-primary" (click)="orderByCrowns()">Order By Crowns</button>
+</h1> -->
+<div class="container">
+    <div *ngFor="let player of leaderboard" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{player.profilePicture}}" alt="Profile Pic">
+      <div class="card-body">
+        <h2 class="card-title">
+          {{player.name}}(👑{{player.crowns}})
+        </h2>
+        <h3 class="card-text">
+        </h3>
+        <h4><strong>Challenge Titles:</strong></h4>
+        <p>{{player.titles}}</p>
+        <a href="https://discordlookup.com/user/{{player.UserID}}" class="btn btn-primary" target="_blank">Profile</a>
+        <a href="{{player.social}}" class="btn btn-primary" target="_blank">Social</a>
+      </div>
+  </div>
+  </div>
+  

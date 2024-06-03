@@ -1,46 +1,27 @@
 <nav class="navbar bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="assets/himedialogo.png" 
+            <img src="https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/assets/favicon.ico" 
             alt="" width="30" height="24">
-        </a>  
-        <app-socials></app-socials>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        </a> 
+            <app-socials></app-socials>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
             |||
-        </button>
+        </button> 
         <!---SideBAr-->
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Welcome To HIMediaTV</h5>
+            <h2 class="offcanvas-title" id="offcanvasHeaderLabel">Welcome To HIMediaTV</h2>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <!--Sidebar Links-->
         <div class="offcanvas-body">
-            <li><a class="btn btn-primary"routerLink="links">Links</a></li>
-            <li><a class="btn btn-primary" routerLink="../watchbox">Watchbox </a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">The Winston Cup</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="btn btn-primary" href="https://challonge.com/communities/TheWinstonCup" target="_blank">Sign Up</a></li>
-                        <li><a class="btn btn-primary" routerLink="hotubanlist">YGO Banlist</a></li>                        
-                        <li><a class="btn btn-primary" routerLink="thewinstoncup">See All</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">App Directory</button>
-                    <ul class="dropdown-menu">
-                        <li><a class="btn btn-primary" routerLink="../hallofshame">Hall Of Shame</a></li>
-                        <li><a class="btn btn-primary" routerLink="../games">Games</a></li>
-                        <li><a class="btn btn-primary" routerLink="../cookbook">Cookbook</a></li>
-                        <li><a class="btn btn-primary" href="https://flyaway12345.github.io/Audiodex/" target="_blank">Audiodex</a></li>
-                        <li><a class="btn btn-primary" routerLink="appDir">See All</a></li>
-                    </ul>
-                </div>
-            </li>
-              <app-live></app-live>
+            <li><a class="btn btn-primary" type="button" href="https://himedia.gg/">Links</a></li>
+            <li><a class="btn btn-primary" type="button" href="https://himedia.gg/live">Watchbox </a></li>
+            <li><a class="btn btn-primary" type="button" href="https://himedia.gg/podcasts">Podcasts</a></li>
+            <li><a class="btn btn-primary" type="button" href="https://himedia.gg/thewinstoncup">The Winston Cup</a></li>
+            <li><a class="btn btn-primary" type="button" href="https://himedia.gg/appDir">App Directory</a></li>
+            <app-live-mobile></app-live-mobile>
         </div>
         </div>  
     </div>

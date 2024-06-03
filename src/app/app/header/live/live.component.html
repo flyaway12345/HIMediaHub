@@ -1,0 +1,11 @@
+
+
+        <div class="row" *ngIf="liveswitch">
+            <div class="d-flex justify-content-center">
+                <app-live-desktop></app-live-desktop>
+            </div>
+        </div>
+        <div class="row" *ngIf="!liveswitch">
+            <div class="d-flex justify-content-center">
+                <app-live-mobile></app-live-mobile>
+            </div>

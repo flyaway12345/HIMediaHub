@@ -8,8 +8,8 @@ describe('Bloonstd4Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Bloonstd4Component ]
-    })
+    declarations: [Bloonstd4Component]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(Bloonstd4Component);
