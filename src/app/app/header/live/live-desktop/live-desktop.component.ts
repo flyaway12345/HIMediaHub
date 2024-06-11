@@ -15,4 +15,13 @@ export class LiveDesktopComponent {
   playerSwitch() {
     this.twitchOrKick = !this.twitchOrKick;
   }
+  // setKick(){
+
+  // }
+  // setTwitch(){
+
+  // }
+  // setTrovo(){
+    
+  // }
 }
