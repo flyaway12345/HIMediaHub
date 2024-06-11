@@ -34,6 +34,11 @@ import { CrownLeaderboardComponent } from './modules/crown-leaderboard/crown-lea
 import { CommandsComponent } from './modules/watchbox/live-menu/interaction-menu/commands/commands.component';
 import { DefaultCommandsComponent } from './modules/watchbox/live-menu/interaction-menu/commands/default-commands/default-commands.component';
 import { SoundAlertsComponent } from './modules/watchbox/live-menu/interaction-menu/commands/sound-alerts/sound-alerts.component';
+import { TrovoComponent } from './app/header/live/live-mobile/trovo/trovo.component';
+import { YoutubeComponent } from './app/header/live/live-mobile/youtube/youtube.component';
+import { KickComponent } from './app/header/live/live-mobile/kick/kick.component';
+import { TwitchComponent } from './app/header/live/live-mobile/twitch/twitch.component';
+
 
 export const routes: Routes = [
     {path: '' ,component: LinksComponent},
@@ -80,5 +85,10 @@ export const routes: Routes = [
 {path: 'default-commands', component: DefaultCommandsComponent},
 {path: 'sound-alerts', component: SoundAlertsComponent},
 {path: 'HIMediaTVNewsUpdate', component: HimediatvNewsUpdateComponent},
+{path: 'commands', component: CommandsComponent},
+{path: 'trovo', component: TrovoComponent},
+{path: 'youtube', component: YoutubeComponent},
+{path: 'kick', component: KickComponent},
+{path: 'twitch', component: TwitchComponent},
 {path: '**' ,component: Error404Component}
 ];
