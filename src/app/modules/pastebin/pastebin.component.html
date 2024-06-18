@@ -1,13 +1,14 @@
 <div class="container">
     <div *ngFor="let item of pasteList" class="card" style="width: 18rem;">
-    <img class="card-img-top" src="{{item.img}}" alt="Profile Pic">
+    <img class="card-img-top" src="{{item.img}}" alt="Cover Photo">
       <div class="card-body">
         <h2 class="card-title">
           {{item.name}}
         </h2>
         <h3 class="card-text">
+            <p>{{item.description}}</p>
         </h3>
-        <p>{{item.description}}</p>
+
         <a href="{{item.url}}" class="btn btn-primary" target="_blank">Link</a>
       </div>
   </div>
