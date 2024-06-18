@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 })
 export class PastebinComponent {
   pasteList: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/crown-pasteList/data/pasteList.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/pastebin.json';
   public constructor(private http: HttpClient) {}
   
   public orderByID(): void {
