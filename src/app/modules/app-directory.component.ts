@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { filter, map } from 'rxjs';
 
 @Component({
   selector: 'app-app-directory', 
@@ -12,7 +13,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     RouterLink,
     RouterLinkActive,
     FormsModule,
-    CommonModule 
+    CommonModule, 
   ],
   templateUrl: './app-directory.component.html',
   styleUrls: ['./app-directory.component.css']
@@ -28,15 +29,15 @@ export class AppDirectoryComponent implements OnInit {
     this.appList = this.appList.sort((a: { id: number; }, b: { id: number; }) => b.id - a.id);
     console.log("sorted");
   }
-  public performFilter() {
-    this.appList = this.appList.filter((res: { display: boolean; }) => res.display == true);
-    console.log("filtered");
+  public filterApps():void {
   }
-  
-  ngOnInit(): void {
+  public getData() {
     this.http.get(this.url).subscribe(res => {
       this.appList = res;
-  });
-  
+      console.log("data aquired");
+    });
+  }
+  ngOnInit(): void {
+    this.getData();
 }
 }

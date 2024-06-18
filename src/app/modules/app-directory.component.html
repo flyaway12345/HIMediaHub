@@ -11,8 +11,20 @@
     <h1 style="color: white;">App Directory</h1>
 </div>
 <div class="row">
-        <div *ngFor="let item of appList"  class="card" style="width: 18rem;">
-            <div class="card-body">
+        <div *ngFor="let item of appList;" class="card" style="width: 18rem;">
+            <div *ngIf="item.display" class="card-body">
+                <img src="{{item.img}}" alt="">
+                <h2 class="card-title">
+                {{item.name}}
+                </h2>
+                <p class="card-text">
+                    {{item.description}}
+                <br>
+                
+                </p>
+                <a class="btn btn-primary" routerLink="{{item.routerLink}}">{{item.name}}</a>
+            </div>
+            <div *ngIf="!item.display" class="card-body">
                 <img src="{{item.img}}" alt="">
                 <h2 class="card-title">
                 {{item.name}}
