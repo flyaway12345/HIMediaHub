@@ -7,9 +7,16 @@
         "placeholder":""
     },
     {
+        "id": "1",
+        "name":"PetSafe bug spray and cleaning fluid",
+        "url":"https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/data/petSafeBugSprayAndCleaningFluid.txt",
+        "description":"Homemade cocktail that i made so i could clean, get rid of bugs and make my cat NOT have a asthma attack",
+        "placeholder":""
+    },
+    {
         "id": "",
         "name":"",
-        "url":"https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w?sub_confimration=1",
+        "url":"",
         "description":"",
         "placeholder":""
     }
