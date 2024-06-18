@@ -471,20 +471,32 @@
     {
     "id":"78",
     "name": "auroraelena192", 
-    "dateBanned": "",
-    "reasonForBan": ""
+    "dateBanned": "6/11/24",
+    "reasonForBan": "Bot"
     },
     {
     "id":"79",
     "name": "splendid847", 
-    "dateBanned": "",
-    "reasonForBan": ""
+    "dateBanned": "6/11/24",
+    "reasonForBan": "Bot"
     },
     {
     "id":"80",
     "name": "falcao0967", 
-    "dateBanned": "",
-    "reasonForBan": ""
+    "dateBanned": "6/11/24",
+    "reasonForBan": "Bot"
+    },
+    {
+    "id":"81",
+    "name": "brashhavoc", 
+    "dateBanned": "6/16/24",
+    "reasonForBan": "Scammer"
+    },
+    {
+    "id":"82",
+    "name": "allo­son_­b", 
+    "dateBanned": "6/16/24",
+    "reasonForBan": "Scammer"
     },
     {
     "id":"",
@@ -493,5 +505,4 @@
     "reasonForBan": ""
     }
 ]
-
 
