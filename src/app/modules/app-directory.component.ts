@@ -36,7 +36,6 @@ export class AppDirectoryComponent implements OnInit {
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.appList = res;
-      this.orderByID();
   });
   
 }
