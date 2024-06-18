@@ -6,7 +6,7 @@
         "img":"https://gamipress.com/wp-content/uploads/2018/12/leaderboards.svg",
         "link":"leaderboard",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -16,7 +16,7 @@
         "img":"https://media.istockphoto.com/id/1178889512/vector/retro-tv-set-with-antenna-and-stripes-on-the-screen-vintage-style-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=kpZ9XIQ_H5D7_r0vmWSgIyiBo6VpSL4FsCCEVh3jQng=",
         "link":"live",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -26,7 +26,7 @@
         "img":"https://www.apple.com/v/apple-podcasts/e/images/meta/apple-podcasts__b2lbt81axo2u_og.png",
         "link":"podcasts",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -36,7 +36,7 @@
         "img":"https://i.ytimg.com/vi/2C5BnYTsNW8/hqdefault.jpg",
         "link":"cookbook",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -46,7 +46,7 @@
         "img":"https://gameforge.com/de-DE/littlegames/includes/images/games/13426_5ec634fec15e3.jpg",
         "link":"games",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -56,7 +56,7 @@
         "img":"https://static.vecteezy.com/system/resources/previews/013/387/754/original/paste-icon-in-isolation-on-a-white-background-paste-symbols-for-web-and-mobile-apps-free-vector.jpg",
         "link":"pastebin",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -66,7 +66,7 @@
         "img":"https://www.lrswebsolutions.com/Resources/80af515b-b4fd-4cb1-aafe-0be0560240cf/blog-writing-600.png",
         "link":"blog",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -76,7 +76,7 @@
         "img":"https://i.ytimg.com/vi/Ggi45bz92mM/hqdefault.jpg?v=6529e7e2",
         "link":"thewinstoncup",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -86,7 +86,7 @@
         "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/640px-Roasted_coffee_beans.jpg",
         "link":"morning-coffee",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -96,7 +96,7 @@
         "img":"https://miro.medium.com/v2/resize:fit:640/format:webp/0*iDtsY3jq8XuwEF_t.gif",
         "link":"links",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -106,7 +106,7 @@
         "img":"https://bostonspiritmagazine.com/wp-content/uploads/2023/07/Hall-of-Shame-centered-2.jpg",
         "link":"hallofshame",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -116,7 +116,7 @@
         "img":"https://d3wo5wojvuv7l.cloudfront.net/t_square_limited_720/images.spreaker.com/original/48b5299b1e6d24eb15ef7f525404e89d.jpg",
         "link":"audiodex",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {
@@ -146,7 +146,7 @@
         "img":"https://res.cloudinary.com/teepublic/image/private/s--wbKyetP6--/t_Resized%20Artwork/c_crop,x_10,y_10/c_fit,w_456/c_crop,g_north_west,h_626,w_470,x_-4,y_-29/g_north_west,u_upload:v1462829015:production:blanks:mtl53ofohwq5goqjo9ke,x_-399,y_-354/b_rgb:eeeeee/c_limit,f_auto,h_630,q_auto:good:420,w_630/v1639434986/production/designs/26303402_1.jpg",
         "link":"merch",
         "isRouter":"true",
-        "display":"1",
+        "display":1,
         "placeholder":""
     },
     {

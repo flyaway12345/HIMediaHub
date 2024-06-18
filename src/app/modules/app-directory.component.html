@@ -12,7 +12,7 @@
 </div>
 <div class="row">
         <div *ngFor="let item of appList;" class="card" style="width: 18rem;">
-            <div class="card-body" *ngIf="item.display === 'true'">
+            <div class="card-body" *ngIf="item.display === '1'">
                 <img src="{{item.img}}" alt="">
                 <h2 class="card-title">
                 {{item.name}}
