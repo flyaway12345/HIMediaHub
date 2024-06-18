@@ -26,7 +26,7 @@ export class AppDirectoryComponent implements OnInit {
   public constructor(private http: HttpClient) {}
   
   public orderByVisibility(): void {
-    this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => b.display - a.display);
+    this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => a.display - b.display);
     console.log("sorted");
   }
   public filterApps():void {
@@ -36,7 +36,6 @@ export class AppDirectoryComponent implements OnInit {
       this.appList = res;
       console.log("data aquired");
     });
-    this.orderByVisibility();
   }
   checkRouter(check:boolean){
     if(check == true){
@@ -47,6 +46,6 @@ export class AppDirectoryComponent implements OnInit {
   }
   ngOnInit(): void {
     this.getData();
-    
+    this.orderByVisibility()
 }
 }
