@@ -25,7 +25,7 @@ export class AppDirectoryComponent implements OnInit {
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/modulesList.json';
   public constructor(private http: HttpClient) {}
   
-  public orderByID(): void {
+  public orderByVisibility(): void {
     this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => b.display - a.display);
     console.log("sorted");
   }
@@ -36,6 +36,7 @@ export class AppDirectoryComponent implements OnInit {
       this.appList = res;
       console.log("data aquired");
     });
+    this.orderByVisibility();
   }
   checkRouter(check:boolean){
     if(check == true){
@@ -46,5 +47,6 @@ export class AppDirectoryComponent implements OnInit {
   }
   ngOnInit(): void {
     this.getData();
+    
 }
 }
