@@ -4,7 +4,6 @@
         "name":"Blocked Words",
         "url":"https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/data/blockedwords.txt",
         "description":"This List Of Blocked Words For Youtube Was Last Updated On 6/18/24",
-        "img":"https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F171216124335-cdc-banned-words.jpg",
         "placeholder":""
     },
     {
@@ -12,7 +11,6 @@
         "name":"",
         "url":"https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w?sub_confimration=1",
         "description":"",
-        "img":"https://e7.pngegg.com/pngimages/232/288/png-clipart-computer-icons-symbol-cut-copy-and-paste-symbol-miscellaneous-text.png",
         "placeholder":""
     }
 ]
