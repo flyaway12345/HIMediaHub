@@ -26,7 +26,7 @@ export class AppDirectoryComponent implements OnInit {
   public constructor(private http: HttpClient) {}
   
   public orderByID(): void {
-    this.appList = this.appList.sort((a: { id: number; }, b: { id: number; }) => b.id - a.id);
+    this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => b.display - a.display);
     console.log("sorted");
   }
   public filterApps():void {
@@ -36,6 +36,13 @@ export class AppDirectoryComponent implements OnInit {
       this.appList = res;
       console.log("data aquired");
     });
+  }
+  checkRouter(check:boolean){
+    if(check == true){
+      return true;
+    }else{
+      return false
+    }
   }
   ngOnInit(): void {
     this.getData();
