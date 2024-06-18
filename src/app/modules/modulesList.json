@@ -4,7 +4,7 @@
         "name": "Leaderboard",
         "description":"See How You Rank In The HIMediaTV Community",
         "img":"https://gamipress.com/wp-content/uploads/2018/12/leaderboards.svg",
-        "routerLink":"",
+        "routerLink":"leaderboard",
         "placeholder":""
     },
     {
