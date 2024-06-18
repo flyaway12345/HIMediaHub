@@ -2,8 +2,8 @@
     {
         "id": "0",
         "name":"Blocked Words",
-        "url":"",
-        "description":"",
+        "url":"https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/data/blockedwords.txt",
+        "description":"This List Of Blocked Words For Youtube Was Last Updated On 6/18/24",
         "img":"https://dryuc24b85zbr.cloudfront.net/tes/resources/11360913/image",
         "placeholder":""
     },
