@@ -1,0 +1,16 @@
+<div class="container">
+    <div *ngFor="let item of pasteList" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{item.profilePicture}}" alt="Profile Pic">
+      <div class="card-body">
+        <h2 class="card-title">
+          {{item.name}}(👑{{item.crowns}})
+        </h2>
+        <h3 class="card-text">
+        </h3>
+        <h4><strong>Challenge Titles:</strong></h4>
+        <p>{{item.titles}}</p>
+        <a href="https://discordlookup.com/user/{{item.UserID}}" class="btn btn-primary" target="_blank">Profile</a>
+        <a href="{{item.social}}" class="btn btn-primary" target="_blank">Social</a>
+      </div>
+  </div>
+  </div>

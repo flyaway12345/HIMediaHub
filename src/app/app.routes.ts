@@ -38,6 +38,7 @@ import { TrovoComponent } from './app/header/live/live-mobile/trovo/trovo.compon
 import { YoutubeComponent } from './app/header/live/live-mobile/youtube/youtube.component';
 import { KickComponent } from './app/header/live/live-mobile/kick/kick.component';
 import { TwitchComponent } from './app/header/live/live-mobile/twitch/twitch.component';
+import { PastebinComponent } from './modules/pastebin/pastebin.component';
 
 
 export const routes: Routes = [
@@ -90,5 +91,6 @@ export const routes: Routes = [
 {path: 'youtube', component: YoutubeComponent},
 {path: 'kick', component: KickComponent},
 {path: 'twitch', component: TwitchComponent},
+{path: 'pastebin', component: PastebinComponent},
 {path: '**' ,component: Error404Component}
 ];
