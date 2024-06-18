@@ -12,7 +12,7 @@
 </div>
 <div class="row">
         <div *ngFor="let item of appList;" class="card" style="width: 18rem;">
-            <div class="card-body" *ngIf="item.display === 'true'">
+            <div class="card-body" *ngIf="item.display">
                 <img src="{{item.img}}" alt="">
                 <h2 class="card-title">
                 {{item.name}}
@@ -22,8 +22,8 @@
                 <br>
                 
                 </p>
-                <a *ngIf="item.isRouter === 'true'"  class="btn btn-primary" routerLink="../{{item.link}}">{{item.name}}</a>
-                <a *ngIf="item.isRouter === 'false'" class="btn btn-primary" href="{{item.link}}">{{item.name}}</a>
+                <a *ngIf="item.isRouter"  class="btn btn-primary" routerLink="../{{item.link}}">{{item.name}}</a>
+                <a *ngIf="!item.isRouter" class="btn btn-primary" href="{{item.link}}">{{item.name}}</a>
             </div>
         </div>
 </div>
