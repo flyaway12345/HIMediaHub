@@ -22,8 +22,8 @@
                 <br>
                 
                 </p>
-                <a *ngIf="!item.isRouter" class="btn btn-primary" href="{{item.routerLink}}">{{item.name}}</a>
-                <a *ngIf="item.isRouter"  class="btn btn-primary" routerLink="{{item.routerLink}}">{{item.name}}</a>
+                <a *ngIf="!item.isRouter" class="btn btn-primary" href="{{item.link}}">{{item.name}}</a>
+                <a *ngIf="item.isRouter"  class="btn btn-primary" routerLink="{{item.link}}">{{item.name}}</a>
             </div>
         </div>
 </div>
