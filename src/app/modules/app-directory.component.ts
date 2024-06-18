@@ -23,10 +23,11 @@ export class AppDirectoryComponent implements OnInit {
   appList: any;
   displayApp: boolean = true;
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/modulesList.json';
+
   public constructor(private http: HttpClient) {}
   
   public orderByVisibility(): void {
-    this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => a.display - b.display);
+    this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => b.display - a.display);
     console.log("sorted");
   }
   public filterApps():void {
@@ -35,7 +36,9 @@ export class AppDirectoryComponent implements OnInit {
     this.http.get(this.url).subscribe(res => {
       this.appList = res;
       console.log("data aquired");
+      this.orderByVisibility()
     });
+    
   }
   checkRouter(check:boolean){
     if(check == true){
@@ -44,8 +47,11 @@ export class AppDirectoryComponent implements OnInit {
       return false
     }
   }
+  manualHide(){
+    
+  }
   ngOnInit(): void {
     this.getData();
-    this.orderByVisibility()
+
 }
 }

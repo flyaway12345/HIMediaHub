@@ -20,7 +20,6 @@
                 <p class="card-text">
                     {{item.description}}
                 <br>
-                
                 </p>
                 <a *ngIf="item.isRouter === true"  class="btn btn-primary" routerLink="../{{item.link}}">{{item.name}}</a>
                 <a *ngIf="item.isRouter === false" class="btn btn-primary" href="{{item.link}}">{{item.name}}</a>
