@@ -14,6 +14,27 @@
         "placeholder":""
     },
     {
+        "id": "2",
+        "name":"Mental Health Resources",
+        "url":"https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/data/MentalHealthResorces.txt",
+        "description":"If you are in crisis seek help you are important",
+        "placeholder":""
+    },
+    {
+        "id": "3",
+        "name":"Digital Consumers Bill Of Rights",
+        "url":"https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/data/DigitalConsumersBillOfRights.txt",
+        "description":"what is piracy if buying is not owning",
+        "placeholder":""
+    },
+    {
+        "id": "4",
+        "name":"youngjordies Coronation Video Research",
+        "url":"https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/pastebin/data/data/youngjordiesCoronation.txt",
+        "description":"Sources for research into YOUNAN CONSTRUCTIONS and the allegid crimes of their owners",
+        "placeholder":""
+    },
+    {
         "id": "",
         "name":"",
         "url":"",
