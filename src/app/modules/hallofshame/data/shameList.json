@@ -499,6 +499,12 @@
     "reasonForBan": "Scammer"
     },
     {
+    "id":"83",
+    "name": "Knabies14", 
+    "dateBanned": "6/24/24",
+    "reasonForBan": "Solicitor"
+    },
+    {
     "id":"",
     "name": "", 
     "dateBanned": "",
