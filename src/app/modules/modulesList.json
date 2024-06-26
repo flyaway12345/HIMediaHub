@@ -66,7 +66,7 @@
         "img":"https://www.lrswebsolutions.com/Resources/80af515b-b4fd-4cb1-aafe-0be0560240cf/blog-writing-600.png",
         "link":"blog",
         "isRouter":true,
-        "display":1,
+        "display":0,
         "placeholder":""
     },
     {
