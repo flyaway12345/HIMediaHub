@@ -3,6 +3,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TimerMenuComponent } from "./timer-menu/timer-menu.component";
 import { InteractionMenuComponent } from "./interaction-menu/interaction-menu.component";
 import { DiscordComponent } from "../../../app/header/discord/discord.component";
+import { StreamCalenderComponent } from "../stream-calender/stream-calender.component";
 
 @Component({
     selector: 'app-live-menu',
@@ -15,7 +16,8 @@ import { DiscordComponent } from "../../../app/header/discord/discord.component"
         RouterLinkActive,
         TimerMenuComponent,
         InteractionMenuComponent,
-        DiscordComponent
+        DiscordComponent,
+        StreamCalenderComponent
     ]
 })
 export class LiveMenuComponent implements OnInit {

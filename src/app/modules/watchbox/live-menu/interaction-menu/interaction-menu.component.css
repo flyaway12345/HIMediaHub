@@ -22,3 +22,6 @@ li{
 .btn-close{
     background-color: white;
 }
+.btn-primary {
+    margin-bottom: 0.5em;
+}
