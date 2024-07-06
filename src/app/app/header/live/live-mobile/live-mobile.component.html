@@ -1,11 +1,13 @@
 <div *ngIf="!twitchOrKick">     
     <a class="btn twitch"  target="_blank"><i class="fa-brands fa-twitch"></i></a>
     <a class="btn kick" target="_blank"><i class="fa-brands fa-kickstarter-k" (click)="playerSwitch()"></i></a>
+    <a class="btn youtube" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live" target="_blank"><i class="fa-brands fa-youtube"></i></a>
     <app-twitch></app-twitch>
 </div>
 
 <div *ngIf="twitchOrKick" >
     <a class="btn twitch"  target="_blank"><i class="fa-brands fa-twitch" (click)="playerSwitch()"></i></a>
     <a class="btn kick" target="_blank"><i class="fa-brands fa-kickstarter-k"></i></a>
+    <a class="btn youtube" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live" target="_blank"><i class="fa-brands fa-youtube"></i></a>
     <app-kick></app-kick>
 </div>

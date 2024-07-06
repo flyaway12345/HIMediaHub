@@ -5,8 +5,6 @@ import { CommonModule } from '@angular/common';
 import { LiveMenuComponent } from "./live-menu/live-menu.component";
 import { DiscordComponent } from "../../app/header/discord/discord.component";
 import { CommandsComponent } from "./live-menu/interaction-menu/commands/commands.component";
-import { StreamCalenderComponent } from "./stream-calender/stream-calender.component";
-
 @Component({
     selector: 'app-watchbox',
     standalone: true,
@@ -18,8 +16,7 @@ import { StreamCalenderComponent } from "./stream-calender/stream-calender.compo
         CommonModule,
         LiveMenuComponent,
         DiscordComponent,
-        CommandsComponent,
-        StreamCalenderComponent
+        CommandsComponent
     ]
 })
 export class WatchboxComponent {
