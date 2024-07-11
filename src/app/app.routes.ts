@@ -39,6 +39,7 @@ import { YoutubeComponent } from './app/header/live/live-mobile/youtube/youtube.
 import { KickComponent } from './app/header/live/live-mobile/kick/kick.component';
 import { TwitchComponent } from './app/header/live/live-mobile/twitch/twitch.component';
 import { PastebinComponent } from './modules/pastebin/pastebin.component';
+import { StreamCalenderComponent } from './modules/watchbox/live-menu/stream-calender/stream-calender.component';
 
 
 export const routes: Routes = [
@@ -92,5 +93,7 @@ export const routes: Routes = [
 {path: 'kick', component: KickComponent},
 {path: 'twitch', component: TwitchComponent},
 {path: 'pastebin', component: PastebinComponent},
+{path: 'schedule', component: StreamCalenderComponent},
+{path: 'calendar', component: StreamCalenderComponent},
 {path: '**' ,component: Error404Component}
 ];
