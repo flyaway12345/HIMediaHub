@@ -13,8 +13,15 @@ import { TrovoComponent } from "./trovo/trovo.component";
 })
 export class LiveDesktopComponent {
   twitchOrKick:boolean = false;
+  mobHeight: any;
+  mobWidth: any;
+  liveswitch:boolean = true;
   playerSwitch() {
     this.twitchOrKick = !this.twitchOrKick;
+  }
+  constructor() { 
+    this.mobHeight = (window.screen.height) + "px";
+    this.mobWidth = (window.screen.width) + "px";
   }
   isTwitch:boolean = true;
   isKick:boolean = false;
@@ -34,5 +41,12 @@ export class LiveDesktopComponent {
     this.isTwitch = false;
     this.isKick =false;
     this.isTrovo =true;
+  }
+  ngOnInit(): void {
+    if(this.mobWidth < this.mobHeight){
+      this.liveswitch = true;
+    }else {
+      this.liveswitch = false;
+    }
   }
 }
