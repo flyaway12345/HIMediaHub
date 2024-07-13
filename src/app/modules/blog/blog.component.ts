@@ -38,6 +38,7 @@ export class BlogComponent implements OnInit {
     this.http.get(this.url).subscribe(res => {
       this.blogData = res;
       this.orderByVisibility();
+      this.orderById();
   });
   }
   renderMarkdown(input:string){
