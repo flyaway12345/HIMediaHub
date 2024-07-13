@@ -43,10 +43,6 @@ export class LiveDesktopComponent {
     this.isTrovo =true;
   }
   ngOnInit(): void {
-    if(this.mobWidth < this.mobHeight){
-      this.liveswitch = true;
-    }else {
-      this.liveswitch = false;
-    }
+
   }
 }

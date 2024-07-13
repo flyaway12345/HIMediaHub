@@ -11,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsfeedNewsComponent implements OnInit {
 
-  constructor() { }
-
+    mobHeight: any;
+    mobWidth: any;
+  
+  constructor() { 
+    this.mobHeight = (window.screen.height) + "px";
+    this.mobWidth = (window.screen.width) + "px";
+  }
   ngOnInit(): void {
+    console.log(this.mobHeight + " search")
   }
 
 }

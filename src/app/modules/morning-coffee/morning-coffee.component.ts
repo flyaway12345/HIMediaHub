@@ -6,6 +6,9 @@ import { NewsfeedNewsComponent } from './newsfeed-news/newsfeed-news.component';
 import { HimediatvNewsUpdateComponent } from '../podcasts/himediatv-news-update/himediatv-news-update.component';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { LiveComponent } from "../../app/header/live/live.component";
+import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
+import { NerdNewsComponent } from "../podcasts/nerd-news/nerdnews.component";
 @Component({
   selector: 'app-morning-coffee', 
   standalone: true,
@@ -16,13 +19,16 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     CommonModule,
     RouterOutlet,
     RouterLink,
-    RouterLinkActive
-  ],
+    RouterLinkActive,
+    LiveComponent,
+    LiveMobileComponent,
+    NerdNewsComponent
+],
   templateUrl: './morning-coffee.component.html',
   styleUrls: ['./morning-coffee.component.css']
 })
 export class MorningCoffeeComponent implements OnInit {
- switchNewsFormat:boolean = false;
+ switchNewsFormat:boolean = true;
 newsSwap() {
 this.switchNewsFormat = !this.switchNewsFormat;
 }
@@ -30,22 +36,9 @@ quotes:any;
 dogs:any;
   constructor(private quoteService:InsperationalQuoteService, private dogService:RandomDogService) { }
 
-  pullQuotes(){
-    this.quoteService.getQuote()
-    .subscribe(response => {
-      this.quotes = response;
-    });
-  }
-  pullDog(){
-    this.dogService.getQuote()
-    .subscribe((response: any) => {
-      this.dogs = response;
-    });
-  }
   ngOnInit(): void {
-    this.pullQuotes()
-    this.pullDog()
-    console.log(this.quotes.data.quoteText)
+
+
   }
 
 }

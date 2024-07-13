@@ -20,7 +20,13 @@ import { CommandsComponent } from "./live-menu/interaction-menu/commands/command
     ]
 })
 export class WatchboxComponent {
-
+    mobHeight: any;
+    mobWidth: any;
+  
+  constructor() { 
+    this.mobHeight = (window.screen.height) + "px";
+    this.mobWidth = (window.screen.width) + "px";
+  }
 }
 
 

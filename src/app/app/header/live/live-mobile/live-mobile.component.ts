@@ -24,7 +24,6 @@ export class LiveMobileComponent implements OnInit {
 
   mobHeight: any;
   mobWidth: any;
-  liveswitch:boolean = false;
   
   constructor() { 
     this.mobHeight = (window.screen.height) + "px";
@@ -54,10 +53,6 @@ export class LiveMobileComponent implements OnInit {
     this.isTrovo =true;
   }
   ngOnInit(): void {
-    if(this.mobWidth < this.mobHeight){
-      this.liveswitch = false;
-    }else {
-      this.liveswitch = true;
-    }
+
   }
 }

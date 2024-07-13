@@ -40,6 +40,7 @@ import { KickComponent } from './app/header/live/live-mobile/kick/kick.component
 import { TwitchComponent } from './app/header/live/live-mobile/twitch/twitch.component';
 import { PastebinComponent } from './modules/pastebin/pastebin.component';
 import { StreamCalenderComponent } from './modules/watchbox/live-menu/stream-calender/stream-calender.component';
+import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
 
 
 export const routes: Routes = [
@@ -64,10 +65,11 @@ export const routes: Routes = [
   {path: 'ageOfWar', component: AgeOfWarComponent},
   {path: 'kittenCannon', component: KittenCannonComponent},
 ]},
-{path: 'morning-coffee', component: MorningCoffeeComponent,children: [
-  {path: 'news-feed', component: NewsfeedNewsComponent},
-  {path: 'audio-feed', component: HimediatvNewsUpdateComponent},
+{path: 'newsfeed', component: MorningCoffeeComponent,children: [
+  {path: 'news-rss', component: NewsfeedNewsComponent},
+  {path: 'gaming-rss', component: NewsfeedGamingComponent},
 ]},
+{path: 'morning-coffee', redirectTo: '/newsfeed', pathMatch:'full'},
 {path: 'audiodex', component: AudiodexUiComponent},
 {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
 {path: 'podcasts', component: PodcastsComponent},
