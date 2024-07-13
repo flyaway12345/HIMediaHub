@@ -12,7 +12,7 @@ import { HallofshameComponent } from './modules/hallofshame/hallofshame.componen
 import { DiscordComponent } from '../app/app/header/discord/discord.component';
 import { LinksComponent } from './modules/links/links.component';
 import { MerchComponent } from './modules/merch/merch.component';
-import { MorningCoffeeComponent } from './modules/morning-coffee/morning-coffee.component';
+import { NewsFeedComponent } from './modules/morning-coffee/newsfeed.component';
 import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/newsfeed-news.component';
 import { AudiodexUiComponent } from './modules/podcasts/audiodex/audiodex-ui/audiodex-ui.component';
 import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
@@ -65,7 +65,7 @@ export const routes: Routes = [
   {path: 'ageOfWar', component: AgeOfWarComponent},
   {path: 'kittenCannon', component: KittenCannonComponent},
 ]},
-{path: 'newsfeed', component: MorningCoffeeComponent,children: [
+{path: 'newsfeed', component: NewsFeedComponent,children: [
   {path: 'news-rss', component: NewsfeedNewsComponent},
   {path: 'gaming-rss', component: NewsfeedGamingComponent},
 ]},
