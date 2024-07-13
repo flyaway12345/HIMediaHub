@@ -35,6 +35,13 @@
         "placeholder":""
     },
     {
+        "id": "5",
+        "name":"Rainbow Passage",
+        "url":"https://rainbowpassage.org/",
+        "description":"Finding safety and rebuilding your life starts at Rainbow Passage. We offer a vital lifeline for those escaping danger, providing safe passage and a supportive transitional housing program – all at no cost to you. While we’re currently working towards expanding our services to include on-site mental health support, our team is dedicated to helping you get back on your feet. In the meantime, we can connect you with valuable mental health resources in the community.",
+        "placeholder":""
+    },
+    {
         "id": "",
         "name":"",
         "url":"",

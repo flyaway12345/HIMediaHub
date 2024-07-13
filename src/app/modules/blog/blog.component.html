@@ -33,7 +33,7 @@
     <div class="row">
             <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()">Close <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
             <div *ngFor="let posts of blogData" class="card" style="width: 18rem;">
-                <div class="card-body">
+                <div class="card-body" *ngIf="posts.display === 0">
                   <img src="{{posts.img}}" alt="">
                   <h2 class="card-title">
                     {{posts.title}}

@@ -24,10 +24,18 @@ export class BlogComponent implements OnInit {
   public constructor(private http: HttpClient,private markdownService:MarkdownService) {
 
   }
-  
+  public orderById(): void {
+    this.blogData = this.blogData.sort((a: { id: number; }, b: { id: number; }) => b.id - a.id);
+    console.log("sorted");
+  }
+  public orderByVisibility(): void {
+    this.blogData = this.blogData.sort((a: { display: number; }, b: { display: number; }) => b.display - a.display);
+    console.log("sorted");
+  }
   ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.blogData = res;
+      this.orderById();
   });
   }
   renderMarkdown(input:string){
