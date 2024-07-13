@@ -9,21 +9,6 @@
       </div>
       <div class="col-md-4">
 
-        <iframe src="https://player.twitch.tv/?channel=himediatv&parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
-        frameborder="0" 
-        allowfullscreen="true" 
-        muted="true"
-        scrolling="no"
-        height="378px" 
-        width="100%">
-        </iframe>
-        <iframe
-        id="chat_embed"
-        src="https://www.twitch.tv/embed/himediatv/chat?parent=localhost&parent=flyaway12345.github.io&parent=himedia.gg"
-        height="478px"
-        width="100%">
-        </iframe>
-        <iframe src="https://discord.com/widget?id=426459490725134339&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
       </div>
     </div>
@@ -33,7 +18,7 @@
     <div class="row">
             <a *ngIf="!clear" class="btn btn-primary" (click)="onRefresh()">Close <i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
             <div *ngFor="let posts of blogData" class="card" style="width: 18rem;">
-                <div class="card-body" *ngIf="posts.display === 0">
+                <div class="card-body" *ngIf="posts.display === 1">
                   <img src="{{posts.img}}" alt="">
                   <h2 class="card-title">
                     {{posts.title}}
