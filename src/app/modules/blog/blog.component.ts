@@ -23,6 +23,7 @@ export class BlogComponent implements OnInit {
   markdown = ``;
   activeImage: string = ""
   clear:boolean = true;
+  videoURL:string = "";
   public constructor(private http: HttpClient,private markdownService:MarkdownService) {
 
   }
@@ -40,6 +41,9 @@ export class BlogComponent implements OnInit {
       this.orderByVisibility();
       this.orderById();
   });
+  }
+  getVideo(input:string){
+    this.videoURL = input;
   }
   renderMarkdown(input:string){
     this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog/posts/';
