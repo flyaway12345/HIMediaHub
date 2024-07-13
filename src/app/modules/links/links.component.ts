@@ -27,11 +27,11 @@ import { AppDirectoryComponent } from "../app-directory.component";
 ]
 })
 export class LinksComponent implements OnInit {
-  appDirSwitchBool:boolean = false;
+  // appDirSwitchBool:boolean = false;
   constructor() { }
-  appDirSwitch(){
-    this.appDirSwitchBool = !this.appDirSwitchBool
-  }
+  // appDirSwitch(){
+  //   this.appDirSwitchBool = !this.appDirSwitchBool
+  // }
   ngOnInit(): void {
   }
 
