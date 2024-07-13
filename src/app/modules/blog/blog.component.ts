@@ -3,13 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MarkdownService,MarkdownModule } from 'ngx-markdown';
+import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
+import { DiscordComponent } from "../../app/header/discord/discord.component";
 @Component({
   selector: 'app-blog', 
   standalone: true,
-  imports: [CommonModule,MarkdownModule,
+  imports: [CommonModule, MarkdownModule,
     RouterOutlet,
     RouterLink,
-    RouterLinkActive],
+    RouterLinkActive, LiveMobileComponent, DiscordComponent],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
