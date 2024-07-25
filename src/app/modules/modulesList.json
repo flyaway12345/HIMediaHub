@@ -160,6 +160,16 @@
         "placeholder":""
     },
     {
+        "id":"16",
+        "name": "King POTUS Tracker",
+        "description":"A page to bring awareness to the miscarage of justice Turing The President Of The United States into a functional king",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-pqTfgrFPMuIOs6_6qw5ZRMG0R_e2zGl5Q&s",
+        "link":"https://flyaway12345.github.io/KingPotus/",
+        "isRouter":false,
+        "display":0,
+        "placeholder":""
+    },
+    {
         "id":"",
         "name": "",
         "description":"",
