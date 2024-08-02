@@ -162,11 +162,21 @@
     {
         "id":"16",
         "name": "King POTUS Tracker",
-        "description":"A page to bring awareness to the miscarage of justice Turing The President Of The United States into a functional king",
+        "description":"A page to bring awareness to the miscarage of justice turning The President Of The United States into a functional king",
         "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-pqTfgrFPMuIOs6_6qw5ZRMG0R_e2zGl5Q&s",
         "link":"https://flyaway12345.github.io/KingPotus/",
         "isRouter":false,
         "display":0,
+        "placeholder":""
+    },
+    {
+        "id":"17",
+        "name": "Play Tic Tac Toe",
+        "description":"Check Out This Legacy App By HIMediaTV Creations",
+        "img":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tic_tac_toe.svg/800px-Tic_tac_toe.svg.png",
+        "link":"https://flyaway12345.github.io/ticToctoeV3/",
+        "isRouter":false,
+        "display":1,
         "placeholder":""
     },
     {
