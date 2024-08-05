@@ -1,0 +1,20 @@
+<a class="btn twitch">
+    <i class="fa-brands fa-twitch" (click)="playerSwitchTwitch()"></i>
+</a>
+<a class="btn youtube">
+    <i class="fa-brands fa-youtube" (click)="playerSwitchYoutube()"></i>
+</a>
+<a class="btn trovo">
+    <img class="trovo-icon" src="https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/app/header/live/assets/trovologo.png" (click)="playerSwitchTrovo()">
+</a>
+
+
+<div *ngIf="isTwitch">     
+    <iframe src="https://server.streamavatars.com/viewer.html?channel_id=103310549&platform=twitch"  width="100%" height="800px" frameborder="0" ></iframe>
+</div>
+<div *ngIf="isYoutube" >
+    <iframe src="https://server.streamavatars.com/viewer.html?channel_id=UCRkoBVgvP1Bu_UK5SGMlO_w&platform=youtube"  width="100%" height="800px" frameborder="0" ></iframe>
+</div>
+<div *ngIf="isTrovo" >
+    <iframe src="https://server.streamavatars.com/viewer.html?channel_id=112131820&platform=trovo"  width="100%" height="800px" frameborder="0" ></iframe>
+</div>

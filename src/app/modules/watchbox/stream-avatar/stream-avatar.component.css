@@ -1,0 +1,22 @@
+iframe {
+    display: inline-block;
+}
+.kick {
+    background-color: #00e701;
+}
+.twitch {
+    background-color: #5b24c2;
+}
+.youtube {
+    background-color: #FF0000;
+}
+.trovo {
+    background-color:#158171;
+}
+.fa-brands{
+    color:white;
+}
+.trovo-icon {
+        height: 20px;
+        width: 20px;
+}

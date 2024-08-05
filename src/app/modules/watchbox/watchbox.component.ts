@@ -5,19 +5,21 @@ import { CommonModule } from '@angular/common';
 import { LiveMenuComponent } from "./live-menu/live-menu.component";
 import { DiscordComponent } from "../../app/header/discord/discord.component";
 import { CommandsComponent } from "./live-menu/interaction-menu/commands/commands.component";
+import { StreamAvatarComponent } from "./stream-avatar/stream-avatar.component";
 @Component({
     selector: 'app-watchbox',
     standalone: true,
     templateUrl: './watchbox.component.html',
     styleUrls: ['./watchbox.component.css'],
     imports: [
-        LiveComponent,
-        VideosComponent,
-        CommonModule,
-        LiveMenuComponent,
-        DiscordComponent,
-        CommandsComponent
-    ]
+    LiveComponent,
+    VideosComponent,
+    CommonModule,
+    LiveMenuComponent,
+    DiscordComponent,
+    CommandsComponent,
+    StreamAvatarComponent
+]
 })
 export class WatchboxComponent {
     mobHeight: any;
