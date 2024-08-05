@@ -10,6 +10,9 @@
 <a class="btn youtube" href="https://www.youtube.com/channel/UCRkoBVgvP1Bu_UK5SGMlO_w/live" target="_blank">
     <i class="fa-brands fa-youtube"></i>
 </a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMultichat" aria-controls="offcanvasMultichat">
+    Multichat
+</button>
 
 <div *ngIf="isTwitch">     
     <app-twitch></app-twitch>
@@ -19,4 +22,16 @@
 </div>
 <div *ngIf="isTrovo" >
     <app-trovo></app-trovo>
+</div>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"tabindex="-1" id="offcanvasMultichat" aria-labelledby="offcanvasMultichat">
+    <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMultichatLabel">Multichat</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul>
+            <iframe src="https://botrix.live/widgets/chat/?bid=3Rol0rBnhTUyYJ2EbbfN8A&bots=true&emojis=true&hideCommands=true&hideMessages=false&hideMessagesSeconds=300&fontSize=22&trovo=true&twitch=true&youtube=true&kick=true&livespace=true&platformIcon=true&theme=transparent" width="100%" height="{{mobHeight}}" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </ul>
+    </div>
 </div>
