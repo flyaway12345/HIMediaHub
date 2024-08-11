@@ -613,6 +613,24 @@
     "reasonForBan": "Solicitation"
     },
     {
+    "id":"102",
+    "name": "casey1cox", 
+    "dateBanned": "8/6/2024",
+    "reasonForBan": "Bot"
+    },
+    {
+    "id":"103",
+    "name": "mart­s_p", 
+    "dateBanned": "8/7/2024",
+    "reasonForBan": "Scammer"
+    },
+    {
+    "id":"104",
+    "name": "arya­kraz­y22", 
+    "dateBanned": "8/10/2024",
+    "reasonForBan": "Bot"
+    },
+    {
     "id":"",
     "name": "", 
     "dateBanned": "",
