@@ -180,6 +180,16 @@
         "placeholder":""
     },
     {
+        "id":"17",
+        "name": "Goodbye",
+        "description":"Evan's Last Will & Testimant In The Event Of Death",
+        "img":"https://imageio.forbes.com/specials-images/imageserve/62c71e6f2608b58569baebe8/0x0.jpg",
+        "link":"goodbye",
+        "isRouter":true,
+        "display":0,
+        "placeholder":""
+    },
+    {
         "id":"",
         "name": "",
         "description":"",

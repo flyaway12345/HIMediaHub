@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsfeedGamingComponent } from './newsfeed-gaming/newsfeed-gaming.component';
 import { NewsfeedNewsComponent } from './newsfeed-news/newsfeed-news.component';
-import { HimediatvNewsUpdateComponent } from '../podcasts/himediatv-news-update/himediatv-news-update.component';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { LiveComponent } from "../../app/header/live/live.component";
 import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
 import { NerdNewsComponent } from "../podcasts/nerd-news/nerdnews.component";
+import { LateNiteNewsComponent } from '../podcasts/himediatv-news-update/late-nite-news.component';
 @Component({
   selector: 'app-newsfeed', 
   standalone: true,
   imports: [
     NewsfeedGamingComponent,
     NewsfeedNewsComponent,
-    HimediatvNewsUpdateComponent,
+    LateNiteNewsComponent,
     CommonModule,
     RouterOutlet,
     RouterLink,

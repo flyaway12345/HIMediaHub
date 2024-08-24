@@ -15,7 +15,7 @@ import { MerchComponent } from './modules/merch/merch.component';
 import { NewsFeedComponent } from './modules/morning-coffee/newsfeed.component';
 import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/newsfeed-news.component';
 import { AudiodexUiComponent } from './modules/podcasts/audiodex/audiodex-ui/audiodex-ui.component';
-import { HimediatvNewsUpdateComponent } from './modules/podcasts/himediatv-news-update/himediatv-news-update.component';
+import { LateNiteNewsComponent } from './modules/podcasts/himediatv-news-update/late-nite-news.component';
 import { HISoapboxComponent } from './modules/podcasts/hisoapbox/hisoapbox.component';
 import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.component';
 import { NerdNewsComponent } from './modules/podcasts/nerd-news/nerdnews.component';
@@ -41,6 +41,7 @@ import { TwitchComponent } from './app/header/live/live-mobile/twitch/twitch.com
 import { PastebinComponent } from './modules/pastebin/pastebin.component';
 import { StreamCalenderComponent } from './modules/watchbox/live-menu/stream-calender/stream-calender.component';
 import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
+import { GoodbyeComponent } from './modules/goodbye/goodbye.component';
 
 
 export const routes: Routes = [
@@ -89,7 +90,10 @@ export const routes: Routes = [
 {path: 'crowns', component: CrownLeaderboardComponent},
 {path: 'default-commands', component: DefaultCommandsComponent},
 {path: 'sound-alerts', component: SoundAlertsComponent},
-{path: 'HIMediaTVNewsUpdate', component: HimediatvNewsUpdateComponent},
+{path: 'HIMediaTVNewsUpdate', component: LateNiteNewsComponent},
+{path: 'latenightnews', component: LateNiteNewsComponent},
+{path: 'LNN', component: LateNiteNewsComponent},
+{path: 'lnn', component: LateNiteNewsComponent},
 {path: 'commands', component: CommandsComponent},
 {path: 'trovo', component: TrovoComponent},
 {path: 'youtube', component: YoutubeComponent},
@@ -98,5 +102,6 @@ export const routes: Routes = [
 {path: 'pastebin', component: PastebinComponent},
 {path: 'schedule', component: StreamCalenderComponent},
 {path: 'calendar', component: StreamCalenderComponent},
+{path: 'goodbye', component: GoodbyeComponent},
 {path: '**' ,component: Error404Component}
 ];
