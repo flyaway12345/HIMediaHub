@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class SoundAlertsComponent {
   onClickCopy(text: any){
-    navigator.clipboard.writeText("!"+ text);
+    navigator.clipboard.writeText("!redeem "+ text);
   }
 }
