@@ -42,6 +42,8 @@ import { PastebinComponent } from './modules/pastebin/pastebin.component';
 import { StreamCalenderComponent } from './modules/watchbox/live-menu/stream-calender/stream-calender.component';
 import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
 import { GoodbyeComponent } from './modules/goodbye/goodbye.component';
+import { WhosThatPokemonComponent } from './modules/whos-that-pokemon/whos-that-pokemon.component';
+import { PerksComponent } from './modules/donate/perks/perks.component';
 
 
 export const routes: Routes = [
@@ -51,6 +53,9 @@ export const routes: Routes = [
 {path: 'links', component: LinksComponent},
 {path: 'donate', component: DonateComponent},
 {path: 'tip', component: DonateComponent},
+{path: 'perks', component: PerksComponent},
+{path: 'sub', component: PerksComponent},
+{path: 'subscription', component: PerksComponent},
 {path: 'thewinstoncup', component: TheWinstonCupComponent},
 {path: 'twc', component: TheWinstonCupComponent},
 {path: 'hotubanlist', component: HotubanlistComponent},
@@ -103,5 +108,6 @@ export const routes: Routes = [
 {path: 'schedule', component: StreamCalenderComponent},
 {path: 'calendar', component: StreamCalenderComponent},
 {path: 'goodbye', component: GoodbyeComponent},
+{path: 'whosthatpokemon', component: WhosThatPokemonComponent},
 {path: '**' ,component: Error404Component}
 ];
