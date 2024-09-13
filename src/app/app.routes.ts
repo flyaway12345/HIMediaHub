@@ -44,6 +44,7 @@ import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gamin
 import { GoodbyeComponent } from './modules/goodbye/goodbye.component';
 import { WhosThatPokemonComponent } from './modules/whos-that-pokemon/whos-that-pokemon.component';
 import { PerksComponent } from './modules/donate/perks/perks.component';
+import { PaymentComponent } from './modules/donate/payment/payment.component';
 
 
 export const routes: Routes = [
@@ -55,6 +56,10 @@ export const routes: Routes = [
 {path: 'tip', component: DonateComponent},
 {path: 'perks', component: PerksComponent},
 {path: 'sub', component: PerksComponent},
+{path: 'pay', component: PaymentComponent},
+{path: 'payment', component: PaymentComponent},
+{path: 'payments', component: PaymentComponent},
+{path: 'makeapayment', component: PaymentComponent},
 {path: 'subscription', component: PerksComponent},
 {path: 'thewinstoncup', component: TheWinstonCupComponent},
 {path: 'twc', component: TheWinstonCupComponent},
