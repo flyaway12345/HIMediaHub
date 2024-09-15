@@ -188,6 +188,28 @@
 },
 {
     "id":"17",
+    "name": "unkomfy",
+    "points_twc": "0",
+    "crowns":"2",
+    "UserID": "586775341608075265",
+    "social": "https://www.twitch.tv/unkomfy",
+    "titles": "Touched Grass, Hydrated",
+    "profilePicture": "https://cdn.discordapp.com/avatars/586775341608075265/7e974e5449d8279544057ee01dc70117.webp",
+    "placeholder": "placeholder"
+},
+{
+    "id":"18",
+    "name": "astraenomine",
+    "points_twc": "0",
+    "crowns":"2",
+    "UserID": "211889205230436363",
+    "social": "https://www.youtube.com/channel/UCoYEeezrNwkmNw9CbfG7Qgw",
+    "titles": "Touched Grass, Hydrated",
+    "profilePicture": "https://cdn.discordapp.com/avatars/211889205230436363/6f3da049ed0ee7f4796159a521dc7f0b.webp",
+    "placeholder": "placeholder"
+},
+{
+    "id":"19",
     "name": "This Could Be You!",
     "points_twc": "0",
     "crowns":"0",
