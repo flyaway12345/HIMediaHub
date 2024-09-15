@@ -45,6 +45,10 @@ import { GoodbyeComponent } from './modules/goodbye/goodbye.component';
 import { WhosThatPokemonComponent } from './modules/whos-that-pokemon/whos-that-pokemon.component';
 import { PerksComponent } from './modules/donate/perks/perks.component';
 import { PaymentComponent } from './modules/donate/payment/payment.component';
+import { StaticPagesComponent } from './modules/static-pages/static-pages.component';
+import { BrbComponent } from './modules/static-pages/brb/brb.component';
+import { EndingSoonComponent } from './modules/static-pages/ending-soon/ending-soon.component';
+import { StartingSoonComponent } from './modules/static-pages/starting-soon/starting-soon.component';
 
 
 export const routes: Routes = [
@@ -115,5 +119,11 @@ export const routes: Routes = [
 {path: 'calendar', component: StreamCalenderComponent},
 {path: 'goodbye', component: GoodbyeComponent},
 {path: 'whosthatpokemon', component: WhosThatPokemonComponent},
+{path: 'static-pages', component: StaticPagesComponent, children: [
+  {path: '', component: StaticPagesComponent},
+  {path: 'brb', component: BrbComponent},
+  {path: 'starting-soon', component: StartingSoonComponent},
+  {path: 'ending-soon', component: EndingSoonComponent}
+]},
 {path: '**' ,component: Error404Component}
 ];
