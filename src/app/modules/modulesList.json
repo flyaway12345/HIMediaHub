@@ -196,7 +196,7 @@
         "img":"https://img.freepik.com/premium-vector/simple-browser-window-blue-background-vector-illustration-screen-screenshot-webpage_547674-553.jpg?w=1380",
         "link":"static-pages",
         "isRouter":true,
-        "display":0,
+        "display":1,
         "placeholder":""
     },
     {
