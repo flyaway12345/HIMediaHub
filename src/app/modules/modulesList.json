@@ -190,6 +190,16 @@
         "placeholder":""
     },
     {
+        "id":"18",
+        "name": "Static Pages",
+        "description":"Simple, Pages That Have Different, Small, Purposes",
+        "img":"https://img.freepik.com/premium-vector/simple-browser-window-blue-background-vector-illustration-screen-screenshot-webpage_547674-553.jpg?w=1380",
+        "link":"static-pages",
+        "isRouter":true,
+        "display":0,
+        "placeholder":""
+    },
+    {
         "id":"",
         "name": "",
         "description":"",
