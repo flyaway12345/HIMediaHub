@@ -88,6 +88,7 @@ export const routes: Routes = [
 {path: 'morning-coffee', redirectTo: '/newsfeed', pathMatch:'full'},
 {path: 'audiodex', component: AudiodexUiComponent},
 {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
+{path: 'icsuuytmt', component: ICSUUYTMTComponent},
 {path: 'podcast', component: PodcastsComponent},
 {path: 'podcasts', component: PodcastsComponent},
 {path: 'cookbook', component: RecipesComponent},
