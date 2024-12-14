@@ -200,6 +200,16 @@
         "placeholder":""
     },
     {
+        "id":"19",
+        "name": "Take Evan's Twitter Away",
+        "description":"All Of Evans Stream Of Consciousness Tweets From When Hes Stoned",
+        "img":"https://cdn.bsky.app/img/avatar/plain/did:plc:72tayfilsa6caks67lld7phz/bafkreif5xae3222hvkvfamscwgxdl5kxeeelqun2xy6wath45xzgb3qc6y@jpeg",
+        "link":"https://flyaway12345.github.io/TakeEvansTwitterAway/",
+        "isRouter":false,
+        "display":1,
+        "placeholder":""
+    },
+    {
         "id":"",
         "name": "",
         "description":"",
