@@ -17,7 +17,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 export class RecipesComponent implements OnInit{
 
   recipeData: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/CookingByApproximation/main/src/assets/recipes.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/recipes.json';
   public constructor(private http: HttpClient) {}
 
 
@@ -26,7 +26,7 @@ export class RecipesComponent implements OnInit{
     this.http.get(this.url).subscribe(res => {
       this.recipeData = res;
   });
-  
+
 }
- 
+
 }
