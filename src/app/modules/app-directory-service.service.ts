@@ -6,10 +6,10 @@ import { Observable, filter, map } from 'rxjs';
   providedIn: 'root'
 })
 export class AppDirectoryServiceService {
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/modulesList.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/modulesList.json';
 
   constructor(private http: HttpClient) { }
-  
+
 
   public getData() : Observable<any> {
    return this.http.get(this.url);

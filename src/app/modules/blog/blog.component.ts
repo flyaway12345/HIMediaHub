@@ -6,7 +6,7 @@ import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
 import { DiscordComponent } from "../../app/header/discord/discord.component";
 @Component({
-  selector: 'app-blog', 
+  selector: 'app-blog',
   standalone: true,
   imports: [CommonModule, MarkdownModule,
     RouterOutlet,
@@ -18,8 +18,8 @@ import { DiscordComponent } from "../../app/header/discord/discord.component";
 export class BlogComponent implements OnInit {
 
   blogData: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog/postlist.json';
-  srcURL:string ='https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog/posts/';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/postlist.json';
+  srcURL:string ='https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/md/blog/';
   markdown = ``;
   activeImage: string = ""
   clear:boolean = true;
