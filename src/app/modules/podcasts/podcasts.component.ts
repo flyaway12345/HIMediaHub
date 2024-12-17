@@ -5,12 +5,12 @@ import { ThePaldeckFilesComponent } from './the-paldeck-files/thepaldeckfiles.co
 import { AudiodexPlayerComponent } from './audiodex/audiodex-player/audiodex-player.component';
 import { HISoapboxComponent } from './hisoapbox/hisoapbox.component';
 import { LateNiteNewsComponent } from './himediatv-news-update/late-nite-news.component';
-import { NerdNewsComponent } from './nerd-news/nerdnews.component';
+import { NerdNewsComponent } from './himediaheadlines/nerdnews.component';
 import { ICSUUYTMTComponent } from './icsuuytmt/icsuuytmt.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-podcasts', 
+  selector: 'app-podcasts',
   standalone: true,
   imports: [
     WinstonMasterDuelRoundtableComponent,

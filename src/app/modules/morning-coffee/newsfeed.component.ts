@@ -5,10 +5,10 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { LiveComponent } from "../../app/header/live/live.component";
 import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
-import { NerdNewsComponent } from "../podcasts/nerd-news/nerdnews.component";
+import { NerdNewsComponent } from "../podcasts/himediaheadlines/nerdnews.component";
 import { LateNiteNewsComponent } from '../podcasts/himediatv-news-update/late-nite-news.component';
 @Component({
-  selector: 'app-newsfeed', 
+  selector: 'app-newsfeed',
   standalone: true,
   imports: [
     NewsfeedGamingComponent,

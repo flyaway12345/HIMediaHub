@@ -15,10 +15,9 @@ import { MerchComponent } from './modules/merch/merch.component';
 import { NewsFeedComponent } from './modules/morning-coffee/newsfeed.component';
 import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/newsfeed-news.component';
 import { AudiodexUiComponent } from './modules/podcasts/audiodex/audiodex-ui/audiodex-ui.component';
-import { LateNiteNewsComponent } from './modules/podcasts/himediatv-news-update/late-nite-news.component';
 import { HISoapboxComponent } from './modules/podcasts/hisoapbox/hisoapbox.component';
 import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.component';
-import { NerdNewsComponent } from './modules/podcasts/nerd-news/nerdnews.component';
+import { HIMediaHeadlinesComponent } from './modules/podcasts/himediaheadlines/nerdnews.component';
 import { PodcastsComponent } from './modules/podcasts/podcasts.component';
 import { ThePaldeckFilesComponent } from './modules/podcasts/the-paldeck-files/thepaldeckfiles.component';
 import { TheRundownComponent } from './modules/podcasts/the-rundown/therundown.component';
@@ -95,7 +94,8 @@ export const routes: Routes = [
 {path: 'ppcxtrr', component: PPCxTRRComponent},
 {path: 'merch', component: MerchComponent},
 {path: 'live-menu', component: LiveMenuComponent},
-{path: 'nerdnews', component: NerdNewsComponent},
+{path: 'nerdnews', component: HIMediaHeadlinesComponent},
+{path: 'himediaheadlines', component: HIMediaHeadlinesComponent},
 {path: 'hisoapbox', component: HISoapboxComponent},
 {path: 'thepaldeckfiles', component: ThePaldeckFilesComponent},
 {path: 'therundown', component: TheRundownComponent},
@@ -105,10 +105,10 @@ export const routes: Routes = [
 {path: 'crowns', component: CrownLeaderboardComponent},
 {path: 'default-commands', component: DefaultCommandsComponent},
 {path: 'sound-alerts', component: SoundAlertsComponent},
-{path: 'HIMediaTVNewsUpdate', component: LateNiteNewsComponent},
-{path: 'latenightnews', component: LateNiteNewsComponent},
-{path: 'LNN', component: LateNiteNewsComponent},
-{path: 'lnn', component: LateNiteNewsComponent},
+{path: 'HIMediaTVNewsUpdate', component: HIMediaHeadlinesComponent},
+{path: 'latenightnews', component: HIMediaHeadlinesComponent},
+{path: 'LNN', component: HIMediaHeadlinesComponent},
+{path: 'lnn', component: HIMediaHeadlinesComponent},
 {path: 'commands', component: CommandsComponent},
 {path: 'trovo', component: TrovoComponent},
 {path: 'youtube', component: YoutubeComponent},
