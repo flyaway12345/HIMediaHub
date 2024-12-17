@@ -4,8 +4,7 @@ import { TheRundownComponent } from './the-rundown/therundown.component';
 import { ThePaldeckFilesComponent } from './the-paldeck-files/thepaldeckfiles.component';
 import { AudiodexPlayerComponent } from './audiodex/audiodex-player/audiodex-player.component';
 import { HISoapboxComponent } from './hisoapbox/hisoapbox.component';
-import { LateNiteNewsComponent } from './himediatv-news-update/late-nite-news.component';
-import { NerdNewsComponent } from './himediaheadlines/nerdnews.component';
+import { HIMediaHeadlinesComponent } from './himediaheadlines/himediaheadlines.component';
 import { ICSUUYTMTComponent } from './icsuuytmt/icsuuytmt.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -18,8 +17,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     ThePaldeckFilesComponent,
     AudiodexPlayerComponent,
     HISoapboxComponent,
-    LateNiteNewsComponent,
-    NerdNewsComponent,
+    HIMediaHeadlinesComponent,
     ICSUUYTMTComponent,
     RouterOutlet,
     RouterLink,

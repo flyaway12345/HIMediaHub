@@ -17,7 +17,7 @@ import { NewsfeedNewsComponent } from './modules/morning-coffee/newsfeed-news/ne
 import { AudiodexUiComponent } from './modules/podcasts/audiodex/audiodex-ui/audiodex-ui.component';
 import { HISoapboxComponent } from './modules/podcasts/hisoapbox/hisoapbox.component';
 import { ICSUUYTMTComponent } from './modules/podcasts/icsuuytmt/icsuuytmt.component';
-import { HIMediaHeadlinesComponent } from './modules/podcasts/himediaheadlines/nerdnews.component';
+import { HIMediaHeadlinesComponent } from './modules/podcasts/himediaheadlines/himediaheadlines.component';
 import { PodcastsComponent } from './modules/podcasts/podcasts.component';
 import { ThePaldeckFilesComponent } from './modules/podcasts/the-paldeck-files/thepaldeckfiles.component';
 import { TheRundownComponent } from './modules/podcasts/the-rundown/therundown.component';
