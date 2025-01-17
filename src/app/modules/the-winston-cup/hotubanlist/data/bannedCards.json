@@ -1,73 +1,92 @@
-  [
-    {
-      "cardname": "Dimension Shifter",
-      "cardq": 1,
-      "cardrarity": "Prismatic Secret Rare",
-      "card_edition": "Limited",
-      "cardset": "2019 Gold Sarcophagus Tin",
-      "cardcode": "TN19-EN012",
-      "cardid": 91800273,
-      "print_id": 197089
-    },
-    {
-      "cardname": "Dimensional Barrier",
-      "cardq": 1,
-      "cardrarity": "Secret Rare",
-      "card_edition": "1st Edition",
-      "cardset": "Invasion: Vengeance",
-      "cardcode": "INOV-EN078",
-      "cardid": 83326048,
-      "print_id": 124795
-    },
-    {
-      "cardname": "Droll & Lock Bird",
-      "cardq": 1,
-      "cardrarity": "Rare",
-      "card_edition": "1st Edition",
-      "cardset": "Starstrike Blast",
-      "cardcode": "STBL-EN082",
-      "cardid": 94145021,
-      "print_id": 38616
-    },
-    {
-      "cardname": "Maxx \"C\"",
-      "cardq": 1,
-      "cardrarity": "Secret Rare",
-      "card_edition": "1st Edition",
-      "cardset": "Storm of Ragnarok",
-      "cardcode": "STOR-EN086",
-      "cardid": 23434538,
-      "print_id": 39269
-    },
-    {
-      "cardname": "Rivalry of Warlords",
-      "cardq": 1,
-      "cardrarity": "Collector's Rare",
-      "card_edition": "1st Edition",
-      "cardset": "King's Court",
-      "cardcode": "KICO-EN058",
-      "cardid": 90846359,
-      "print_id": 243470
-    },
-    {
-      "cardname": "Royal Decree",
-      "cardq": 1,
-      "cardrarity": "Ultra Rare",
-      "card_edition": "Unlimited",
-      "cardset": "Tournament Pack 4",
-      "cardcode": "TP4-001",
-      "cardid": 51452091,
-      "print_id": 22772
-    },
-    {
-      "cardname": "Skill Drain",
-      "cardq": 1,
-      "cardrarity": "Rare",
-      "card_edition": "1st Edition",
-      "cardset": "Dark Crisis",
-      "cardcode": "DCR-049",
-      "cardid": 82732705,
-      "print_id": 22867
-    }
-   ]
-
+[
+  {
+    "cardname": "Dimension Shifter",
+    "cardq": 1,
+    "cardrarity": "Prismatic Secret Rare",
+    "card_edition": "Limited",
+    "cardset": "2019 Gold Sarcophagus Tin",
+    "cardcode": "TN19-EN012",
+    "cardid": 91800273,
+    "print_id": 197089
+  },
+  {
+    "cardname": "Dimensional Barrier",
+    "cardq": 1,
+    "cardrarity": "Secret Rare",
+    "card_edition": "1st Edition",
+    "cardset": "Invasion: Vengeance",
+    "cardcode": "INOV-EN078",
+    "cardid": 83326048,
+    "print_id": 124795
+  },
+  {
+    "cardname": "Droll & Lock Bird",
+    "cardq": 1,
+    "cardrarity": "Rare",
+    "card_edition": "1st Edition",
+    "cardset": "Starstrike Blast",
+    "cardcode": "STBL-EN082",
+    "cardid": 94145021,
+    "print_id": 38616
+  },
+  {
+    "cardname": "Gozen Match",
+    "cardq": 1,
+    "cardrarity": "Super Rare",
+    "card_edition": "1st Edition",
+    "cardset": "Hidden Summoners",
+    "cardcode": "HISU-EN060",
+    "cardid": 53334471,
+    "print_id": 180313
+  },
+  {
+    "cardname": "Maxx \"C\"",
+    "cardq": 1,
+    "cardrarity": "Secret Rare",
+    "card_edition": "1st Edition",
+    "cardset": "Storm of Ragnarok",
+    "cardcode": "STOR-EN086",
+    "cardid": 23434538,
+    "print_id": 39269
+  },
+  {
+    "cardname": "Rivalry of Warlords",
+    "cardq": 1,
+    "cardrarity": "Collector's Rare",
+    "card_edition": "1st Edition",
+    "cardset": "King's Court",
+    "cardcode": "KICO-EN058",
+    "cardid": 90846359,
+    "print_id": 243470
+  },
+  {
+    "cardname": "Royal Decree",
+    "cardq": 1,
+    "cardrarity": "Ultra Rare",
+    "card_edition": "Unlimited",
+    "cardset": "Tournament Pack 4",
+    "cardcode": "TP4-001",
+    "cardid": 51452091,
+    "print_id": 22772
+  },
+  {
+    "cardname": "Skill Drain",
+    "cardq": 1,
+    "cardrarity": "Rare",
+    "card_edition": "1st Edition",
+    "cardset": "Dark Crisis",
+    "cardcode": "DCR-049",
+    "cardid": 82732705,
+    "print_id": 22867
+  },
+  {
+    "cardname": "There Can Be Only One",
+    "cardq": 1,
+    "cardrarity": "Super Rare",
+    "card_edition": "1st Edition",
+    "cardset": "Extreme Force",
+    "cardcode": "EXFO-EN076",
+    "cardid": 24207889,
+    "print_id": 158141
+  }
+ ]
