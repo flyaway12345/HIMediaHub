@@ -5,7 +5,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { CrownLeaderboardComponent } from '../crown-leaderboard/crown-leaderboard.component';
 
 @Component({
-  selector: 'app-the-winston-cup', 
+  selector: 'app-the-winston-cup',
   standalone: true,
   imports:[CrownLeaderboardComponent,
             HotubanlistComponent,
@@ -18,15 +18,11 @@ import { CrownLeaderboardComponent } from '../crown-leaderboard/crown-leaderboar
   styleUrls: ['./the-winston-cup.component.css']
 })
 export class TheWinstonCupComponent {
-  banlistDisplay:boolean = false;
-  leaderboardDisplay:boolean = false;
+  banlistDisplay:boolean = true;
   public constructor() {}
-  
+
   onClickBanlist(){
     this.banlistDisplay = !this.banlistDisplay;
-  }
-  onClickLeaderboard(){
-    this.leaderboardDisplay = !this.leaderboardDisplay;
   }
 
   }
