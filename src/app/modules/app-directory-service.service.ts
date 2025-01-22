@@ -6,7 +6,7 @@ import { Observable, filter, map } from 'rxjs';
   providedIn: 'root'
 })
 export class AppDirectoryServiceService {
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/modulesList.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/HIMediaHub/json/modulesList.json';
 
   constructor(private http: HttpClient) { }
 
