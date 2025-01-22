@@ -18,8 +18,8 @@ import { DiscordComponent } from "../../app/header/discord/discord.component";
 export class BlogComponent implements OnInit {
 
   blogData: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/postlist.json';
-  srcURL:string ='https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/md/blog/';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/HIMediaHub/json/postlist.json';
+  srcURL:string ='https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/HIMediaHub/md/blog/';
   markdown = ``;
   activeImage: string = ""
   clear:boolean = true;
@@ -46,7 +46,7 @@ export class BlogComponent implements OnInit {
     this.videoURL = input;
   }
   renderMarkdown(input:string){
-    this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/blog/posts/';
+    this.srcURL = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/HIMediaHub/src/app/modules/blog/posts/';
     this.srcURL = this.srcURL + input.replace(/\s+/g, '') + '.md';
     this.http.get(this.srcURL,{responseType:'text'}).subscribe(data => this.markdown = data);
     this.clear = false;

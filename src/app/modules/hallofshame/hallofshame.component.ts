@@ -17,7 +17,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class HallofshameComponent implements OnInit {
   listOfNames: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/pastebin.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/HIMediaHub/json/pastebin.json';
   public constructor(private http: HttpClient) {}
   card:boolean = false;
 

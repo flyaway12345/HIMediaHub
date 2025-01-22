@@ -15,7 +15,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 export class SoundboardComponent {
 playsound() {
  let audio = new Audio();
- audio.src = "https://github.com/flyaway12345/Assets/raw/refs/heads/main/audio/Fedyourmom.mp3"
+ audio.src = "https://github.com/flyaway12345/Assets/raw/refs/heads/main/HIMediaHub/audio/Fedyourmom.mp3"
  audio.load();
  audio.play();
 }

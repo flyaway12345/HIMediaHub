@@ -18,7 +18,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class CrownLeaderboardComponent implements OnInit{
   leaderboard: any;
-  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/json/leaderboard.json';
+  url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/HIMediaHub/json/leaderboard.json';
   public constructor(private http: HttpClient) {
 
   }
