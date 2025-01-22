@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './mbe-index.component.css'
 })
 export class MbeIndexComponent {
-
+  mobHeight: string;
+  mobWidth: string;
+  constructor() {
+    this.mobHeight = (window.screen.height) + "px";
+    this.mobWidth = (window.screen.width) + "px";
+  }
 }
