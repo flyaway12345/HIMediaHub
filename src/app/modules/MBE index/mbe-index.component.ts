@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-egg-index',
   standalone: true,
   imports: [],
-  templateUrl: './egg-index.component.html',
-  styleUrl: './egg-index.component.css'
+  templateUrl: './mbe-index.component.html',
+  styleUrl: './mbe-index.component.css'
 })
-export class EggIndexComponent {
+export class MbeIndexComponent {
 
 }

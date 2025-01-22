@@ -47,7 +47,7 @@ import { StaticPagesComponent } from './modules/static-pages/static-pages.compon
 import { BrbComponent } from './modules/static-pages/brb/brb.component';
 import { EndingSoonComponent } from './modules/static-pages/ending-soon/ending-soon.component';
 import { StartingSoonComponent } from './modules/static-pages/starting-soon/starting-soon.component';
-import { EggIndexComponent } from './modules/egg-index/egg-index.component';
+import { MbeIndexComponent } from './modules/MBE index/mbe-index.component';
 
 
 export const routes: Routes = [
@@ -119,7 +119,7 @@ export const routes: Routes = [
 {path: 'calendar', component: StreamCalenderComponent},
 {path: 'goodbye', component: GoodbyeComponent},
 {path: 'whosthatpokemon', component: WhosThatPokemonComponent},
-{path: 'egg', component: EggIndexComponent},
+{path: 'mbe', component: MbeIndexComponent},
 {path: 'static-pages', component: StaticPagesComponent, children: [
   {path: '', component: StaticPagesComponent},
   {path: 'brb', component: BrbComponent},

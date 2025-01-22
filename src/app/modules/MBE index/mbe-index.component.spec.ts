@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EggIndexComponent } from './egg-index.component';
+import { MbeIndexComponent } from './mbe-index.component';
 
 describe('EggIndexComponent', () => {
-  let component: EggIndexComponent;
-  let fixture: ComponentFixture<EggIndexComponent>;
+  let component: MbeIndexComponent;
+  let fixture: ComponentFixture<MbeIndexComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EggIndexComponent]
+      imports: [MbeIndexComponent]
     })
     .compileComponents();
-    
-    fixture = TestBed.createComponent(EggIndexComponent);
+
+    fixture = TestBed.createComponent(MbeIndexComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
