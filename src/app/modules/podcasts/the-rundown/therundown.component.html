@@ -1,6 +1,16 @@
-<div class="d-flex justify-content-center">
-  </div>
+<div *ngIf="formatSwitch">
+  <a class="btn btn-primary" (click)="formatSwitchMethod()">Switch To Audio</a>
   <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=plMz6cTVJ0gU5Q3B&amp;list=PLrdsRuM2eycXcJvbet2E-LFHQrk425uQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div *ngIf="!formatSwitch">
+  <a class="btn btn-primary" (click)="formatSwitchMethod()">Switch To Video</a>
+<iframe src='https://widget.spreaker.com/player?show_id=6168942&theme=dark&playlist=show&playlist-continuous=true&chapters-image=true' width='100%' height='400px' title='The Rundown' frameborder='0'></iframe>
+</div>
+<div>
+  <h2>
+    Or Listen On Your Favorite Podcasting App:
+  </h2>
+</div>
       <a  href="https://open.spotify.com/show/7FRHDa7RFPVlSqYfWJLb0Y?si=9ac7979ea4b94bd3&nd=1&dlsi=fb451a0758c44e40" class="btn btn-primary" target="_blank">Spotify</a>
       <a href="https://iheart.com/podcast/288265002/" class="btn btn-primary" target="_blank">iHeartRadio</a>
      <a href="https://podcasts.apple.com/us/podcast/the-rundown/id1744854506" class="btn btn-primary" target="_blank">Apple</a>

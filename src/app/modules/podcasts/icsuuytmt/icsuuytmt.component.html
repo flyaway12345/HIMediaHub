@@ -1,6 +1,15 @@
-<div class="d-flex justify-content-center">
-  </div>
-
+<div *ngIf="formatSwitch">
+  <a class="btn btn-primary" (click)="formatSwitchMethod()">Switch To Audio</a>
   <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=1do5pMO9zkvO4XRN&amp;list=PLrdsRuM2eycXCCE2gK5M_gLQ9CzlOghBP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div *ngIf="!formatSwitch">
+  <a class="btn btn-primary" (click)="formatSwitchMethod()">Switch To Video</a>
+<iframe src='https://widget.spreaker.com/player?show_id=4755662&theme=dark&playlist=show&playlist-continuous=true&chapters-image=true' width='100%' height='400px' title='I Can&#039;t Shut Up Unless You Tell Me To' frameborder='0'></iframe>
+</div>
+<div>
+  <h2>
+    Or Listen On Your Favorite Podcasting App:
+  </h2>
+</div>
     <a  href="https://open.spotify.com/show/5m9p0NsjscWQ7Ndbt31tzI?nd=1&dlsi=039bb50c34794282" class="btn btn-primary" target="_blank">Spotify</a>
     <a href="https://iheart.com/podcast/288265146/" class="btn btn-primary" target="_blank">iHeartRadio</a>
