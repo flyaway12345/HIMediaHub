@@ -7,6 +7,9 @@ import { HISoapboxComponent } from './hisoapbox/hisoapbox.component';
 import { HIMediaHeadlinesComponent } from './himediaheadlines/himediaheadlines.component';
 import { ICSUUYTMTComponent } from './icsuuytmt/icsuuytmt.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { ThePettyPoneglyphPodcastComponent } from "./the-petty-poneglyph-podcast/the-petty-poneglyph-podcast.component";
+import { LittleBlackBookComponent } from "./little-black-book/little-black-book.component";
+import { PsychedelicSpaceCadetComponent } from "./psychedelic-space-cadet/psychedelic-space-cadet.component";
 
 @Component({
   selector: 'app-podcasts',
@@ -21,8 +24,11 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     ICSUUYTMTComponent,
     RouterOutlet,
     RouterLink,
-    RouterLinkActive
-  ],
+    RouterLinkActive,
+    ThePettyPoneglyphPodcastComponent,
+    LittleBlackBookComponent,
+    PsychedelicSpaceCadetComponent
+],
   templateUrl: './podcasts.component.html',
   styleUrls: ['./podcasts.component.css']
 })

@@ -48,6 +48,9 @@ import { BrbComponent } from './modules/static-pages/brb/brb.component';
 import { EndingSoonComponent } from './modules/static-pages/ending-soon/ending-soon.component';
 import { StartingSoonComponent } from './modules/static-pages/starting-soon/starting-soon.component';
 import { MbeIndexComponent } from './modules/MBE index/mbe-index.component';
+import { PsychedelicSpaceCadetComponent } from './modules/podcasts/psychedelic-space-cadet/psychedelic-space-cadet.component';
+import { LittleBlackBookComponent } from './modules/podcasts/little-black-book/little-black-book.component';
+import { ThePettyPoneglyphPodcastComponent } from './modules/podcasts/the-petty-poneglyph-podcast/the-petty-poneglyph-podcast.component';
 
 
 export const routes: Routes = [
@@ -101,6 +104,9 @@ export const routes: Routes = [
 {path: 'thepaldeckfiles', component: ThePaldeckFilesComponent},
 {path: 'therundown', component: TheRundownComponent},
 {path: 'wmdroundtable', component: WinstonMasterDuelRoundtableComponent},
+{path: 'PsychedelicSpaceCadet', component: PsychedelicSpaceCadetComponent},
+{path: 'littleblackbook', component: LittleBlackBookComponent},
+{path: 'ThePettyPoneglyphPodcast', component: ThePettyPoneglyphPodcastComponent},
 {path: 'discord', component: DiscordComponent},
 {path: 'subathon', component: WatchboxComponent},
 {path: 'crowns', component: CrownLeaderboardComponent},
