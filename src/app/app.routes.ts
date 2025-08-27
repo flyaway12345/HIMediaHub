@@ -51,6 +51,7 @@ import { MbeIndexComponent } from './modules/MBE index/mbe-index.component';
 import { PsychedelicSpaceCadetComponent } from './modules/podcasts/psychedelic-space-cadet/psychedelic-space-cadet.component';
 import { LittleBlackBookComponent } from './modules/podcasts/little-black-book/little-black-book.component';
 import { ThePettyPoneglyphPodcastComponent } from './modules/podcasts/the-petty-poneglyph-podcast/the-petty-poneglyph-podcast.component';
+import { VandamnationComponent } from './modules/podcasts/vandamnation/vandamnation.component';
 
 
 export const routes: Routes = [
@@ -107,6 +108,7 @@ export const routes: Routes = [
 {path: 'PsychedelicSpaceCadet', component: PsychedelicSpaceCadetComponent},
 {path: 'littleblackbook', component: LittleBlackBookComponent},
 {path: 'ThePettyPoneglyphPodcast', component: ThePettyPoneglyphPodcastComponent},
+{path: 'Vandamnation', component: VandamnationComponent},
 {path: 'discord', component: DiscordComponent},
 {path: 'subathon', component: WatchboxComponent},
 {path: 'crowns', component: CrownLeaderboardComponent},
