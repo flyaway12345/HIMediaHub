@@ -111,6 +111,7 @@ export const routes: Routes = [
 {path: 'ThePettyPoneglyphPodcast', component: ThePettyPoneglyphPodcastComponent},
 {path: 'Vandamnation', component: VandamnationComponent},
 {path: 'whydoesthiskeephappening', component: Whydoesthiskeephappening},
+{path: 't1bg', component: Whydoesthiskeephappening},
 {path: 'discord', component: DiscordComponent},
 {path: 'subathon', component: WatchboxComponent},
 {path: 'crowns', component: CrownLeaderboardComponent},
