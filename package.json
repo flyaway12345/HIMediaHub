@@ -23,7 +23,7 @@
     "@angular/router": "^17.0.6",
     "bootstrap": "^5.2.0",
     "express": "^4.21.0",
-    "express-xml-bodyparser": "^0.3.0",
+    "express-xml-bodyparser": "^0.4.1",
     "fontawesome": "^5.6.3",
     "got": "^14.4.1",
     "himedia-hub": "file:",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.6",
-    "@angular/cli": "^17.0.6",
+    "@angular/cli": "^20.2.2",
     "@angular/compiler-cli": "^17.0.6",
     "@types/jasmine": "~4.0.0",
     "angular-cli-ghpages": "^1.0.6",

@@ -52,6 +52,7 @@ import { PsychedelicSpaceCadetComponent } from './modules/podcasts/psychedelic-s
 import { LittleBlackBookComponent } from './modules/podcasts/little-black-book/little-black-book.component';
 import { ThePettyPoneglyphPodcastComponent } from './modules/podcasts/the-petty-poneglyph-podcast/the-petty-poneglyph-podcast.component';
 import { VandamnationComponent } from './modules/podcasts/vandamnation/vandamnation.component';
+import { Whydoesthiskeephappening } from './modules/podcasts/whydoesthiskeephappening/whydoesthiskeephappening';
 
 
 export const routes: Routes = [
@@ -109,6 +110,7 @@ export const routes: Routes = [
 {path: 'littleblackbook', component: LittleBlackBookComponent},
 {path: 'ThePettyPoneglyphPodcast', component: ThePettyPoneglyphPodcastComponent},
 {path: 'Vandamnation', component: VandamnationComponent},
+{path: 'whydoesthiskeephappening', component: Whydoesthiskeephappening},
 {path: 'discord', component: DiscordComponent},
 {path: 'subathon', component: WatchboxComponent},
 {path: 'crowns', component: CrownLeaderboardComponent},
