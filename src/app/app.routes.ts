@@ -93,6 +93,8 @@ export const routes: Routes = [
 {path: 'audiodex', component: AudiodexUiComponent},
 {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
 {path: 'icsuuytmt', component: ICSUUYTMTComponent},
+{path: 'pod', component: PodcastsComponent},
+{path: 'pods', component: PodcastsComponent},
 {path: 'podcast', component: PodcastsComponent},
 {path: 'podcasts', component: PodcastsComponent},
 {path: 'cookbook', component: RecipesComponent},
