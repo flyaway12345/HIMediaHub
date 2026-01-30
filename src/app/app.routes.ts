@@ -53,6 +53,7 @@ import { LittleBlackBookComponent } from './modules/podcasts/little-black-book/l
 import { ThePettyPoneglyphPodcastComponent } from './modules/podcasts/the-petty-poneglyph-podcast/the-petty-poneglyph-podcast.component';
 import { VandamnationComponent } from './modules/podcasts/vandamnation/vandamnation.component';
 import { Whydoesthiskeephappening } from './modules/podcasts/whydoesthiskeephappening/whydoesthiskeephappening';
+import { Radio } from './modules/radio/radio';
 
 
 export const routes: Routes = [
@@ -96,6 +97,8 @@ export const routes: Routes = [
 {path: 'audiodex', component: AudiodexUiComponent},
 {path: 'ICSUUYTMT', component: ICSUUYTMTComponent},
 {path: 'icsuuytmt', component: ICSUUYTMTComponent},
+{path: 'radio', component: Radio},
+{path: 'radioshow', component: Radio},
 {path: 'pod', component: PodcastsComponent},
 {path: 'pods', component: PodcastsComponent},
 {path: 'podcast', component: PodcastsComponent},
