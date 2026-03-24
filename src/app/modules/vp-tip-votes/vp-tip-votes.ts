@@ -15,9 +15,14 @@ export class VpTipVotes implements OnInit {
   url: string = 'https://raw.githubusercontent.com/flyaway12345/Assets/refs/heads/main/HIMediaHub/json/VPTipVote.json';
   public constructor(private http: HttpClient) {}
 
-    ngOnInit(): void {
+  public orderById(): void {
+    this.poll = this.poll.sort((a: { id: number; }, b: { id: number; }) => b.id - a.id);
+    console.log("sorted");
+  }
+  ngOnInit(): void {
     this.http.get(this.url).subscribe(res => {
       this.poll = res;
+      this.orderById();
   });
 }
 }

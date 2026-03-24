@@ -1,14 +1,13 @@
-<p>vp-tip-votes works!</p>
-        <div *ngFor="let vote of poll" class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h2 class="card-title">
-              {{vote.date}}
-            </h2>
-            <p class="card-text">
-            <a href="#" class="btn btn-primary">{{vote.option1}}</a>
-            vs
-            <a href="#" class="btn btn-primary">{{vote.option2}}</a>
-            </p>
+<div class="d-flex justify-content-center">
+  <h1>Vote By Tipping Cash At VP!</h1>
+</div>
+<div *ngFor="let vote of poll" class="card" style="width: 18rem; visibility:{{vote.visible}};" >
+  <div class="card-body">
+    <h2 class="card-title">
+        {{vote.option1}} vs {{vote.option2}} - {{vote.date}}
+    </h2>
+    <p class="card-text">
+    <h3 style="color: black;">Winner: {{vote.winner}}</h3>
+  </div>
+</div>
 
-          </div>
-      </div>

@@ -142,6 +142,7 @@ export const routes: Routes = [
 {path: 'whosthatpokemon', component: WhosThatPokemonComponent},
 {path: 'mbe', component: MbeIndexComponent},
 {path: 'village-pizza-votes', component: VpTipVotes},
+{path: 'vote', component: VpTipVotes},
 {path: 'static-pages', component: StaticPagesComponent, children: [
   {path: '', component: StaticPagesComponent},
   {path: 'brb', component: BrbComponent},
