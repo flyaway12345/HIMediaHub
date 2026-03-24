@@ -1,0 +1,14 @@
+<p>vp-tip-votes works!</p>
+        <div *ngFor="let poll of poll" class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h2 class="card-title">
+              {{poll.date}}
+            </h2>
+            <p class="card-text">
+
+            </p>
+            <a href="#" class="btn btn-primary">{{poll.option1}}</a>
+            vs
+            <a href="#" class="btn btn-primary">{{poll.option2}}</a>
+          </div>
+      </div>

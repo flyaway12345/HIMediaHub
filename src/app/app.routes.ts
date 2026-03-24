@@ -54,6 +54,7 @@ import { ThePettyPoneglyphPodcastComponent } from './modules/podcasts/the-petty-
 import { VandamnationComponent } from './modules/podcasts/vandamnation/vandamnation.component';
 import { Whydoesthiskeephappening } from './modules/podcasts/whydoesthiskeephappening/whydoesthiskeephappening';
 import { Radio } from './modules/radio/radio';
+import { VpTipVotes } from './modules/vp-tip-votes/vp-tip-votes';
 
 
 export const routes: Routes = [
@@ -140,6 +141,7 @@ export const routes: Routes = [
 {path: 'goodbye', component: GoodbyeComponent},
 {path: 'whosthatpokemon', component: WhosThatPokemonComponent},
 {path: 'mbe', component: MbeIndexComponent},
+{path: 'village-pizza-votes', component: VpTipVotes},
 {path: 'static-pages', component: StaticPagesComponent, children: [
   {path: '', component: StaticPagesComponent},
   {path: 'brb', component: BrbComponent},
