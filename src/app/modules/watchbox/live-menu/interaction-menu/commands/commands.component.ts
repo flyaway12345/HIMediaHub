@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { SoundAlertsComponent } from "./sound-alerts/sound-alerts.component";
 import { CommonModule } from '@angular/common';
 import { DefaultCommandsComponent } from "./default-commands/default-commands.component";
@@ -7,6 +7,7 @@ import { DefaultCommandsComponent } from "./default-commands/default-commands.co
     selector: 'app-commands',
     templateUrl: './commands.component.html',
     styleUrl: './commands.component.css',
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         SoundAlertsComponent,
         CommonModule,

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TwitchComponent } from './twitch/twitch.component';
 import { KickComponent } from "./kick/kick.component";
 import { CommonModule } from '@angular/common';
@@ -8,6 +8,7 @@ import { TrovoComponent } from "./trovo/trovo.component";
     selector: 'app-live-desktop',
     templateUrl: './live-desktop.component.html',
     styleUrl: './live-desktop.component.css',
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [TwitchComponent, KickComponent, CommonModule, TrovoComponent]
 })
 export class LiveDesktopComponent {

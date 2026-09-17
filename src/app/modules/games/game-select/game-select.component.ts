@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -13,6 +13,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         CommonModule
     ],
     templateUrl: './game-select.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./game-select.component.css']
 })
 export class GameSelectComponent implements OnInit, OnChanges {

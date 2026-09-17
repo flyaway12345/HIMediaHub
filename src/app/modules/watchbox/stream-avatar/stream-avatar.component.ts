@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-stream-avatar',
     imports: [CommonModule],
     templateUrl: './stream-avatar.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './stream-avatar.component.css'
 })
 export class StreamAvatarComponent {

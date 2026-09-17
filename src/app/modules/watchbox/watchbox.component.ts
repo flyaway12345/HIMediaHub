@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { LiveComponent } from '../../app/header/live/live.component';
 import { VideosComponent } from './videos/videos.component';
 import { CommonModule } from '@angular/common';
@@ -10,6 +10,7 @@ import { StreamAvatarComponent } from "./stream-avatar/stream-avatar.component";
     selector: 'app-watchbox',
     templateUrl: './watchbox.component.html',
     styleUrls: ['./watchbox.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         LiveComponent,
         VideosComponent,

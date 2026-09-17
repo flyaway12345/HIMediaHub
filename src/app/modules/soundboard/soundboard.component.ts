@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: './soundboard.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './soundboard.component.css'
 })
 export class SoundboardComponent {

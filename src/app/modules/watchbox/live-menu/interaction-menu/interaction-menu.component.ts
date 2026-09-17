@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { CommandsComponent } from "./commands/commands.component";
 import { InteractionItemsComponent } from "./interaction-items/interaction-items.component";
 
@@ -6,6 +6,7 @@ import { InteractionItemsComponent } from "./interaction-items/interaction-items
     selector: 'app-interaction-menu',
     templateUrl: './interaction-menu.component.html',
     styleUrl: './interaction-menu.component.css',
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [CommandsComponent, InteractionItemsComponent]
 })
 export class InteractionMenuComponent {

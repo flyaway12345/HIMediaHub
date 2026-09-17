@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-egg-index',
     imports: [],
     templateUrl: './mbe-index.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './mbe-index.component.css'
 })
 export class MbeIndexComponent {

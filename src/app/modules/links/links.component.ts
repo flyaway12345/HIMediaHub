@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DiscordComponent } from '../../app/header/discord/discord.component';
 import { SocialsComponent } from '../../app/header/socials/socials.component';
 import { LiveComponent } from '../../app/header/live/live.component';
@@ -12,6 +12,7 @@ import { AppDirectoryComponent } from "../app-directory.component";
     selector: 'app-home',
     templateUrl: './links.component.html',
     styleUrls: ['./links.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         DiscordComponent,
         SocialsComponent,

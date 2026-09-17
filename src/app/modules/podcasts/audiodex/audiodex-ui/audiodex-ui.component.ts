@@ -1,4 +1,4 @@
-import { Component, SimpleChanges, OnInit, Output, Input } from '@angular/core';
+import { Component, SimpleChanges, OnInit, Output, Input, ChangeDetectionStrategy } from '@angular/core';
 import { PokeapiService } from '../services/pokeapi.service';
 import { AudiodexPlayerComponent } from '../audiodex-player/audiodex-player.component';
 import { CommonModule, NgIf } from '@angular/common';
@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
         FormsModule
     ],
     templateUrl: './audiodex-ui.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./audiodex-ui.component.css']
 })
 export class AudiodexUiComponent implements OnInit{

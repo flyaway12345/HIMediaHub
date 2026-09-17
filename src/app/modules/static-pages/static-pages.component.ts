@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -11,6 +11,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: './static-pages.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './static-pages.component.css'
 })
 export class StaticPagesComponent {

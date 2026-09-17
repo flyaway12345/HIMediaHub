@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-vp-tip-votes',
     imports: [CommonModule],
     templateUrl: './vp-tip-votes.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './vp-tip-votes.css'
 })
 export class VpTipVotes implements OnInit {

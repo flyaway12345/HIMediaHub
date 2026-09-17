@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: './videos.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./videos.component.css']
 })
 export class VideosComponent implements OnInit {

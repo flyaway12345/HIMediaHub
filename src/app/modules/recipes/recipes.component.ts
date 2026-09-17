@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
@@ -11,6 +11,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: 'recipes.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['recipes.component.css']
 })
 export class RecipesComponent implements OnInit{

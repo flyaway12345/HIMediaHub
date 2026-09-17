@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { HotubanlistComponent } from './hotubanlist/hotubanlist.component';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
@@ -14,6 +14,7 @@ import { CrownLeaderboardComponent } from '../crown-leaderboard/crown-leaderboar
         RouterLinkActive
     ],
     templateUrl: './the-winston-cup.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./the-winston-cup.component.css']
 })
 export class TheWinstonCupComponent {

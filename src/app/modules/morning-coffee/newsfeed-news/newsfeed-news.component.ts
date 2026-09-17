@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-newsfeed-news',
     imports: [],
     templateUrl: './newsfeed-news.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./newsfeed-news.component.css']
 })
 export class NewsfeedNewsComponent implements OnInit {

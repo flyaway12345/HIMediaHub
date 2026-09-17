@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -12,6 +12,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         CommonModule
     ],
     templateUrl: './hallofshame.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./hallofshame.component.css']
 })
 export class HallofshameComponent implements OnInit {

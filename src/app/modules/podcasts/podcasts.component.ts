@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { WinstonMasterDuelRoundtableComponent } from './wmdroundtable/wmdroundtable.component';
 import { TheRundownComponent } from './the-rundown/therundown.component';
 import { ThePaldeckFilesComponent } from './the-paldeck-files/thepaldeckfiles.component';
@@ -29,6 +29,7 @@ import { PsychedelicSpaceCadetComponent } from "./psychedelic-space-cadet/psyche
         PsychedelicSpaceCadetComponent
     ],
     templateUrl: './podcasts.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./podcasts.component.css']
 })
 export class PodcastsComponent implements OnInit {

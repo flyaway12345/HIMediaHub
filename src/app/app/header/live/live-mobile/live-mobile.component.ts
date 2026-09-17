@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TwitchComponent } from './twitch/twitch.component';
 import { KickComponent } from "./kick/kick.component";
@@ -9,6 +9,7 @@ import { TrovoComponent } from "./trovo/trovo.component";
     selector: 'app-live-mobile',
     templateUrl: './live-mobile.component.html',
     styleUrls: ['./live-mobile.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         RouterOutlet,
         RouterLink,

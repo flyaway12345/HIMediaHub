@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { LiveComponent } from '../../app/header/live/live.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
@@ -7,6 +7,7 @@ import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobi
     selector: 'app-donate',
     templateUrl: './donate.component.html',
     styleUrls: ['./donate.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         LiveComponent,
         RouterOutlet,

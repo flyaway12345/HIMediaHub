@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TimerMenuComponent } from "./timer-menu/timer-menu.component";
 import { InteractionMenuComponent } from "./interaction-menu/interaction-menu.component";
@@ -10,6 +10,7 @@ import { StreamAvatarComponent } from "../stream-avatar/stream-avatar.component"
     selector: 'app-live-menu',
     templateUrl: './live-menu.component.html',
     styleUrls: ['./live-menu.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         RouterOutlet,
         RouterLink,

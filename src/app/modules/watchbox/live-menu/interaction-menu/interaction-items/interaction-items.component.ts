@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-interaction-items',
     imports: [],
     templateUrl: './interaction-items.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './interaction-items.component.css'
 })
 export class InteractionItemsComponent {

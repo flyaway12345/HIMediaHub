@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { NewsfeedGamingComponent } from './newsfeed-gaming/newsfeed-gaming.component';
 import { NewsfeedNewsComponent } from './newsfeed-news/newsfeed-news.component';
 import { CommonModule } from '@angular/common';
@@ -21,6 +21,7 @@ import { HIMediaHeadlinesComponent } from "../podcasts/himediaheadlines/himediah
         HIMediaHeadlinesComponent
     ],
     templateUrl: './newsfeed.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./newsfeed.component.css']
 })
 export class NewsFeedComponent implements OnInit {

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-icsuuytmt',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
         CommonModule
     ],
     templateUrl: './icsuuytmt.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./icsuuytmt.component.css']
 })
 export class ICSUUYTMTComponent implements OnInit {

@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-whydoesthiskeephappening',
     imports: [CommonModule],
     templateUrl: './whydoesthiskeephappening.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './whydoesthiskeephappening.css'
 })
 export class Whydoesthiskeephappening  implements OnInit {

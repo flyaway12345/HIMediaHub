@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { LiveDesktopComponent } from "./live-desktop/live-desktop.component";
 import { CommonModule } from '@angular/common';
@@ -8,6 +8,7 @@ import { LiveMobileComponent } from "./live-mobile/live-mobile.component";
     selector: 'app-live',
     templateUrl: './live.component.html',
     styleUrls: ['./live.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         RouterOutlet,
         RouterLink,

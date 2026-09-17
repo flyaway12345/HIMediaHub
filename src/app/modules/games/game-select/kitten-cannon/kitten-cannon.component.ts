@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: './kitten-cannon.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./kitten-cannon.component.css']
 })
 export class KittenCannonComponent implements OnInit {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DiscordComponent } from '../../app/header/discord/discord.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
@@ -10,6 +10,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: './ppcxtrr.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./ppcxtrr.component.css']
 })
 export class PPCxTRRComponent implements OnInit {

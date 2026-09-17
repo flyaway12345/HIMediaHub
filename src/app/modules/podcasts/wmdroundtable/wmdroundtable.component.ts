@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-wmdroundtable',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
         CommonModule
     ],
     templateUrl: './wmdroundtable.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./wmdroundtable.component.css']
 })
 export class WinstonMasterDuelRoundtableComponent implements OnInit {

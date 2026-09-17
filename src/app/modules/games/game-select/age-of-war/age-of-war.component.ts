@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         RouterLinkActive
     ],
     templateUrl: './age-of-war.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./age-of-war.component.css']
 })
 export class AgeOfWarComponent implements OnInit {

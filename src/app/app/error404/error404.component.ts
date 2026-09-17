@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { SocialsComponent } from '../header/socials/socials.component';
 
@@ -11,6 +11,7 @@ import { SocialsComponent } from '../header/socials/socials.component';
         RouterLinkActive
     ],
     templateUrl: './error404.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./error404.component.css']
 })
 export class Error404Component implements OnInit {

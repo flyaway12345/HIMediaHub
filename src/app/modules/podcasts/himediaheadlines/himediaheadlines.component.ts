@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-himediaheadlines',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
         CommonModule
     ],
     templateUrl: './himediaheadlines.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./himediaheadlines.component.css']
 })
 export class HIMediaHeadlinesComponent implements OnInit {

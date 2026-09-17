@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup, FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Observable, filter, map } from 'rxjs';
@@ -10,6 +10,7 @@ import { AppDirSearchPipe } from "./app-dir-search.pipe";
     selector: 'app-app-directory',
     templateUrl: './app-directory.component.html',
     styleUrls: ['./app-directory.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         RouterOutlet,
         RouterLink,

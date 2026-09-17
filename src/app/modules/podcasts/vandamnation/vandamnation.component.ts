@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-vandamnation',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
         CommonModule
     ],
     templateUrl: './vandamnation.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './vandamnation.component.css'
 })
 export class VandamnationComponent implements OnInit{

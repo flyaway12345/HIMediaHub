@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
@@ -12,6 +12,7 @@ import { DiscordComponent } from "../../app/header/discord/discord.component";
         RouterLink,
         RouterLinkActive, LiveMobileComponent, DiscordComponent],
     templateUrl: './blog.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './blog.component.css'
 })
 export class BlogComponent implements OnInit {
