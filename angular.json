@@ -108,7 +108,7 @@
           "options": {
             "baseHref": "./",
             "name": "HI Media Creations",
-            "dir": "/docs/browser",
+            "dir": "C:\\Users\\evanh\\Documents\\CODE\\REPOS\\HIMediaHub\\docs\\browser",
             "cname":"himedia.gg"
           }
         }
