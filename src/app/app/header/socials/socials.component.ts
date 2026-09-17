@@ -4,9 +4,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-socials',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
     ],
     templateUrl: './socials.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

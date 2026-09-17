@@ -5,9 +5,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
     selector: 'app-ppcxtrr',
     imports: [
         DiscordComponent,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        RouterLink
     ],
     templateUrl: './ppcxtrr.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

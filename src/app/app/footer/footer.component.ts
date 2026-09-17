@@ -4,9 +4,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({
     selector: 'app-footer',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
     ],
     templateUrl: './footer.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

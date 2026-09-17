@@ -6,12 +6,9 @@ import { CrownLeaderboardComponent } from '../crown-leaderboard/crown-leaderboar
 
 @Component({
     selector: 'app-the-winston-cup',
-    imports: [CrownLeaderboardComponent,
+    imports: [
         HotubanlistComponent,
         CommonModule,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
     ],
     templateUrl: './the-winston-cup.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

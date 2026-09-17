@@ -12,9 +12,7 @@ import { AppDirSearchPipe } from "./app-dir-search.pipe";
     styleUrls: ['./app-directory.component.css'],
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
-        RouterOutlet,
         RouterLink,
-        RouterLinkActive,
         FormsModule,
         CommonModule,
         AppDirSearchPipe

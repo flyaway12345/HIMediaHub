@@ -4,9 +4,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-bloonstd4',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        RouterLink
     ],
     templateUrl: './bloonstd4.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -4,9 +4,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-videos',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
     ],
     templateUrl: './videos.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

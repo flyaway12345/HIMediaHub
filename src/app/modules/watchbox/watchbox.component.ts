@@ -13,19 +13,16 @@ import { StreamAvatarComponent } from "./stream-avatar/stream-avatar.component";
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         LiveComponent,
-        VideosComponent,
         CommonModule,
         LiveMenuComponent,
-        DiscordComponent,
-        CommandsComponent,
-        StreamAvatarComponent
+        CommandsComponent
     ]
 })
 export class WatchboxComponent {
     mobHeight: any;
     mobWidth: any;
-  
-  constructor() { 
+
+  constructor() {
     this.mobHeight = (window.screen.height) + "px";
     this.mobWidth = (window.screen.width) + "px";
   }

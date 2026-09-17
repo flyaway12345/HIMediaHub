@@ -11,10 +11,6 @@ import { LiveMobileComponent } from "./live/live-mobile/live-mobile.component";
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         SocialsComponent,
-        LiveComponent,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
         LiveMobileComponent
     ]
 })

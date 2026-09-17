@@ -4,9 +4,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-age-of-war',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        RouterLink
     ],
     templateUrl: './age-of-war.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

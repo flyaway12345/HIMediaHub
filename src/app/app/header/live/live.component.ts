@@ -10,9 +10,6 @@ import { LiveMobileComponent } from "./live-mobile/live-mobile.component";
     styleUrls: ['./live.component.css'],
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
         LiveDesktopComponent,
         CommonModule,
         LiveMobileComponent
@@ -22,7 +19,7 @@ export class LiveComponent implements OnInit {
   mobHeight: any;
   mobWidth: any;
   liveswitch:boolean = false;
-  constructor() { 
+  constructor() {
     this.mobHeight = (window.screen.height) + "px";
     this.mobWidth = (window.screen.width) + "px";
       console.log(this.mobHeight);
@@ -36,11 +33,11 @@ export class LiveComponent implements OnInit {
       this.liveswitch = true;
     }
   }
-  
 
-  
+
+
   onClick(){
     this.liveswitch = !this.liveswitch
   }
-  
+
 }

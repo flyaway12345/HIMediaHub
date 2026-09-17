@@ -10,11 +10,8 @@ import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobi
     styleUrls: ['./games.component.css'],
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
-        LiveComponent,
         CommonModule,
         RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
         LiveMobileComponent
     ]
 })

@@ -15,15 +15,9 @@ import { AppDirectoryComponent } from "../app-directory.component";
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
         DiscordComponent,
-        SocialsComponent,
-        LiveComponent,
-        RouterOutlet,
         RouterLink,
-        RouterLinkActive,
-        TheWinstonCupComponent,
         LiveMobileComponent,
-        CommonModule,
-        AppDirectoryComponent
+        CommonModule
     ]
 })
 export class LinksComponent implements OnInit {

@@ -11,9 +11,6 @@ import { TrovoComponent } from "./trovo/trovo.component";
     styleUrls: ['./live-mobile.component.css'],
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
         TwitchComponent,
         KickComponent,
         CommonModule,
@@ -24,8 +21,8 @@ export class LiveMobileComponent implements OnInit {
 
   mobHeight: any;
   mobWidth: any;
-  
-  constructor() { 
+
+  constructor() {
     this.mobHeight = (window.screen.height) + "px";
     this.mobWidth = (window.screen.width) + "px";
   }

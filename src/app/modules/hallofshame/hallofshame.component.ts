@@ -6,9 +6,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-hallofshame',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
         CommonModule
     ],
     templateUrl: './hallofshame.component.html',

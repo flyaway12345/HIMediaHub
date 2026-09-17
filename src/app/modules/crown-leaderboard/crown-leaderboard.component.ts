@@ -7,10 +7,8 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-crown-leaderboard',
     imports: [
-        CommonModule,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        CommonModule
+
     ],
     templateUrl: './crown-leaderboard.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

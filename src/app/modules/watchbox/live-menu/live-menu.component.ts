@@ -12,12 +12,7 @@ import { StreamAvatarComponent } from "../stream-avatar/stream-avatar.component"
     styleUrls: ['./live-menu.component.css'],
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
-        TimerMenuComponent,
         InteractionMenuComponent,
-        DiscordComponent,
         StreamCalenderComponent,
         StreamAvatarComponent
     ]
@@ -28,7 +23,7 @@ export class LiveMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
   liveswitchSub:boolean = false;
   onClick(){
     this.liveswitchSub = !this.liveswitchSub

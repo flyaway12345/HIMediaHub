@@ -5,10 +5,7 @@ import { SocialsComponent } from '../header/socials/socials.component';
 @Component({
     selector: 'app-error404',
     imports: [
-        SocialsComponent,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        RouterLink
     ],
     templateUrl: './error404.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -19,6 +16,6 @@ export class Error404Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+  } 
 
 }

@@ -7,9 +7,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-game-select',
     imports: [
-        RouterOutlet,
         RouterLink,
-        RouterLinkActive,
         CommonModule
     ],
     templateUrl: './game-select.component.html',

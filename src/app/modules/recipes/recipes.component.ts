@@ -5,10 +5,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-recipes',
     imports: [
-        CommonModule,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        CommonModule
     ],
     templateUrl: 'recipes.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -7,10 +7,11 @@ import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobi
 import { DiscordComponent } from "../../app/header/discord/discord.component";
 @Component({
     selector: 'app-blog',
-    imports: [CommonModule, MarkdownModule,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive, LiveMobileComponent, DiscordComponent],
+    imports: [
+      CommonModule,
+      MarkdownModule,
+      LiveMobileComponent,
+      DiscordComponent],
     templateUrl: './blog.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
     styleUrl: './blog.component.css'

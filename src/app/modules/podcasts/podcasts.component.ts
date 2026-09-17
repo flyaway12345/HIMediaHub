@@ -14,19 +14,6 @@ import { PsychedelicSpaceCadetComponent } from "./psychedelic-space-cadet/psyche
 @Component({
     selector: 'app-podcasts',
     imports: [
-        WinstonMasterDuelRoundtableComponent,
-        TheRundownComponent,
-        ThePaldeckFilesComponent,
-        AudiodexPlayerComponent,
-        HISoapboxComponent,
-        HIMediaHeadlinesComponent,
-        ICSUUYTMTComponent,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
-        ThePettyPoneglyphPodcastComponent,
-        LittleBlackBookComponent,
-        PsychedelicSpaceCadetComponent
     ],
     templateUrl: './podcasts.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

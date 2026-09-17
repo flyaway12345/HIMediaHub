@@ -8,7 +8,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
         CommonModule,
         RouterOutlet,
         RouterLink,
-        RouterLinkActive
     ],
     templateUrl: './static-pages.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

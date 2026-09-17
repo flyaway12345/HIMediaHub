@@ -13,11 +13,6 @@ import { HIMediaHeadlinesComponent } from "../podcasts/himediaheadlines/himediah
         NewsfeedGamingComponent,
         NewsfeedNewsComponent,
         CommonModule,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive,
-        LiveComponent,
-        LiveMobileComponent,
         HIMediaHeadlinesComponent
     ],
     templateUrl: './newsfeed.component.html',

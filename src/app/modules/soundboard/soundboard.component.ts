@@ -4,9 +4,6 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-soundboard',
     imports: [
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
     ],
     templateUrl: './soundboard.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,

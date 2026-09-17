@@ -6,10 +6,7 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
     selector: 'app-hotubanlist',
     imports: [
-        CommonModule,
-        RouterOutlet,
-        RouterLink,
-        RouterLinkActive
+        CommonModule
     ],
     templateUrl: './hotubanlist.component.html',
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -20,7 +17,7 @@ export class HotubanlistComponent implements OnInit {
   banlist: any;
   url: string = 'https://raw.githubusercontent.com/flyaway12345/HIMediaHub/main/src/app/modules/the-winston-cup/hotubanlist/data/bannedCards.json';
   public constructor(private http: HttpClient) {}
-  
+
   bannedCards:boolean = false;
   banlistChanges:boolean = true;
   onClickCards(){
@@ -33,7 +30,7 @@ export class HotubanlistComponent implements OnInit {
     this.http.get(this.url).subscribe(res => {
       this.banlist = res;
   });
-  
+
   }
   ngOnChange(): void {
     this.http.get(this.url).subscribe(res => {
