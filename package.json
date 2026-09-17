@@ -36,7 +36,8 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular/cli": "^20.2.2",
+    "@angular/build": "^21.2.24",
+    "@angular/cli": "^21.2.24",
     "@angular/compiler-cli": "^19.2.25",
     "@types/jasmine": "~4.0.0",
     "angular-cli-ghpages": "^1.0.6",
