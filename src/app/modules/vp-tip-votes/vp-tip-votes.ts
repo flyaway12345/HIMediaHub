@@ -3,11 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-vp-tip-votes',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './vp-tip-votes.html',
-  styleUrl: './vp-tip-votes.css'
+    selector: 'app-vp-tip-votes',
+    imports: [CommonModule],
+    templateUrl: './vp-tip-votes.html',
+    styleUrl: './vp-tip-votes.css'
 })
 export class VpTipVotes implements OnInit {
 

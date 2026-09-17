@@ -1,13 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-newsfeed-gaming', 
-  standalone: true,
-  imports: [
-    
-  ],
-  templateUrl: './newsfeed-gaming.component.html',
-  styleUrls: ['./newsfeed-gaming.component.css']
+    selector: 'app-newsfeed-gaming',
+    imports: [],
+    templateUrl: './newsfeed-gaming.component.html',
+    styleUrls: ['./newsfeed-gaming.component.css']
 })
 export class NewsfeedGamingComponent implements OnInit {
 

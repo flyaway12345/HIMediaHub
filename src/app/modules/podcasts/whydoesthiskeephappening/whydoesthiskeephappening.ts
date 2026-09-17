@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-whydoesthiskeephappening',
-  imports: [ CommonModule ],
-  templateUrl: './whydoesthiskeephappening.html',
-  styleUrl: './whydoesthiskeephappening.css',
-  standalone: true
+    selector: 'app-whydoesthiskeephappening',
+    imports: [CommonModule],
+    templateUrl: './whydoesthiskeephappening.html',
+    styleUrl: './whydoesthiskeephappening.css'
 })
 export class Whydoesthiskeephappening  implements OnInit {
 

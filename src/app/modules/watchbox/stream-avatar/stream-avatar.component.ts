@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-stream-avatar',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './stream-avatar.component.html',
-  styleUrl: './stream-avatar.component.css'
+    selector: 'app-stream-avatar',
+    imports: [CommonModule],
+    templateUrl: './stream-avatar.component.html',
+    styleUrl: './stream-avatar.component.css'
 })
 export class StreamAvatarComponent {
   isTwitch:boolean = true;

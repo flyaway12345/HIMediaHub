@@ -5,15 +5,15 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-game-select',
-  standalone: true,
-  imports:[
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    CommonModule],
-  templateUrl: './game-select.component.html',
-  styleUrls: ['./game-select.component.css']
+    selector: 'app-game-select',
+    imports: [
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        CommonModule
+    ],
+    templateUrl: './game-select.component.html',
+    styleUrls: ['./game-select.component.css']
 })
 export class GameSelectComponent implements OnInit, OnChanges {
   gameData: any;

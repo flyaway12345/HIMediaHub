@@ -5,17 +5,16 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { CrownLeaderboardComponent } from '../crown-leaderboard/crown-leaderboard.component';
 
 @Component({
-  selector: 'app-the-winston-cup',
-  standalone: true,
-  imports:[CrownLeaderboardComponent,
-            HotubanlistComponent,
-            CommonModule,
-            RouterOutlet,
-            RouterLink,
-            RouterLinkActive
-          ],
-  templateUrl: './the-winston-cup.component.html',
-  styleUrls: ['./the-winston-cup.component.css']
+    selector: 'app-the-winston-cup',
+    imports: [CrownLeaderboardComponent,
+        HotubanlistComponent,
+        CommonModule,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive
+    ],
+    templateUrl: './the-winston-cup.component.html',
+    styleUrls: ['./the-winston-cup.component.css']
 })
 export class TheWinstonCupComponent {
   banlistDisplay:boolean = true;

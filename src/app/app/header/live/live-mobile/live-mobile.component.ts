@@ -7,18 +7,17 @@ import { TrovoComponent } from "./trovo/trovo.component";
 
 @Component({
     selector: 'app-live-mobile',
-    standalone: true,
     templateUrl: './live-mobile.component.html',
     styleUrls: ['./live-mobile.component.css'],
     imports: [
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    TwitchComponent,
-    KickComponent,
-    CommonModule,
-    TrovoComponent
-]
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        TwitchComponent,
+        KickComponent,
+        CommonModule,
+        TrovoComponent
+    ]
 })
 export class LiveMobileComponent implements OnInit {
 

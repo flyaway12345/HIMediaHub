@@ -5,15 +5,14 @@ import { CommonModule, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-audiodex-ui', 
-  standalone: true,
-  imports: [
-    AudiodexPlayerComponent,
-    CommonModule,
-    FormsModule
-  ],
-  templateUrl: './audiodex-ui.component.html',
-  styleUrls: ['./audiodex-ui.component.css']
+    selector: 'app-audiodex-ui',
+    imports: [
+        AudiodexPlayerComponent,
+        CommonModule,
+        FormsModule
+    ],
+    templateUrl: './audiodex-ui.component.html',
+    styleUrls: ['./audiodex-ui.component.css']
 })
 export class AudiodexUiComponent implements OnInit{
   title = 'Audiodex';

@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-audiodex-player',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './audiodex-player.component.html',
-  styleUrls: ['./audiodex-player.component.css']
+    selector: 'app-audiodex-player',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './audiodex-player.component.html',
+    styleUrls: ['./audiodex-player.component.css']
 })
 export class AudiodexPlayerComponent implements OnInit {
 

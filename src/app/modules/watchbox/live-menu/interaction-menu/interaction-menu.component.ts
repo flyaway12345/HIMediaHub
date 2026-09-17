@@ -4,7 +4,6 @@ import { InteractionItemsComponent } from "./interaction-items/interaction-items
 
 @Component({
     selector: 'app-interaction-menu',
-    standalone: true,
     templateUrl: './interaction-menu.component.html',
     styleUrl: './interaction-menu.component.css',
     imports: [CommandsComponent, InteractionItemsComponent]

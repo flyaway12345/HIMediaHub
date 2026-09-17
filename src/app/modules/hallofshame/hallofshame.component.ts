@@ -4,16 +4,15 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-hallofshame',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    CommonModule
-  ],
-  templateUrl: './hallofshame.component.html',
-  styleUrls: ['./hallofshame.component.css']
+    selector: 'app-hallofshame',
+    imports: [
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        CommonModule
+    ],
+    templateUrl: './hallofshame.component.html',
+    styleUrls: ['./hallofshame.component.css']
 })
 export class HallofshameComponent implements OnInit {
   listOfNames: any;

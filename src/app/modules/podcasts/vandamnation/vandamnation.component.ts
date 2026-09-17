@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-vandamnation',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './vandamnation.component.html',
-  styleUrl: './vandamnation.component.css'
+    selector: 'app-vandamnation',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './vandamnation.component.html',
+    styleUrl: './vandamnation.component.css'
 })
 export class VandamnationComponent implements OnInit{
   constructor() { }

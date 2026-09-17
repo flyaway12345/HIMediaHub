@@ -5,7 +5,6 @@ import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobi
 
 @Component({
     selector: 'app-donate',
-    standalone: true,
     templateUrl: './donate.component.html',
     styleUrls: ['./donate.component.css'],
     imports: [

@@ -12,25 +12,24 @@ import { LittleBlackBookComponent } from "./little-black-book/little-black-book.
 import { PsychedelicSpaceCadetComponent } from "./psychedelic-space-cadet/psychedelic-space-cadet.component";
 
 @Component({
-  selector: 'app-podcasts',
-  standalone: true,
-  imports: [
-    WinstonMasterDuelRoundtableComponent,
-    TheRundownComponent,
-    ThePaldeckFilesComponent,
-    AudiodexPlayerComponent,
-    HISoapboxComponent,
-    HIMediaHeadlinesComponent,
-    ICSUUYTMTComponent,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    ThePettyPoneglyphPodcastComponent,
-    LittleBlackBookComponent,
-    PsychedelicSpaceCadetComponent
-],
-  templateUrl: './podcasts.component.html',
-  styleUrls: ['./podcasts.component.css']
+    selector: 'app-podcasts',
+    imports: [
+        WinstonMasterDuelRoundtableComponent,
+        TheRundownComponent,
+        ThePaldeckFilesComponent,
+        AudiodexPlayerComponent,
+        HISoapboxComponent,
+        HIMediaHeadlinesComponent,
+        ICSUUYTMTComponent,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        ThePettyPoneglyphPodcastComponent,
+        LittleBlackBookComponent,
+        PsychedelicSpaceCadetComponent
+    ],
+    templateUrl: './podcasts.component.html',
+    styleUrls: ['./podcasts.component.css']
 })
 export class PodcastsComponent implements OnInit {
 

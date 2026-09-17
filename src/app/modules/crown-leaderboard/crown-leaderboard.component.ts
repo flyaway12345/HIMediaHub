@@ -5,16 +5,15 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
-  selector: 'app-crown-leaderboard',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive
-  ],
-  templateUrl: './crown-leaderboard.component.html',
-  styleUrl: './crown-leaderboard.component.css'
+    selector: 'app-crown-leaderboard',
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive
+    ],
+    templateUrl: './crown-leaderboard.component.html',
+    styleUrl: './crown-leaderboard.component.css'
 })
 export class CrownLeaderboardComponent implements OnInit{
   leaderboard: any;

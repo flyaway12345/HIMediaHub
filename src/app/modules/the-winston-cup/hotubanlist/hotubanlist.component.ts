@@ -4,16 +4,15 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-hotubanlist',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive
-  ],
-  templateUrl: './hotubanlist.component.html',
-  styleUrls: ['./hotubanlist.component.css']
+    selector: 'app-hotubanlist',
+    imports: [
+        CommonModule,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive
+    ],
+    templateUrl: './hotubanlist.component.html',
+    styleUrls: ['./hotubanlist.component.css']
 })
 export class HotubanlistComponent implements OnInit {
 

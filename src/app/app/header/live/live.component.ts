@@ -6,7 +6,6 @@ import { LiveMobileComponent } from "./live-mobile/live-mobile.component";
 
 @Component({
     selector: 'app-live',
-    standalone: true,
     templateUrl: './live.component.html',
     styleUrls: ['./live.component.css'],
     imports: [

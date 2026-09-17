@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-thepaldeckfiles',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './thepaldeckfiles.component.html',
-  styleUrls: ['./thepaldeckfiles.component.css']
+    selector: 'app-thepaldeckfiles',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './thepaldeckfiles.component.html',
+    styleUrls: ['./thepaldeckfiles.component.css']
 })
 export class ThePaldeckFilesComponent implements OnInit {
 

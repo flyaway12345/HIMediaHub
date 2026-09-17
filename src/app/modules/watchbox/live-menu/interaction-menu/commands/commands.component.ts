@@ -5,7 +5,6 @@ import { DefaultCommandsComponent } from "./default-commands/default-commands.co
 
 @Component({
     selector: 'app-commands',
-    standalone: true,
     templateUrl: './commands.component.html',
     styleUrl: './commands.component.css',
     imports: [

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-stream-calender',
-  standalone: true,
-  imports: [],
-  templateUrl: './stream-calender.component.html',
-  styleUrl: './stream-calender.component.css'
+    selector: 'app-stream-calender',
+    imports: [],
+    templateUrl: './stream-calender.component.html',
+    styleUrl: './stream-calender.component.css'
 })
 export class StreamCalenderComponent {
 

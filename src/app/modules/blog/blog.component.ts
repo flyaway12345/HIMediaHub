@@ -6,14 +6,13 @@ import { MarkdownService,MarkdownModule } from 'ngx-markdown';
 import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobile.component";
 import { DiscordComponent } from "../../app/header/discord/discord.component";
 @Component({
-  selector: 'app-blog',
-  standalone: true,
-  imports: [CommonModule, MarkdownModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive, LiveMobileComponent, DiscordComponent],
-  templateUrl: './blog.component.html',
-  styleUrl: './blog.component.css'
+    selector: 'app-blog',
+    imports: [CommonModule, MarkdownModule,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive, LiveMobileComponent, DiscordComponent],
+    templateUrl: './blog.component.html',
+    styleUrl: './blog.component.css'
 })
 export class BlogComponent implements OnInit {
 

@@ -6,7 +6,6 @@ import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobi
 
 @Component({
     selector: 'app-games',
-    standalone: true,
     templateUrl: './games.component.html',
     styleUrls: ['./games.component.css'],
     imports: [

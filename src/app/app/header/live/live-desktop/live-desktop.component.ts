@@ -6,7 +6,6 @@ import { TrovoComponent } from "./trovo/trovo.component";
 
 @Component({
     selector: 'app-live-desktop',
-    standalone: true,
     templateUrl: './live-desktop.component.html',
     styleUrl: './live-desktop.component.css',
     imports: [TwitchComponent, KickComponent, CommonModule, TrovoComponent]

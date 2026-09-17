@@ -8,21 +8,20 @@ import { LiveMobileComponent } from "../../app/header/live/live-mobile/live-mobi
 import { HIMediaHeadlinesComponent } from "../podcasts/himediaheadlines/himediaheadlines.component";
 
 @Component({
-  selector: 'app-newsfeed',
-  standalone: true,
-  imports: [
-    NewsfeedGamingComponent,
-    NewsfeedNewsComponent,
-    CommonModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    LiveComponent,
-    LiveMobileComponent,
-    HIMediaHeadlinesComponent
-],
-  templateUrl: './newsfeed.component.html',
-  styleUrls: ['./newsfeed.component.css']
+    selector: 'app-newsfeed',
+    imports: [
+        NewsfeedGamingComponent,
+        NewsfeedNewsComponent,
+        CommonModule,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        LiveComponent,
+        LiveMobileComponent,
+        HIMediaHeadlinesComponent
+    ],
+    templateUrl: './newsfeed.component.html',
+    styleUrls: ['./newsfeed.component.css']
 })
 export class NewsFeedComponent implements OnInit {
  switchNewsFormat:boolean = true;

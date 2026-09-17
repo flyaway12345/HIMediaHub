@@ -8,19 +8,18 @@ import { StreamAvatarComponent } from "../stream-avatar/stream-avatar.component"
 
 @Component({
     selector: 'app-live-menu',
-    standalone: true,
     templateUrl: './live-menu.component.html',
     styleUrls: ['./live-menu.component.css'],
     imports: [
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    TimerMenuComponent,
-    InteractionMenuComponent,
-    DiscordComponent,
-    StreamCalenderComponent,
-    StreamAvatarComponent
-]
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        TimerMenuComponent,
+        InteractionMenuComponent,
+        DiscordComponent,
+        StreamCalenderComponent,
+        StreamAvatarComponent
+    ]
 })
 export class LiveMenuComponent implements OnInit {
 

@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-icsuuytmt',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './icsuuytmt.component.html',
-  styleUrls: ['./icsuuytmt.component.css']
+    selector: 'app-icsuuytmt',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './icsuuytmt.component.html',
+    styleUrls: ['./icsuuytmt.component.css']
 })
 export class ICSUUYTMTComponent implements OnInit {
 

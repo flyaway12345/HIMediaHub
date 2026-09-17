@@ -8,7 +8,6 @@ import { AppDirectoryServiceService } from './app-directory-service.service';
 import { AppDirSearchPipe } from "./app-dir-search.pipe";
 @Component({
     selector: 'app-app-directory',
-    standalone: true,
     templateUrl: './app-directory.component.html',
     styleUrls: ['./app-directory.component.css'],
     imports: [

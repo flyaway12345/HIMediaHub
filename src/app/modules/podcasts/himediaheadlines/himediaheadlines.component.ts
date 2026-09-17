@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-himediaheadlines',
-  standalone: true,
-  imports: [
-CommonModule
-  ],
-  templateUrl: './himediaheadlines.component.html',
-  styleUrls: ['./himediaheadlines.component.css']
+    selector: 'app-himediaheadlines',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './himediaheadlines.component.html',
+    styleUrls: ['./himediaheadlines.component.css']
 })
 export class HIMediaHeadlinesComponent implements OnInit {
 

@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-interaction-items',
-  standalone: true,
-  imports: [],
-  templateUrl: './interaction-items.component.html',
-  styleUrl: './interaction-items.component.css'
+    selector: 'app-interaction-items',
+    imports: [],
+    templateUrl: './interaction-items.component.html',
+    styleUrl: './interaction-items.component.css'
 })
 export class InteractionItemsComponent {
   mobHeight: any;

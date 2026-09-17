@@ -10,21 +10,20 @@ import { AppDirectoryComponent } from "../app-directory.component";
 
 @Component({
     selector: 'app-home',
-    standalone: true,
     templateUrl: './links.component.html',
     styleUrls: ['./links.component.css'],
     imports: [
-    DiscordComponent,
-    SocialsComponent,
-    LiveComponent,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
-    TheWinstonCupComponent,
-    LiveMobileComponent,
-    CommonModule,
-    AppDirectoryComponent
-]
+        DiscordComponent,
+        SocialsComponent,
+        LiveComponent,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        TheWinstonCupComponent,
+        LiveMobileComponent,
+        CommonModule,
+        AppDirectoryComponent
+    ]
 })
 export class LinksComponent implements OnInit {
   // appDirSwitchBool:boolean = false;

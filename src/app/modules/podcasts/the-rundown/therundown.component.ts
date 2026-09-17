@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-therundown',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './therundown.component.html',
-  styleUrls: ['./therundown.component.css']
+    selector: 'app-therundown',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './therundown.component.html',
+    styleUrls: ['./therundown.component.css']
 })
 export class TheRundownComponent implements OnInit {
 
