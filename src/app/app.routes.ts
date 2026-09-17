@@ -55,6 +55,8 @@ import { VandamnationComponent } from './modules/podcasts/vandamnation/vandamnat
 import { Whydoesthiskeephappening } from './modules/podcasts/whydoesthiskeephappening/whydoesthiskeephappening';
 import { Radio } from './modules/radio/radio';
 import { VpTipVotes } from './modules/vp-tip-votes/vp-tip-votes';
+import { Redirect } from './modules/redirect/redirect';
+import { PatreonRedirect } from './modules/redirect/patreon-redirect/patreon-redirect';
 
 
 export const routes: Routes = [
@@ -63,18 +65,18 @@ export const routes: Routes = [
 {path: 'HIMediaHub', component: WatchboxComponent},
 {path: 'links', component: LinksComponent},
 {path: 'pay', component: PaymentComponent},
-{path: 'donate', component: PerksComponent},
-{path: 'tip', component: PerksComponent},
-{path: 'perk', component: PerksComponent},
-{path: 'perks', component: PerksComponent},
-{path: 'kofi', component: PerksComponent},
-{path: 'ko-fi', component: PerksComponent},
-{path: 'sub', component: PerksComponent},
+{path: 'donate', component: PatreonRedirect},
+{path: 'tip', component: PatreonRedirect},
+{path: 'perk', component: PatreonRedirect},
+{path: 'perks', component: PatreonRedirect},
+{path: 'kofi', component: PatreonRedirect},
+{path: 'ko-fi', component: PatreonRedirect},
+{path: 'sub', component: PatreonRedirect},
 {path: 'pay', component: PaymentComponent},
 {path: 'payment', component: PaymentComponent},
 {path: 'payments', component: PaymentComponent},
 {path: 'makeapayment', component: PaymentComponent},
-{path: 'subscription', component: PerksComponent},
+{path: 'subscription', component: PatreonRedirect},
 {path: 'thewinstoncup', component: TheWinstonCupComponent},
 {path: 'twc', component: TheWinstonCupComponent},
 {path: 'hotubanlist', component: HotubanlistComponent},
@@ -148,6 +150,9 @@ export const routes: Routes = [
   {path: 'brb', component: BrbComponent},
   {path: 'starting-soon', component: StartingSoonComponent},
   {path: 'ending-soon', component: EndingSoonComponent}
+]},
+{path: 'redirect', component: Error404Component,children: [
+  {path: 'patreon', component: PatreonRedirect}
 ]},
 {path: '**' ,component: Error404Component}
 ];

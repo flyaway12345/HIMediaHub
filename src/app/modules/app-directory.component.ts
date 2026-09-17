@@ -26,7 +26,7 @@ export class AppDirectoryComponent implements OnInit {
   search: any;
   appList: Array<any> = [];
   public constructor(private appDirectoryServiceService:AppDirectoryServiceService) {}
-  
+
   public orderByVisibility(): void {
     this.appList = this.appList.sort((a: { display: number; }, b: { display: number; }) => b.display - a.display);
     console.log("sorted");
@@ -34,14 +34,14 @@ export class AppDirectoryComponent implements OnInit {
   public filterApps():void {
   }
   public baseData() {
-    this.appDirectoryServiceService.getData().subscribe(res => {
+    this.appDirectoryServiceService.getData().subscribe((res: any[]) => {
       this.appList = res;
       console.log("data aquired");
       this.orderByVisibility()
     });
   }
   public formatData() {
-    this.appDirectoryServiceService.getDataBySearch(this.search).subscribe(res => {
+    this.appDirectoryServiceService.getDataBySearch(this.search).subscribe((res: any[]) => {
       this.appList = res;
       console.log("data aquired");
       this.orderByVisibility()
