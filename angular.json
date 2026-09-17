@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/HIMediaHub",
+            "outputPath": "docs",
             "index": "src/index.html",
             "polyfills": [
               "src/polyfills.ts"
@@ -35,8 +35,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -108,6 +108,7 @@
           "options": {
             "baseHref": "./",
             "name": "HI Media Creations",
+            "dir": "/docs/browser",
             "cname":"himedia.gg"
           }
         }
