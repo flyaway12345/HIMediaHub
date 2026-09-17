@@ -1,4 +1,0 @@
-# This robots.txt file controls crawling of URLs under https://himedia.gg.
-
-User-agent: *
-Allow: /
