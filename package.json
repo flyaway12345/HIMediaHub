@@ -28,7 +28,6 @@
     "got": "^14.4.1",
     "himedia-hub": "file:",
     "ng2-search-filter": "^0.5.1",
-    "ngx-markdown": "^17.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "tsx": "^4.19.1",
