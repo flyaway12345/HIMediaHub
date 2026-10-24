@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
 import { Error404Component } from './app/error404/error404.component';
 import { AppDirectoryComponent } from './modules/app-directory.component';
-import { BlogComponent } from './modules/blog/blog.component';
-import { DonateComponent } from './modules/donate/donate.component';
 import { AgeOfWarComponent } from './modules/games/game-select/age-of-war/age-of-war.component';
 import { Bloonstd4Component } from './modules/games/game-select/bloonstd4/bloonstd4.component';
 import { GameSelectComponent } from './modules/games/game-select/game-select.component';
@@ -41,7 +39,6 @@ import { StreamCalenderComponent } from './modules/watchbox/live-menu/stream-cal
 import { NewsfeedGamingComponent } from './modules/morning-coffee/newsfeed-gaming/newsfeed-gaming.component';
 import { GoodbyeComponent } from './modules/goodbye/goodbye.component';
 import { WhosThatPokemonComponent } from './modules/whos-that-pokemon/whos-that-pokemon.component';
-import { PerksComponent } from './modules/donate/perks/perks.component';
 import { PaymentComponent } from './modules/donate/payment/payment.component';
 import { StaticPagesComponent } from './modules/static-pages/static-pages.component';
 import { BrbComponent } from './modules/static-pages/brb/brb.component';
@@ -61,7 +58,6 @@ import { PatreonRedirect } from './modules/redirect/patreon-redirect/patreon-red
 
 export const routes: Routes = [
     {path: '' ,component: LinksComponent},
-{path: 'blog' ,component: BlogComponent},
 {path: 'HIMediaHub', component: WatchboxComponent},
 {path: 'links', component: LinksComponent},
 {path: 'pay', component: PaymentComponent},
