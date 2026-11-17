@@ -55,6 +55,7 @@ export class AppDirectoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.baseData();
+  
   }
 
 
